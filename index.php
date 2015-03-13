@@ -41,12 +41,34 @@
 			</div> <!-- Close container-fluid -->
 		</nav>
 
-		<!-- Welcome title -->
-		<h1>Welcome!</h1>
+		<?php
+			// Render the requested page
+			if (isset($_GET['p'])) {
+				$p = $_GET['p'];
 
-		<!-- Page description -->
-
-		<!-- Three boxes with pictures and text, link to pages -->
-
+				switch($p) {
+					case 'home':
+						include_once('home.php');
+						break;
+					case 'projects':
+						include_once('projects.php');
+						break;
+					case 'art':
+						include_once('art.php');
+						break;
+					case 'music':
+						include_once('music.php');
+						break;
+					case 'about':
+						include_once('about.php');
+						break;
+					default:
+						include_once('error.php');
+						break;
+				}
+			} else {
+				include_once('home.php');
+			}
+		?>
 	</div>
 </body>
