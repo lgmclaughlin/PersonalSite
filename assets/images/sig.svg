@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="sig.svg">
+   sodipodi:docname="sig.svg"
+   inkscape:export-filename="C:\Coding Program Files\XAMPP\htdocs\lucas\assets\images\sig.png"
+   inkscape:export-xdpi="110.32702"
+   inkscape:export-ydpi="110.32702">
   <defs
      id="defs4">
     <filter
@@ -186,16 +189,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="328.1247"
-     inkscape:cy="96.415039"
+     inkscape:cx="105.38027"
+     inkscape:cy="216.41504"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1057"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
+     inkscape:window-width="686"
+     inkscape:window-height="403"
+     inkscape:window-x="8"
+     inkscape:window-y="288"
+     inkscape:window-maximized="0"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -208,7 +211,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -222,7 +225,7 @@
        style="stroke:#ffffff;stroke-opacity:1">
       <g
          transform="matrix(0.67658024,0,0,0.67658024,216.53545,113.14386)"
-         style="stroke-width:4.69999981;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4784);stroke:#ffffff;stroke-opacity:1"
+         style="stroke:#ffffff;stroke-width:4.69999981;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4784)"
          id="g4470">
         <path
            style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:4.69999981;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -236,7 +239,7 @@
            inkscape:connector-curvature="0" />
       </g>
       <g
-         style="stroke-width:4.76999998;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4700);stroke:#ffffff;stroke-opacity:1"
+         style="stroke:#ffffff;stroke-width:4.76999998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4700)"
          id="g4624"
          transform="matrix(0.67220981,0.07677756,-0.07677756,0.67220981,-30.375018,7.975763)">
         <path

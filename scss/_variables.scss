@@ -328,6 +328,14 @@ $grid-float-breakpoint:     $screen-sm-min !default;
 $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 
 
+//== Container styles
+//
+//## Define style variables for containers
+
+// Default colors
+$container-bgc-default:       #D2D2D2 !default;
+
+
 //== Container sizes
 //
 //## Define the maximum width of `.container` for different screen sizes.
@@ -355,7 +363,7 @@ $container-lg:                 $container-large-desktop !default;
 // Basics of a navbar
 $navbar-height:                    50px !default;
 $navbar-margin-bottom:             $line-height-computed !default;
-$navbar-border-radius:             0px !default;
+$navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height:       340px !default;
@@ -408,6 +416,31 @@ $navbar-inverse-brand-hover-bg:             transparent !default;
 $navbar-inverse-toggle-hover-bg:            #333 !default;
 $navbar-inverse-toggle-icon-bar-bg:         #fff !default;
 $navbar-inverse-toggle-border-color:        #333 !default;
+
+//== Navbar sizes
+//
+//## Define the maximum width of `.navbar` for different screen sizes.
+
+// Length of extension past container
+$navbar-extension:                 25px !default;
+
+// Margin left for nav to center over container
+$navbar-ml:                    (($navbar-extension + $grid-gutter-width)/2) * -1;
+
+// Small screen / tablet
+$navbar-tablet:             ($container-sm + $navbar-extension) !default;
+//** For `$screen-sm-min` and up.
+$navbar-sm:                 $navbar-tablet !default;
+
+// Medium screen / desktop
+$navbar-desktop:            ($container-md + $navbar-extension) !default;
+//** For `$screen-md-min` and up.
+$navbar-md:                 $navbar-desktop !default;
+
+// Large screen / wide desktop
+$navbar-large-desktop:      ($container-lg + $navbar-extension) !default;
+//** For `$screen-lg-min` and up.
+$navbar-lg:                 $navbar-large-desktop !default;
 
 
 //== Navs

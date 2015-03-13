@@ -5462,7 +5462,7 @@ tbody.collapse.in {
 @media (min-width: 768px) {
   /* line 11, ../assets/stylesheets/bootstrap/_navbar.scss */
   .navbar {
-    border-radius: 0px;
+    border-radius: 4px;
   }
 }
 
@@ -5820,8 +5820,8 @@ tbody.collapse.in {
 /* line 333, ../assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
   margin-bottom: 0;
-  border-top-right-radius: 0px;
-  border-top-left-radius: 0px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -7851,4 +7851,37 @@ button.close {
 .brand {
   max-width: 175px;
   margin-top: -15px;
+}
+
+/* line 9, ../scss/main.scss */
+.container {
+  background-color: #d2d2d2;
+}
+
+/* line 13, ../scss/main.scss */
+.top-container {
+  padding-top: 25px;
+}
+
+/* line 17, ../scss/main.scss */
+.navbar-default {
+  margin-left: -27.5px;
+}
+@media (min-width: 768px) {
+  /* line 17, ../scss/main.scss */
+  .navbar-default {
+    width: 775px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 17, ../scss/main.scss */
+  .navbar-default {
+    width: 995px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 17, ../scss/main.scss */
+  .navbar-default {
+    width: 1195px;
+  }
 }

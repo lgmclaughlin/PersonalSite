@@ -5,3 +5,25 @@
 	max-width: 175px;
 	margin-top: -15px;
 }
+
+.container {
+	background-color: $container-bgc-default;
+}
+
+.top-container {
+	padding-top: 25px;
+}
+
+.navbar-default {
+	margin-left: $navbar-ml;
+
+	@media (min-width: $screen-sm-min) {
+		width: $navbar-sm;
+	}
+	@media (min-width: $screen-md-min) {
+		width: $navbar-md;
+	}
+	@media (min-width: $screen-lg-min) {
+		width: $navbar-lg;
+	}
+}
