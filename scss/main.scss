@@ -8,10 +8,19 @@
 
 .container {
 	background-color: $container-bgc-default;
+ 	box-shadow: 0 3px 15px 3px #AAA;
 }
 
 .top-container {
 	padding-top: 25px;
+}
+
+.main-container {
+	min-height: 90%
+}
+
+.bottom-container {
+	padding-top: 50px;
 }
 
 .navbar-default {

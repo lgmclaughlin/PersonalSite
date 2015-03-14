@@ -7856,31 +7856,42 @@ button.close {
 /* line 9, ../scss/main.scss */
 .container {
   background-color: #d2d2d2;
+  box-shadow: 0 3px 15px 3px #AAA;
 }
 
-/* line 13, ../scss/main.scss */
+/* line 14, ../scss/main.scss */
 .top-container {
   padding-top: 25px;
 }
 
-/* line 17, ../scss/main.scss */
+/* line 18, ../scss/main.scss */
+.main-container {
+  min-height: 90%;
+}
+
+/* line 22, ../scss/main.scss */
+.bottom-container {
+  padding-top: 50px;
+}
+
+/* line 26, ../scss/main.scss */
 .navbar-default {
   margin-left: -27.5px;
 }
 @media (min-width: 768px) {
-  /* line 17, ../scss/main.scss */
+  /* line 26, ../scss/main.scss */
   .navbar-default {
     width: 775px;
   }
 }
 @media (min-width: 992px) {
-  /* line 17, ../scss/main.scss */
+  /* line 26, ../scss/main.scss */
   .navbar-default {
     width: 995px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 17, ../scss/main.scss */
+  /* line 26, ../scss/main.scss */
   .navbar-default {
     width: 1195px;
   }

@@ -12,11 +12,10 @@
 <body>
 
 	<!-- Top container div for whitespace -->
-	<div class="container top-container">
-	</div>
+	<div class="container top-container"></div>
 
 	<!-- Main container div -->
-	<div class="container">
+	<div class="container main-container">
 		<!-- Nav bar -->
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
@@ -71,4 +70,7 @@
 			}
 		?>
 	</div>
+
+	<!-- Bottom container div for whitespace -->
+	<div class="bottom-container"></div>
 </body>
