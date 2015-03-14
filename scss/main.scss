@@ -1,6 +1,7 @@
 @import "compass";
 @import "bootstrap";
 
+
 /*************/
 /* index.php */
 /*************/
@@ -45,6 +46,7 @@ body {
 	background-color: #C8C8C8;
 }
 
+
 /*********************/
 /* all PHP pages CSS */
 /*********************/
@@ -56,15 +58,10 @@ $inner-padding: 15px;
 	padding-right: $inner-padding;
 }
 
+
 /****************/
 /* home.php CSS */
 /****************/
-
-$number-of-columns: 3;
-$info-column-width-sm: ($container-sm - ($inner-padding * 2) - $grid-gutter-width)/$number-of-columns;
-$info-column-width-md: ($container-md - ($inner-padding * 2) - $grid-gutter-width)/$number-of-columns;
-$info-column-width-lg: ($container-lg - ($inner-padding * 2) - $grid-gutter-width)/$number-of-columns;
-$image-width: 250px;
 
 .welcome {
 	h1 {
@@ -81,35 +78,38 @@ $image-width: 250px;
 	}
 }
 
-.info-column {
-	float: left;
+.columns-div {
+	//margin-left: 200px;
 
-	@media (min-width: $screen-sm-min) {
-		width: ($container-sm - ($inner-padding * 2) - $grid-gutter-width)/$number-of-columns;
-	}
-	@media (min-width: $screen-md-min) {
-		width: ($container-md - ($inner-padding * 2) - $grid-gutter-width)/$number-of-columns;
-	}
-	@media (min-width: $screen-lg-min) {
-		width: ($container-lg - ($inner-padding * 2) - $grid-gutter-width)/$number-of-columns;
-	}
+	.info-column {
+		float: left;
+		position: relative;
 
-	.info-column-content {
 		@media (min-width: $screen-sm-min) {
-			margin-left: ($info-column-width-sm - $image-width)/2;
-			margin-right: ($info-column-width-sm - $image-width)/2;
+			width: $info-column-width-sm;
 		}
 		@media (min-width: $screen-md-min) {
-			margin-left: ($info-column-width-md - $image-width)/2;
-			margin-right: ($info-column-width-md - $image-width)/2;
+			width: $info-column-width-md;
 		}
 		@media (min-width: $screen-lg-min) {
-			margin-left: ($info-column-width-lg - $image-width)/2;
-			margin-right: ($info-column-width-lg - $image-width)/2;
+			width: $info-column-width-lg;
 		}
-	}
 
-	.image {
-		width: $image-width;		
+		.info-column-content {
+			width: $column-width;
+
+			@media (min-width: $screen-sm-min) {
+				margin-left: $column-content-margin-sm;
+				margin-right: $column-content-margin-sm;
+			}
+			@media (min-width: $screen-md-min) {
+				margin-left: $column-content-margin-md;
+				margin-right: $column-content-margin-md;
+			}
+			@media (min-width: $screen-lg-min) {
+				margin-left: $column-content-margin-lg;
+				margin-right: $column-content-margin-lg;
+			}
+		}
 	}
 }

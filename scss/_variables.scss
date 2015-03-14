@@ -466,11 +466,33 @@ $nav-tabs-active-link-hover-border-color:   #ddd !default;
 $nav-tabs-justified-link-border-color:            #ddd !default;
 $nav-tabs-justified-active-link-border-color:     $body-bg !default;
 
+//== Get widths
+
 //== Pills
 $nav-pills-border-radius:                   $border-radius-base !default;
 $nav-pills-active-link-hover-bg:            $component-active-bg !default;
 $nav-pills-active-link-hover-color:         $component-active-color !default;
 
+
+//== Info Columns
+//
+//## Define widths and margins of the info columns div
+
+// Number of columns
+$number-of-columns:        3;                 
+
+// Get info column widths based on the rest of the page elements
+$info-column-width-sm:     ($container-sm - $grid-gutter-width)/$number-of-columns;
+$info-column-width-md:     ($container-md - $grid-gutter-width)/$number-of-columns;
+$info-column-width-lg:     ($container-lg - $grid-gutter-width)/$number-of-columns;
+
+// Width of content columns inside info column divs
+$column-width:             200px; 
+
+// Get the margins on left and right of info-column-content divs to center them
+$column-content-margin-sm: ($info-column-width-sm - $column-width)/2;
+$column-content-margin-md: ($info-column-width-md - $column-width)/2;
+$column-content-margin-lg: ($info-column-width-lg - $column-width)/2;
 
 //== Pagination
 //

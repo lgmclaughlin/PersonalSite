@@ -7850,57 +7850,57 @@ button.close {
 /*************/
 /* index.php */
 /*************/
-/* line 8, ../scss/main.scss */
+/* line 9, ../scss/main.scss */
 .brand {
   max-width: 175px;
   margin-top: -15px;
 }
 
-/* line 13, ../scss/main.scss */
+/* line 14, ../scss/main.scss */
 .container {
   background-color: #fbfbfb;
   box-shadow: 0 3px 15px 3px #6B6B6B;
 }
 
-/* line 18, ../scss/main.scss */
+/* line 19, ../scss/main.scss */
 .top-container {
   padding-top: 25px;
 }
 
-/* line 22, ../scss/main.scss */
+/* line 23, ../scss/main.scss */
 .main-container {
   min-height: 90%;
 }
 
-/* line 26, ../scss/main.scss */
+/* line 27, ../scss/main.scss */
 .bottom-container {
   padding-top: 50px;
 }
 
-/* line 30, ../scss/main.scss */
+/* line 31, ../scss/main.scss */
 .navbar-default {
   margin-left: -27.5px;
 }
 @media (min-width: 768px) {
-  /* line 30, ../scss/main.scss */
+  /* line 31, ../scss/main.scss */
   .navbar-default {
     width: 775px;
   }
 }
 @media (min-width: 992px) {
-  /* line 30, ../scss/main.scss */
+  /* line 31, ../scss/main.scss */
   .navbar-default {
     width: 995px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 30, ../scss/main.scss */
+  /* line 31, ../scss/main.scss */
   .navbar-default {
     width: 1195px;
   }
 }
 
-/* line 44, ../scss/main.scss */
+/* line 45, ../scss/main.scss */
 body {
   background-color: #C8C8C8;
 }
@@ -7908,7 +7908,7 @@ body {
 /*********************/
 /* all PHP pages CSS */
 /*********************/
-/* line 54, ../scss/main.scss */
+/* line 56, ../scss/main.scss */
 .content {
   padding-left: 15px;
   padding-right: 15px;
@@ -7917,13 +7917,13 @@ body {
 /****************/
 /* home.php CSS */
 /****************/
-/* line 70, ../scss/main.scss */
+/* line 67, ../scss/main.scss */
 .welcome h1 {
   font-size: 50px;
   padding-left: 20px;
   margin-bottom: 20px;
 }
-/* line 76, ../scss/main.scss */
+/* line 73, ../scss/main.scss */
 .welcome p {
   line-height: 1.5;
   margin-bottom: 0px;
@@ -7932,49 +7932,50 @@ body {
 }
 
 /* line 84, ../scss/main.scss */
-.info-column {
+.columns-div .info-column {
   float: left;
+  position: relative;
 }
 @media (min-width: 768px) {
   /* line 84, ../scss/main.scss */
-  .info-column {
-    width: 230px;
+  .columns-div .info-column {
+    width: 240px;
   }
 }
 @media (min-width: 992px) {
   /* line 84, ../scss/main.scss */
-  .info-column {
-    width: 303.33333px;
+  .columns-div .info-column {
+    width: 313.33333px;
   }
 }
 @media (min-width: 1200px) {
   /* line 84, ../scss/main.scss */
-  .info-column {
-    width: 370px;
+  .columns-div .info-column {
+    width: 380px;
   }
 }
+/* line 98, ../scss/main.scss */
+.columns-div .info-column .info-column-content {
+  width: 200px;
+}
 @media (min-width: 768px) {
-  /* line 97, ../scss/main.scss */
-  .info-column .info-column-content {
-    margin-left: -10px;
-    margin-right: -10px;
+  /* line 98, ../scss/main.scss */
+  .columns-div .info-column .info-column-content {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 @media (min-width: 992px) {
-  /* line 97, ../scss/main.scss */
-  .info-column .info-column-content {
-    margin-left: 26.66667px;
-    margin-right: 26.66667px;
+  /* line 98, ../scss/main.scss */
+  .columns-div .info-column .info-column-content {
+    margin-left: 56.66667px;
+    margin-right: 56.66667px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 97, ../scss/main.scss */
-  .info-column .info-column-content {
-    margin-left: 60px;
-    margin-right: 60px;
+  /* line 98, ../scss/main.scss */
+  .columns-div .info-column .info-column-content {
+    margin-left: 90px;
+    margin-right: 90px;
   }
-}
-/* line 112, ../scss/main.scss */
-.info-column .image {
-  width: 250px;
 }

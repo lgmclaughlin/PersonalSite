@@ -62,18 +62,19 @@ class InfoColumns {
 		$infoColumns = $this->infoColumns;
 
 		// Loop through each column and create the HTML of the Info Columns
-		$html = "";
+		$html = "<div class='columns-div'>";
 		foreach($infoColumns as $col) {
-			$html .= "<div class='info-column'>\n";
-			$html .= "	<div class='info-column-content'>\n";
-			$html .= "		<h3>{$col['title']}</h2>\n";
-			$html .= "		<div>\n";
-			$html .= "			<img src='assets/images/{$col['image']}' alt='{$col['alt']} class='image'>\n";
+			$html .= "	<div class='info-column'>\n";
+			$html .= "		<div class='info-column-content'>\n";
+			$html .= "			<h3>{$col['title']}</h2>\n";
+			$html .= "			<div>\n";
+			$html .= "				<img src='assets/images/{$col['image']}' alt='{$col['alt']} class='image'>\n";
+			$html .= "			</div>\n";
+			$html .= "			<p>{$col['description']}</p>\n";
 			$html .= "		</div>\n";
-			$html .= "		<p>{$col['description']}</p>\n";
 			$html .= "	</div>\n";
-			$html .= "</div>\n";
 		}
+		$html .= "</div>\n";
 
 		return $html;
 	}
