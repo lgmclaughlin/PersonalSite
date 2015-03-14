@@ -5874,16 +5874,16 @@ tbody.collapse.in {
 }
 /* line 398, ../assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default {
-  background-color: #015f92;
+  background-color: #363636;
   border-color: black;
 }
 /* line 402, ../assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand {
-  color: #eeeeee;
+  color: #dddddd;
 }
 /* line 405, ../assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #d4d4d4;
+  color: #c4c4c4;
   background-color: transparent;
 }
 /* line 411, ../assets/stylesheets/bootstrap/_navbar.scss */
@@ -5892,17 +5892,17 @@ tbody.collapse.in {
 }
 /* line 416, ../assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a {
-  color: #eeeeee;
+  color: #dddddd;
 }
 /* line 420, ../assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #eeeeee;
-  background-color: #014a71;
+  color: white;
+  background-color: #252525;
 }
 /* line 428, ../assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #eeeeee;
-  background-color: #0174b3;
+  color: white;
+  background-color: #474747;
 }
 /* line 436, ../assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
@@ -5928,23 +5928,23 @@ tbody.collapse.in {
 }
 /* line 465, ../assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #0174b3;
-  color: #eeeeee;
+  background-color: #474747;
+  color: white;
 }
 @media (max-width: 767px) {
   /* line 474, ../assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #eeeeee;
+    color: #dddddd;
   }
   /* line 477, ../assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #eeeeee;
-    background-color: #014a71;
+    color: white;
+    background-color: #252525;
   }
   /* line 485, ../assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #eeeeee;
-    background-color: #0174b3;
+    color: white;
+    background-color: #474747;
   }
   /* line 493, ../assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
@@ -5954,19 +5954,19 @@ tbody.collapse.in {
 }
 /* line 507, ../assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-link {
-  color: #eeeeee;
+  color: #dddddd;
 }
 /* line 509, ../assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-link:hover {
-  color: #eeeeee;
+  color: white;
 }
 /* line 514, ../assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .btn-link {
-  color: #eeeeee;
+  color: #dddddd;
 }
 /* line 517, ../assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
-  color: #eeeeee;
+  color: white;
 }
 /* line 523, ../assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-default .btn-link:focus {
@@ -7847,52 +7847,134 @@ button.close {
     display: none !important;
   }
 }
-/* line 4, ../scss/main.scss */
+/*************/
+/* index.php */
+/*************/
+/* line 8, ../scss/main.scss */
 .brand {
   max-width: 175px;
   margin-top: -15px;
 }
 
-/* line 9, ../scss/main.scss */
+/* line 13, ../scss/main.scss */
 .container {
-  background-color: #d2d2d2;
-  box-shadow: 0 3px 15px 3px #AAA;
+  background-color: #fbfbfb;
+  box-shadow: 0 3px 15px 3px #6B6B6B;
 }
 
-/* line 14, ../scss/main.scss */
+/* line 18, ../scss/main.scss */
 .top-container {
   padding-top: 25px;
 }
 
-/* line 18, ../scss/main.scss */
+/* line 22, ../scss/main.scss */
 .main-container {
   min-height: 90%;
 }
 
-/* line 22, ../scss/main.scss */
+/* line 26, ../scss/main.scss */
 .bottom-container {
   padding-top: 50px;
 }
 
-/* line 26, ../scss/main.scss */
+/* line 30, ../scss/main.scss */
 .navbar-default {
   margin-left: -27.5px;
 }
 @media (min-width: 768px) {
-  /* line 26, ../scss/main.scss */
+  /* line 30, ../scss/main.scss */
   .navbar-default {
     width: 775px;
   }
 }
 @media (min-width: 992px) {
-  /* line 26, ../scss/main.scss */
+  /* line 30, ../scss/main.scss */
   .navbar-default {
     width: 995px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 26, ../scss/main.scss */
+  /* line 30, ../scss/main.scss */
   .navbar-default {
     width: 1195px;
   }
+}
+
+/* line 44, ../scss/main.scss */
+body {
+  background-color: #C8C8C8;
+}
+
+/*********************/
+/* all PHP pages CSS */
+/*********************/
+/* line 54, ../scss/main.scss */
+.content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/****************/
+/* home.php CSS */
+/****************/
+/* line 70, ../scss/main.scss */
+.welcome h1 {
+  font-size: 50px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+/* line 76, ../scss/main.scss */
+.welcome p {
+  line-height: 1.5;
+  margin-bottom: 0px;
+  text-align: justify;
+  font-size: 16px;
+}
+
+/* line 84, ../scss/main.scss */
+.info-column {
+  float: left;
+}
+@media (min-width: 768px) {
+  /* line 84, ../scss/main.scss */
+  .info-column {
+    width: 230px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 84, ../scss/main.scss */
+  .info-column {
+    width: 303.33333px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 84, ../scss/main.scss */
+  .info-column {
+    width: 370px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 97, ../scss/main.scss */
+  .info-column .info-column-content {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 97, ../scss/main.scss */
+  .info-column .info-column-content {
+    margin-left: 26.66667px;
+    margin-right: 26.66667px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 97, ../scss/main.scss */
+  .info-column .info-column-content {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+/* line 112, ../scss/main.scss */
+.info-column .image {
+  width: 250px;
 }

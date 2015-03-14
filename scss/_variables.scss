@@ -333,7 +333,7 @@ $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 //## Define style variables for containers
 
 // Default colors
-$container-bgc-default:       #D2D2D2 !default;
+$container-bgc-default:       #FBFBFB !default;
 
 
 //== Container sizes
@@ -369,14 +369,14 @@ $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2
 $navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             #ffffff !default;
-$navbar-default-bg:                #015F92 !default;
+$navbar-default-bg:                #363636 !default;
 $navbar-default-border:            darken($navbar-default-bg, 30%) !default;
 
 // Navbar links
-$navbar-default-link-color:                #eee !default;
-$navbar-default-link-hover-color:          #eee !default;
+$navbar-default-link-color:                #ddd !default;
+$navbar-default-link-hover-color:          #fff !default;
 $navbar-default-link-hover-bg:             darken($navbar-default-bg, 6.5%) !default;
-$navbar-default-link-active-color:         #eee !default;
+$navbar-default-link-active-color:         #fff !default;
 $navbar-default-link-active-bg:            lighten($navbar-default-bg, 6.5%) !default;
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
