@@ -7939,3 +7939,36 @@ hr {
   background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
+
+/********************/
+/* projects.php CSS */
+/********************/
+/* line 97, ../scss/main.scss */
+.past-present-btns {
+  padding-top: 135px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 204px;
+}
+/* line 103, ../scss/main.scss */
+.past-present-btns button {
+  background-color: transparent;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 300;
+}
+/* line 113, ../scss/main.scss */
+.past-present-btns .past {
+  border-right: 1px dashed rgba(20, 20, 20, 0.3);
+  text-align: right;
+  padding-right: 15px;
+}
+/* line 119, ../scss/main.scss */
+.past-present-btns .present {
+  border-right: none;
+  text-align: left;
+  padding-left: 15px;
+}
