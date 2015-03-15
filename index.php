@@ -14,21 +14,11 @@
 	<!-- Top container div for whitespace -->
 	<div class="container top-container"></div>
 
-	<!-- Main container div -->
-	<div class="container main-container">
+	<!-- Nav Container -->
+	<div class="nav-container">
 		<!-- Nav bar -->
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="navbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a href="#" class="navbar-brand">
-						<img src="assets/images/sig.png" alt="Lucas McLaughlin logo" class="brand"/>
-					</a>
-				</div> <!-- Close navbar-header -->
 				<div class="collapse navbar-collapse" id="navbar">
 					<ul class="nav navbar-nav">
 						<?php 
@@ -39,37 +29,37 @@
 				</div> <!-- Close navbar-collapse -->
 			</div> <!-- Close container-fluid -->
 		</nav>
-
-		<?php
-			// Render the requested page
-			if (isset($_GET['p'])) {
-				$p = $_GET['p'];
-
-				switch($p) {
-					case 'home':
-						include_once('home.php');
-						break;
-					case 'projects':
-						include_once('projects.php');
-						break;
-					case 'art':
-						include_once('art.php');
-						break;
-					case 'music':
-						include_once('music.php');
-						break;
-					case 'about':
-						include_once('about.php');
-						break;
-					default:
-						include_once('error.php');
-						break;
-				}
-			} else {
-				include_once('home.php');
-			}
-		?>
 	</div>
+
+	<?php
+		// Render the requested page
+		if (isset($_GET['p'])) {
+			$p = $_GET['p'];
+
+			switch($p) {
+				case 'home':
+					include_once('home.php');
+					break;
+				case 'projects':
+					include_once('projects.php');
+					break;
+				case 'art':
+					include_once('art.php');
+					break;
+				case 'music':
+					include_once('music.php');
+					break;
+				case 'about':
+					include_once('about.php');
+					break;
+				default:
+					include_once('error.php');
+					break;
+			}
+		} else {
+			include_once('home.php');
+		}
+	?>
 
 	<!-- Bottom container div for whitespace -->
 	<div class="bottom-container"></div>

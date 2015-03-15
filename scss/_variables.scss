@@ -360,8 +360,13 @@ $container-lg:                 $container-large-desktop !default;
 //
 //##
 
+// Important widths and counts to determin navbar width
+$navbar-default-link-width:			       110px !default;
+$navbar-number-of-links:                   5 !default;
+
 // Basics of a navbar
-$navbar-height:                    50px !default;
+$navbar-width-lg:                  62px + $navbar-default-link-width * $navbar-number-of-links !default; // I don't want the navbar resizing, so fix the width; extra 63 is to provide space for psuedo-elements and fluid and collapse divs
+$navbar-height:                    60px !default;
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
@@ -369,15 +374,15 @@ $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2
 $navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             #ffffff !default;
-$navbar-default-bg:                #363636 !default;
-$navbar-default-border:            darken($navbar-default-bg, 30%) !default;
+$navbar-default-bg:                rgba(54, 54, 54, 0.1) !default;
+$navbar-default-border:            none !default;
 
 // Navbar links
-$navbar-default-link-color:                #ddd !default;
-$navbar-default-link-hover-color:          #fff !default;
-$navbar-default-link-hover-bg:             darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-color:                #222 !default;
+$navbar-default-link-hover-color:          #eee !default;
+$navbar-default-link-hover-bg:             transparent !default; // old: darken($navbar-default-bg, 6.5%)
 $navbar-default-link-active-color:         #fff !default;
-$navbar-default-link-active-bg:            lighten($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-active-bg:            transparent !default; // old: lighten($navbar-default-bg, 6.5%)
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 
