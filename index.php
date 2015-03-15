@@ -19,16 +19,12 @@
 	<div class="nav-container">
 		<!-- Nav bar -->
 		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<div class="collapse navbar-collapse" id="navbar">
-					<ul class="nav navbar-nav">
-						<?php 
-							$nav = new NavBar();
-							echo $nav->generateNav();
-						?>
-					</ul>
-				</div> <!-- Close navbar-collapse -->
-			</div> <!-- Close container-fluid -->
+			<ul class="nav navbar-nav">
+				<?php 
+					$nav = new NavBar();
+					echo $nav->generateNav();
+				?>
+			</ul>
 		</nav>
 	</div>
 

@@ -9,14 +9,19 @@
 .nav-container {
 	width: $navbar-width-lg;
 	margin: auto;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.navbar-nav {
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .navbar-link {
 	width: $navbar-default-link-width;
-	display: block;
-	text-align: center;
-	font-size: 20px;
-	font-weight: 300;
+	float: left;
 }
 
 .top-container {

@@ -7854,35 +7854,41 @@ button.close {
 .nav-container {
   width: 612px;
   margin: auto;
-}
-
-/* line 14, ../scss/main.scss */
-.navbar-link {
-  width: 110px;
-  display: block;
   text-align: center;
   font-size: 20px;
   font-weight: 300;
 }
 
+/* line 17, ../scss/main.scss */
+.navbar-nav {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 /* line 22, ../scss/main.scss */
+.navbar-link {
+  width: 110px;
+  float: left;
+}
+
+/* line 27, ../scss/main.scss */
 .top-container {
   color: transparent;
   padding-top: 25px;
 }
 
-/* line 27, ../scss/main.scss */
+/* line 32, ../scss/main.scss */
 .main-container {
   background-color: #fbfbfb;
   min-height: 90%;
 }
 
-/* line 32, ../scss/main.scss */
+/* line 37, ../scss/main.scss */
 .bottom-container {
   padding-top: 50px;
 }
 
-/* line 36, ../scss/main.scss */
+/* line 41, ../scss/main.scss */
 body {
   background-image: url("../assets/images/home_background.jpg");
   background-repeat: no-repeat;
@@ -7894,7 +7900,7 @@ body {
 /*********************/
 /* all PHP pages CSS */
 /*********************/
-/* line 50, ../scss/main.scss */
+/* line 55, ../scss/main.scss */
 .content {
   padding-left: 15px;
   padding-right: 15px;
@@ -7903,28 +7909,28 @@ body {
 /****************/
 /* home.php CSS */
 /****************/
-/* line 59, ../scss/main.scss */
+/* line 64, ../scss/main.scss */
 .home-content {
   margin: auto;
   text-align: center;
   padding-top: 50px;
 }
-/* line 64, ../scss/main.scss */
+/* line 69, ../scss/main.scss */
 .home-content .name {
   font-weight: 100;
   font-size: 40px;
 }
-/* line 69, ../scss/main.scss */
+/* line 74, ../scss/main.scss */
 .home-content .title {
   font-weight: 700;
   font-size: 60px;
 }
-/* line 74, ../scss/main.scss */
+/* line 79, ../scss/main.scss */
 .home-content .hobbies {
   font-size: 50px;
 }
 
-/* line 79, ../scss/main.scss */
+/* line 84, ../scss/main.scss */
 hr {
   border: 0;
   height: 1px;
