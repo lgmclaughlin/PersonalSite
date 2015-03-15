@@ -6,7 +6,8 @@
 	<meta name="author" content="Lucas McLaughlin"/>
 	<meta charset="UTF-8"/>
 
-	<link rel="stylesheet" href="css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>

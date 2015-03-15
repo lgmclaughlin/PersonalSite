@@ -16,7 +16,7 @@
 	display: block;
 	text-align: center;
 	font-size: 20px;
-	font-weight: 100;
+	font-weight: 300;
 }
 
 .top-container {
@@ -36,10 +36,9 @@
 body {
 	background-image: url("../assets/images/home_background.jpg");
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background-attachment: fixed;
+	background-position: 50% 0%;
+	font-family: 'Lato', sans-serif;
 }
 
 /*********************/
@@ -57,24 +56,24 @@ $inner-padding: 15px;
 /* home.php CSS */
 /****************/
 
-.welcome {
-	h1 {
+.home-content {
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+
+	.name {
+		font-weight: 100;
+		font-size: 40px;
+	}
+
+	.title {
+		font-weight: 700;
+		font-size: 60px;
+	}
+
+	.hobbies {
 		font-size: 50px;
-		padding-left: 20px;
-		margin-bottom: 20px;
 	}
-
-	p {
-		line-height: 1.5;
-		margin-bottom: 0px;
-		text-align: justify;
-		font-size: 16px;
-	}
-}
-
-.separator {
-	padding-top: 40px;
-	padding-bottom: 40px;
 }
 
 hr {
@@ -84,47 +83,4 @@ hr {
     background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-}
-
-.columns-div {
-	.info-column {
-		float: left;
-		position: relative;
-
-		@media (min-width: $screen-sm-min) {
-			width: $info-column-width-sm;
-		}
-		@media (min-width: $screen-md-min) {
-			width: $info-column-width-md;
-		}
-		@media (min-width: $screen-lg-min) {
-			width: $info-column-width-lg;
-		}
-
-		.info-column-content {
-			width: $column-width;
-
-			@media (min-width: $screen-sm-min) {
-				margin-left: $column-content-margin-sm;
-				margin-right: $column-content-margin-sm;
-			}
-			@media (min-width: $screen-md-min) {
-				margin-left: $column-content-margin-md;
-				margin-right: $column-content-margin-md;
-			}
-			@media (min-width: $screen-lg-min) {
-				margin-left: $column-content-margin-lg;
-				margin-right: $column-content-margin-lg;
-			}
-
-			h3 {
-				text-align: center;
-			}
-
-			p {
-				margin-top: 10px;
-				text-align: justify;
-			}
-		}
-	}
 }

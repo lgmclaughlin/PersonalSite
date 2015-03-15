@@ -7862,7 +7862,7 @@ button.close {
   display: block;
   text-align: center;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 /* line 22, ../scss/main.scss */
@@ -7886,16 +7886,15 @@ button.close {
 body {
   background-image: url("../assets/images/home_background.jpg");
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 0%;
+  font-family: 'Lato', sans-serif;
 }
 
 /*********************/
 /* all PHP pages CSS */
 /*********************/
-/* line 51, ../scss/main.scss */
+/* line 50, ../scss/main.scss */
 .content {
   padding-left: 15px;
   padding-right: 15px;
@@ -7904,27 +7903,28 @@ body {
 /****************/
 /* home.php CSS */
 /****************/
-/* line 61, ../scss/main.scss */
-.welcome h1 {
+/* line 59, ../scss/main.scss */
+.home-content {
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+/* line 64, ../scss/main.scss */
+.home-content .name {
+  font-weight: 100;
+  font-size: 40px;
+}
+/* line 69, ../scss/main.scss */
+.home-content .title {
+  font-weight: 700;
+  font-size: 60px;
+}
+/* line 74, ../scss/main.scss */
+.home-content .hobbies {
   font-size: 50px;
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
-/* line 67, ../scss/main.scss */
-.welcome p {
-  line-height: 1.5;
-  margin-bottom: 0px;
-  text-align: justify;
-  font-size: 16px;
 }
 
-/* line 75, ../scss/main.scss */
-.separator {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-/* line 80, ../scss/main.scss */
+/* line 79, ../scss/main.scss */
 hr {
   border: 0;
   height: 1px;
@@ -7932,62 +7932,4 @@ hr {
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
   background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-
-/* line 90, ../scss/main.scss */
-.columns-div .info-column {
-  float: left;
-  position: relative;
-}
-@media (min-width: 768px) {
-  /* line 90, ../scss/main.scss */
-  .columns-div .info-column {
-    width: 240px;
-  }
-}
-@media (min-width: 992px) {
-  /* line 90, ../scss/main.scss */
-  .columns-div .info-column {
-    width: 313.33333px;
-  }
-}
-@media (min-width: 1200px) {
-  /* line 90, ../scss/main.scss */
-  .columns-div .info-column {
-    width: 380px;
-  }
-}
-/* line 104, ../scss/main.scss */
-.columns-div .info-column .info-column-content {
-  width: 200px;
-}
-@media (min-width: 768px) {
-  /* line 104, ../scss/main.scss */
-  .columns-div .info-column .info-column-content {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-@media (min-width: 992px) {
-  /* line 104, ../scss/main.scss */
-  .columns-div .info-column .info-column-content {
-    margin-left: 56.66667px;
-    margin-right: 56.66667px;
-  }
-}
-@media (min-width: 1200px) {
-  /* line 104, ../scss/main.scss */
-  .columns-div .info-column .info-column-content {
-    margin-left: 90px;
-    margin-right: 90px;
-  }
-}
-/* line 120, ../scss/main.scss */
-.columns-div .info-column .info-column-content h3 {
-  text-align: center;
-}
-/* line 124, ../scss/main.scss */
-.columns-div .info-column .info-column-content p {
-  margin-top: 10px;
-  text-align: justify;
 }
