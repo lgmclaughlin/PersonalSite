@@ -8,6 +8,7 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" href="css/main.css" />
+	<script type="text/javascript" src="assets/javascripts/jquery-2-1-3.min.js"></script>
 </head>
 
 <body>
@@ -38,6 +39,7 @@
 					include_once('home.php');
 					break;
 				case 'projects':
+					echo '<script type="text/javascript" src="assets/javascripts/projects.js"></script>';
 					include_once('projects.php');
 					break;
 				case 'art':

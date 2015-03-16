@@ -7906,31 +7906,42 @@ body {
   padding-right: 15px;
 }
 
+/* line 60, ../scss/main.scss */
+a, a:visited, a:focus, a:active, a:hover {
+  outline: 0 none !important;
+}
+
+/* line 64, ../scss/main.scss */
+button, button:visited, button:focus, button:active, button:hover {
+  outline: 0 none !important;
+  box-shadow: none !important;
+}
+
 /****************/
 /* home.php CSS */
 /****************/
-/* line 64, ../scss/main.scss */
+/* line 73, ../scss/main.scss */
 .home-content {
   margin: auto;
   text-align: center;
   padding-top: 50px;
 }
-/* line 69, ../scss/main.scss */
+/* line 78, ../scss/main.scss */
 .home-content .name {
   font-weight: 100;
   font-size: 40px;
 }
-/* line 74, ../scss/main.scss */
+/* line 83, ../scss/main.scss */
 .home-content .title {
   font-weight: 700;
   font-size: 60px;
 }
-/* line 79, ../scss/main.scss */
+/* line 88, ../scss/main.scss */
 .home-content .hobbies {
   font-size: 50px;
 }
 
-/* line 84, ../scss/main.scss */
+/* line 93, ../scss/main.scss */
 hr {
   border: 0;
   height: 1px;
@@ -7943,15 +7954,18 @@ hr {
 /********************/
 /* projects.php CSS */
 /********************/
-/* line 97, ../scss/main.scss */
-.past-present-btns {
-  padding-top: 135px;
+/* line 106, ../scss/main.scss */
+.past-current-btns {
   margin-left: auto;
   margin-right: auto;
   width: 204px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-/* line 103, ../scss/main.scss */
-.past-present-btns button {
+/* line 115, ../scss/main.scss */
+.past-current-btns .btn {
   background-color: transparent;
   border-top: none;
   border-bottom: none;
@@ -7960,15 +7974,41 @@ hr {
   font-size: 16px;
   font-weight: 300;
 }
-/* line 113, ../scss/main.scss */
-.past-present-btns .past {
+/* line 125, ../scss/main.scss */
+.past-current-btns .btn:hover {
+  background-color: rgba(230, 230, 230, 0.5);
+}
+/* line 129, ../scss/main.scss */
+.past-current-btns .btn:visited, .past-current-btns .btn:active {
+  background-color: transparent;
+}
+/* line 133, ../scss/main.scss */
+.past-current-btns .btn:focus {
+  background-color: none;
+}
+/* line 137, ../scss/main.scss */
+.past-current-btns .active {
+  background-color: rgba(230, 230, 230, 0.5);
+}
+/* line 141, ../scss/main.scss */
+.past-current-btns .past {
   border-right: 1px dashed rgba(20, 20, 20, 0.3);
   text-align: right;
   padding-right: 15px;
 }
-/* line 119, ../scss/main.scss */
-.past-present-btns .present {
+/* line 147, ../scss/main.scss */
+.past-current-btns .current {
   border-right: none;
   text-align: left;
   padding-left: 15px;
+}
+
+/* line 154, ../scss/main.scss */
+.btns-inactive {
+  padding-top: 135px;
+}
+
+/* line 158, ../scss/main.scss */
+.btns-active {
+  padding-top: 25px;
 }
