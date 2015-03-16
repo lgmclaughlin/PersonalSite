@@ -58,7 +58,8 @@ $inner-padding: 15px;
 }
 
 a, a:visited, a:focus, a:active, a:hover {
-    outline:0 none !important;
+    outline: 0 none !important;
+    text-decoration: none !important;
 }
 
 button, button:visited, button:focus, button:active, button:hover {
@@ -88,6 +89,17 @@ button, button:visited, button:focus, button:active, button:hover {
 	.hobbies {
 		font-size: 50px;
 	}
+}
+
+.social-icons {
+	padding-top: 40px;
+}
+
+.social-icon {
+	width: 30px;
+	height: auto;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
 hr {
