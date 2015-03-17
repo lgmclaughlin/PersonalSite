@@ -8062,8 +8062,8 @@ hr {
   display: none;
   width: 750px;
   background-color: #eee;
-  padding-top: 1000px;
-  margin-top: 40px;
+  padding-top: 3000px;
+  margin-top: 42px;
 }
 /* line 15, ../assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 .project-div:before, .project-div:after {

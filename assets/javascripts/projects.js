@@ -57,6 +57,16 @@ function setUpContent(clickedBtn) {
 }
 
 $(document).ready(function() {
+	/**
+	 * Implement parallax scrolling
+	 */
+	$(window).scroll(function() {
+        var speed = 8;
+        var img = new Image;
+        img.src = $(document.body).css('background-image').replace('url', '').replace('(', '').replace(')', '').replace('"', '').replace('"', '');
+        $(document.body).css('background-position', "50% " + (-window.pageYOffset / speed) + "px");
+    });
+
 	$('#past-btn').click(function() {
 		setUpContent($(this));
 	});
