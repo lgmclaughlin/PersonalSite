@@ -7901,18 +7901,23 @@ body {
 /* all PHP pages CSS */
 /*********************/
 /* line 55, ../scss/main.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 59, ../scss/main.scss */
 .content {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* line 60, ../scss/main.scss */
+/* line 64, ../scss/main.scss */
 a, a:visited, a:focus, a:active, a:hover {
   outline: 0 none !important;
   text-decoration: none !important;
 }
 
-/* line 65, ../scss/main.scss */
+/* line 69, ../scss/main.scss */
 button, button:visited, button:focus, button:active, button:hover {
   outline: 0 none !important;
   box-shadow: none !important;
@@ -7921,33 +7926,33 @@ button, button:visited, button:focus, button:active, button:hover {
 /****************/
 /* home.php CSS */
 /****************/
-/* line 74, ../scss/main.scss */
+/* line 78, ../scss/main.scss */
 .home-content {
   margin: auto;
   text-align: center;
   padding-top: 50px;
 }
-/* line 79, ../scss/main.scss */
+/* line 83, ../scss/main.scss */
 .home-content .name {
   font-weight: 100;
   font-size: 40px;
 }
-/* line 84, ../scss/main.scss */
+/* line 88, ../scss/main.scss */
 .home-content .title {
   font-weight: 700;
   font-size: 60px;
 }
-/* line 89, ../scss/main.scss */
+/* line 93, ../scss/main.scss */
 .home-content .hobbies {
   font-size: 50px;
 }
 
-/* line 94, ../scss/main.scss */
+/* line 98, ../scss/main.scss */
 .social-icons {
   padding-top: 40px;
 }
 
-/* line 98, ../scss/main.scss */
+/* line 102, ../scss/main.scss */
 .social-icon {
   width: 30px;
   height: auto;
@@ -7955,7 +7960,7 @@ button, button:visited, button:focus, button:active, button:hover {
   margin-right: 15px;
 }
 
-/* line 105, ../scss/main.scss */
+/* line 109, ../scss/main.scss */
 hr {
   border: 0;
   height: 1px;
@@ -7968,19 +7973,19 @@ hr {
 /********************/
 /* projects.php CSS */
 /********************/
-/* line 118, ../scss/main.scss */
+/* line 122, ../scss/main.scss */
 .git-hub-link {
   width: 100%;
 }
 
-/* line 122, ../scss/main.scss */
+/* line 126, ../scss/main.scss */
 .git-hub-icon {
   padding-top: 40px;
   display: block;
   margin: auto;
 }
 
-/* line 128, ../scss/main.scss */
+/* line 132, ../scss/main.scss */
 .projects-page-description {
   width: 500px;
   padding-top: 10px;
@@ -7989,7 +7994,7 @@ hr {
   font-weight: normal;
 }
 
-/* line 136, ../scss/main.scss */
+/* line 140, ../scss/main.scss */
 .past-current-btns {
   margin-left: auto;
   margin-right: auto;
@@ -7999,7 +8004,7 @@ hr {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 145, ../scss/main.scss */
+/* line 149, ../scss/main.scss */
 .past-current-btns .btn {
   background-color: transparent;
   border-top: none;
@@ -8009,41 +8014,81 @@ hr {
   font-size: 16px;
   font-weight: 300;
 }
-/* line 155, ../scss/main.scss */
+/* line 159, ../scss/main.scss */
 .past-current-btns .btn:hover {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 159, ../scss/main.scss */
+/* line 163, ../scss/main.scss */
 .past-current-btns .btn:visited, .past-current-btns .btn:active {
   background-color: transparent;
 }
-/* line 163, ../scss/main.scss */
+/* line 167, ../scss/main.scss */
 .past-current-btns .btn:focus {
   background-color: none;
 }
-/* line 167, ../scss/main.scss */
+/* line 171, ../scss/main.scss */
 .past-current-btns .active {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 171, ../scss/main.scss */
+/* line 175, ../scss/main.scss */
 .past-current-btns .past {
   border-right: 1px dashed rgba(20, 20, 20, 0.3);
   text-align: right;
   padding-right: 15px;
 }
-/* line 177, ../scss/main.scss */
+/* line 181, ../scss/main.scss */
 .past-current-btns .current {
   border-right: none;
   text-align: left;
   padding-left: 15px;
 }
 
-/* line 184, ../scss/main.scss */
+/* line 188, ../scss/main.scss */
 .btns-inactive {
   padding-top: 60px;
 }
 
-/* line 188, ../scss/main.scss */
+/* line 192, ../scss/main.scss */
 .btns-active {
   padding-top: 25px;
+}
+
+/* line 196, ../scss/main.scss */
+.project-div {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: none;
+  width: 750px;
+  background-color: #eee;
+  padding-top: 1000px;
+  margin-top: 40px;
+}
+/* line 15, ../assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+.project-div:before, .project-div:after {
+  content: " ";
+  display: table;
+}
+/* line 19, ../assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+.project-div:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 196, ../scss/main.scss */
+  .project-div {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 196, ../scss/main.scss */
+  .project-div {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 196, ../scss/main.scss */
+  .project-div {
+    width: 1170px;
+  }
 }

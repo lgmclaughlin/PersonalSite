@@ -52,6 +52,10 @@ body {
 
 $inner-padding: 15px;
 
+html {
+    overflow-y: scroll;
+}
+
 .content {
 	padding-left: $inner-padding;
 	padding-right: $inner-padding;
@@ -187,4 +191,24 @@ hr {
 
 .btns-active {
 	padding-top: 25px;
+}
+
+.project-div {
+	@include container-fixed;
+
+	@media (min-width: $screen-sm-min) {
+		width: $container-sm;
+	}
+	@media (min-width: $screen-md-min) {
+		width: $container-md;
+	}
+	@media (min-width: $screen-lg-min) {
+		width: $container-lg;
+	}
+
+	display: none;
+	width: 750px;
+	background-color: #eee;
+	padding-top: 1000px;
+	margin-top: 40px;
 }
