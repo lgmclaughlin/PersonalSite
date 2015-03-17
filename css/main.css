@@ -1719,13 +1719,13 @@ textarea {
 
 /* line 48, ../assets/stylesheets/bootstrap/_scaffolding.scss */
 a {
-  color: #337ab7;
+  color: #eeeeee;
   text-decoration: none;
 }
 /* line 53, ../assets/stylesheets/bootstrap/_scaffolding.scss */
 a:hover, a:focus {
-  color: #23527c;
-  text-decoration: underline;
+  color: #333333;
+  text-decoration: none;
 }
 /* line 58, ../assets/stylesheets/bootstrap/_scaffolding.scss */
 a:focus {
@@ -4579,7 +4579,7 @@ select[multiple].input-lg,
 
 /* line 88, ../assets/stylesheets/bootstrap/_buttons.scss */
 .btn-link {
-  color: #337ab7;
+  color: #eeeeee;
   font-weight: normal;
   border-radius: 0;
 }
@@ -4595,8 +4595,8 @@ select[multiple].input-lg,
 }
 /* line 108, ../assets/stylesheets/bootstrap/_buttons.scss */
 .btn-link:hover, .btn-link:focus {
-  color: #23527c;
-  text-decoration: underline;
+  color: #333333;
+  text-decoration: none;
   background-color: transparent;
 }
 /* line 116, ../assets/stylesheets/bootstrap/_buttons.scss */
@@ -5291,7 +5291,7 @@ tbody.collapse.in {
 /* line 48, ../assets/stylesheets/bootstrap/_navs.scss */
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #337ab7;
+  border-color: #eeeeee;
 }
 /* line 59, ../assets/stylesheets/bootstrap/_navs.scss */
 .nav .nav-divider {
@@ -6124,7 +6124,7 @@ tbody.collapse.in {
   padding: 6px 12px;
   line-height: 1.42857;
   text-decoration: none;
-  color: #337ab7;
+  color: #eeeeee;
   background-color: white;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -6146,7 +6146,7 @@ tbody.collapse.in {
 .pagination > li > a:hover, .pagination > li > a:focus,
 .pagination > li > span:hover,
 .pagination > li > span:focus {
-  color: #23527c;
+  color: #333333;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
@@ -6382,7 +6382,7 @@ a.label:hover, a.label:focus {
 }
 /* line 41, ../assets/stylesheets/bootstrap/_badges.scss */
 .list-group-item.active > .badge, .nav-pills > .active > a > .badge {
-  color: #337ab7;
+  color: #eeeeee;
   background-color: white;
 }
 /* line 46, ../assets/stylesheets/bootstrap/_badges.scss */
@@ -6484,7 +6484,7 @@ a.badge:hover, a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #337ab7;
+  border-color: #eeeeee;
 }
 
 /* line 9, ../assets/stylesheets/bootstrap/_alerts.scss */
@@ -7969,6 +7969,27 @@ hr {
 /* projects.php CSS */
 /********************/
 /* line 118, ../scss/main.scss */
+.git-hub-link {
+  width: 100%;
+}
+
+/* line 122, ../scss/main.scss */
+.git-hub-icon {
+  padding-top: 40px;
+  display: block;
+  margin: auto;
+}
+
+/* line 128, ../scss/main.scss */
+.projects-page-description {
+  width: 500px;
+  padding-top: 10px;
+  margin: auto;
+  text-align: center;
+  font-weight: normal;
+}
+
+/* line 136, ../scss/main.scss */
 .past-current-btns {
   margin-left: auto;
   margin-right: auto;
@@ -7978,7 +7999,7 @@ hr {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 127, ../scss/main.scss */
+/* line 145, ../scss/main.scss */
 .past-current-btns .btn {
   background-color: transparent;
   border-top: none;
@@ -7988,41 +8009,41 @@ hr {
   font-size: 16px;
   font-weight: 300;
 }
-/* line 137, ../scss/main.scss */
+/* line 155, ../scss/main.scss */
 .past-current-btns .btn:hover {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 141, ../scss/main.scss */
+/* line 159, ../scss/main.scss */
 .past-current-btns .btn:visited, .past-current-btns .btn:active {
   background-color: transparent;
 }
-/* line 145, ../scss/main.scss */
+/* line 163, ../scss/main.scss */
 .past-current-btns .btn:focus {
   background-color: none;
 }
-/* line 149, ../scss/main.scss */
+/* line 167, ../scss/main.scss */
 .past-current-btns .active {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 153, ../scss/main.scss */
+/* line 171, ../scss/main.scss */
 .past-current-btns .past {
   border-right: 1px dashed rgba(20, 20, 20, 0.3);
   text-align: right;
   padding-right: 15px;
 }
-/* line 159, ../scss/main.scss */
+/* line 177, ../scss/main.scss */
 .past-current-btns .current {
   border-right: none;
   text-align: left;
   padding-left: 15px;
 }
 
-/* line 166, ../scss/main.scss */
+/* line 184, ../scss/main.scss */
 .btns-inactive {
-  padding-top: 135px;
+  padding-top: 60px;
 }
 
-/* line 170, ../scss/main.scss */
+/* line 188, ../scss/main.scss */
 .btns-active {
   padding-top: 25px;
 }

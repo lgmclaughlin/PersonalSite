@@ -25,6 +25,8 @@ function setUpContent(clickedBtn) {
 		clickedBtn.removeClass('active');
 		// Update the button div to the correct class
 		$('#past-current-btns').removeClass('btns-active').addClass('btns-inactive');
+		// Unhid the GitHub link
+		$('#git-hub-link').slideDown();
 	} else {
 		// Otherwise, always remove the active state
 		// from the other element and add it to the new one
@@ -32,6 +34,8 @@ function setUpContent(clickedBtn) {
 		clickedBtn.addClass('active');
 		// Inform the div that one of the buttons is active
 		$('#past-current-btns').removeClass('btns-inactive').addClass('btns-active');
+		// Hide the GitHub link
+		$('#git-hub-link').slideUp();
 	}
 }
 

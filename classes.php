@@ -76,4 +76,21 @@ class NavBar {
 	}
 }
 
+/**
+ * Class for rendering the projects on the Projects page
+ *
+ * This class takes care of displaying the HTML for all
+ * content of each project div on the Projects page.
+ */
+class Projects {
+	/**
+	 * This array houses the Past projects on the Projects page.
+	 * By changing information and such here, the changes will
+	 * be reflected on the Projects page.
+	 */
+	private $pastProject = array(
+
+	);
+}
+
 ?>

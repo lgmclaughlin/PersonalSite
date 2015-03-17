@@ -115,6 +115,24 @@ hr {
 /* projects.php CSS */
 /********************/
 
+.git-hub-link {
+	width: 100%;
+}
+
+.git-hub-icon {
+	padding-top: 40px;
+	display: block;
+	margin: auto;
+}
+
+.projects-page-description {
+	width: 500px;
+	padding-top: 10px;
+	margin: auto;
+	text-align: center;
+	font-weight: normal;
+}
+
 .past-current-btns {
 	margin-left: auto;
 	margin-right: auto;
@@ -164,7 +182,7 @@ hr {
 }
 
 .btns-inactive {
-	padding-top: 135px;
+	padding-top: 60px;
 }
 
 .btns-active {
