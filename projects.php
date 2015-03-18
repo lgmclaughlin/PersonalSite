@@ -14,9 +14,13 @@
 		</div>
 	</div>
 </div>
-<div class="project-div" id="past-prj-div">
-	
+<div class="outer-content-div" id="past-prj-div">
+	<h1 class="project-category-title">Past Projects</h1>
+	<?php
+		$pastProjects = new Projects();
+		echo $pastProjects->generatePast();
+	?>
 </div>
-<div class="project-div" id="current-prj-div">
+<div class="outer-content-div" id="current-prj-div">
 	
 </div>

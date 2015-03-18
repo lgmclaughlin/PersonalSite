@@ -7923,36 +7923,127 @@ button, button:visited, button:focus, button:active, button:hover {
   box-shadow: none !important;
 }
 
+/* line 76, ../scss/main.scss */
+.outer-content-div {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: none;
+  width: 750px;
+  background-color: #eee;
+  margin-top: 42px;
+  padding: 15px 60px 70px 60px;
+}
+/* line 15, ../assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+.outer-content-div:before, .outer-content-div:after {
+  content: " ";
+  display: table;
+}
+/* line 19, ../assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+.outer-content-div:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 76, ../scss/main.scss */
+  .outer-content-div {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 76, ../scss/main.scss */
+  .outer-content-div {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 76, ../scss/main.scss */
+  .outer-content-div {
+    width: 1170px;
+  }
+}
+/* line 95, ../scss/main.scss */
+.outer-content-div .inner-content-div {
+  margin-bottom: 80px;
+}
+/* line 99, ../scss/main.scss */
+.outer-content-div .content-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+/* line 104, ../scss/main.scss */
+.outer-content-div .content-p {
+  padding-top: 15px;
+  text-align: justify;
+}
+/* line 109, ../scss/main.scss */
+.outer-content-div .content-link-align {
+  text-align: center;
+}
+/* line 113, ../scss/main.scss */
+.outer-content-div .content-link, .outer-content-div a.content-link:visited, .outer-content-div a.content-link:active {
+  color: #333;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #333;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  padding-left: 2px;
+  padding-right: 2px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 129, ../scss/main.scss */
+.outer-content-div a.content-link:hover {
+  color: #777;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+/* line 139, ../scss/main.scss */
+.outer-content-div .content-image {
+  float: right;
+  display: inline;
+  margin: 0px 0px 0px 10px;
+  padding-top: 50px;
+}
+
 /****************/
 /* home.php CSS */
 /****************/
-/* line 78, ../scss/main.scss */
+/* line 152, ../scss/main.scss */
 .home-content {
   margin: auto;
   text-align: center;
   padding-top: 50px;
 }
-/* line 83, ../scss/main.scss */
+/* line 157, ../scss/main.scss */
 .home-content .name {
   font-weight: 100;
   font-size: 40px;
 }
-/* line 88, ../scss/main.scss */
+/* line 162, ../scss/main.scss */
 .home-content .title {
   font-weight: 700;
   font-size: 60px;
 }
-/* line 93, ../scss/main.scss */
+/* line 167, ../scss/main.scss */
 .home-content .hobbies {
   font-size: 50px;
 }
 
-/* line 98, ../scss/main.scss */
+/* line 172, ../scss/main.scss */
 .social-icons {
   padding-top: 40px;
 }
 
-/* line 102, ../scss/main.scss */
+/* line 176, ../scss/main.scss */
 .social-icon {
   width: 30px;
   height: auto;
@@ -7960,7 +8051,7 @@ button, button:visited, button:focus, button:active, button:hover {
   margin-right: 15px;
 }
 
-/* line 109, ../scss/main.scss */
+/* line 183, ../scss/main.scss */
 hr {
   border: 0;
   height: 1px;
@@ -7973,19 +8064,19 @@ hr {
 /********************/
 /* projects.php CSS */
 /********************/
-/* line 122, ../scss/main.scss */
+/* line 196, ../scss/main.scss */
 .git-hub-link {
   width: 100%;
 }
 
-/* line 126, ../scss/main.scss */
+/* line 200, ../scss/main.scss */
 .git-hub-icon {
   padding-top: 40px;
   display: block;
   margin: auto;
 }
 
-/* line 132, ../scss/main.scss */
+/* line 206, ../scss/main.scss */
 .projects-page-description {
   width: 500px;
   padding-top: 10px;
@@ -7994,7 +8085,7 @@ hr {
   font-weight: normal;
 }
 
-/* line 140, ../scss/main.scss */
+/* line 214, ../scss/main.scss */
 .past-current-btns {
   margin-left: auto;
   margin-right: auto;
@@ -8004,7 +8095,7 @@ hr {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 149, ../scss/main.scss */
+/* line 223, ../scss/main.scss */
 .past-current-btns .btn {
   background-color: transparent;
   border-top: none;
@@ -8014,81 +8105,47 @@ hr {
   font-size: 16px;
   font-weight: 300;
 }
-/* line 159, ../scss/main.scss */
+/* line 233, ../scss/main.scss */
 .past-current-btns .btn:hover {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 163, ../scss/main.scss */
+/* line 237, ../scss/main.scss */
 .past-current-btns .btn:visited, .past-current-btns .btn:active {
   background-color: transparent;
 }
-/* line 167, ../scss/main.scss */
+/* line 241, ../scss/main.scss */
 .past-current-btns .btn:focus {
   background-color: none;
 }
-/* line 171, ../scss/main.scss */
+/* line 245, ../scss/main.scss */
 .past-current-btns .active {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 175, ../scss/main.scss */
+/* line 249, ../scss/main.scss */
 .past-current-btns .past {
   border-right: 1px dashed rgba(20, 20, 20, 0.3);
   text-align: right;
   padding-right: 15px;
 }
-/* line 181, ../scss/main.scss */
+/* line 255, ../scss/main.scss */
 .past-current-btns .current {
   border-right: none;
   text-align: left;
   padding-left: 15px;
 }
 
-/* line 188, ../scss/main.scss */
+/* line 262, ../scss/main.scss */
 .btns-inactive {
   padding-top: 60px;
 }
 
-/* line 192, ../scss/main.scss */
+/* line 266, ../scss/main.scss */
 .btns-active {
   padding-top: 25px;
 }
 
-/* line 196, ../scss/main.scss */
-.project-div {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: none;
-  width: 750px;
-  background-color: #eee;
-  padding-top: 3000px;
-  margin-top: 42px;
-}
-/* line 15, ../assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.project-div:before, .project-div:after {
-  content: " ";
-  display: table;
-}
-/* line 19, ../assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.project-div:after {
-  clear: both;
-}
-@media (min-width: 768px) {
-  /* line 196, ../scss/main.scss */
-  .project-div {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  /* line 196, ../scss/main.scss */
-  .project-div {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  /* line 196, ../scss/main.scss */
-  .project-div {
-    width: 1170px;
-  }
+/* line 270, ../scss/main.scss */
+.project-category-title {
+  text-align: center !important;
+  padding: 10px 0px 20px 0px;
 }

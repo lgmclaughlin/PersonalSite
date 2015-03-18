@@ -71,6 +71,80 @@ button, button:visited, button:focus, button:active, button:hover {
     box-shadow: none !important;
 }
 
+
+
+.outer-content-div {
+	@include container-fixed;
+
+	@media (min-width: $screen-sm-min) {
+		width: $container-sm;
+	}
+	@media (min-width: $screen-md-min) {
+		width: $container-md;
+	}
+	@media (min-width: $screen-lg-min) {
+		width: $container-lg;
+	}
+
+	display: none;
+	width: 750px;
+	background-color: #eee;
+	margin-top: 42px;
+	padding: 15px 60px 70px 60px;
+
+	.inner-content-div {
+		margin-bottom: 80px;
+	}
+
+	.content-title {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	.content-p {
+		padding-top: 15px;
+		text-align: justify;
+	}
+
+	.content-link-align {
+		text-align: center;
+	}
+
+	.content-link, a.content-link:visited, a.content-link:active {
+		color: #333;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid #333;
+		border-right: 1px solid transparent;
+		border-left:  1px solid transparent;
+		padding-left: 2px;
+		padding-right: 2px;
+		-webkit-transition: all 0.5s ease;
+	    -moz-transition: all 0.5s ease;
+	    -o-transition: all 0.5s ease;
+	    transition: all 0.5s ease;
+	}
+
+	a.content-link:hover {
+		color: #777;
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+		border-right: 1px solid #aaa;
+		border-left: 1px solid #aaa;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+
+	.content-image {
+		float: right;
+		display: inline;
+		margin: 0px 0px 0px 10px;
+		padding-top: 50px;
+	}
+
+}
+
 /****************/
 /* home.php CSS */
 /****************/
@@ -193,22 +267,10 @@ hr {
 	padding-top: 25px;
 }
 
-.project-div {
-	@include container-fixed;
-
-	@media (min-width: $screen-sm-min) {
-		width: $container-sm;
-	}
-	@media (min-width: $screen-md-min) {
-		width: $container-md;
-	}
-	@media (min-width: $screen-lg-min) {
-		width: $container-lg;
-	}
-
-	display: none;
-	width: 750px;
-	background-color: #eee;
-	padding-top: 3000px;
-	margin-top: 42px;
+.project-category-title {
+	text-align: center !important;
+	padding: 10px 0px 20px 0px;
 }
+
+
+
