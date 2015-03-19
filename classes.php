@@ -109,6 +109,52 @@ class Projects {
 										on which I\'ve worked, and the experience I gained from it in 
 										regards to networking was invaluable.'
 					   ),
+		'bt9' => array('title'       => 'Bit9: Certificate Tree GUI Web Application',
+					   'link'        => 'https://www.bit9.com/',
+					   'link-text'   => 'Bit9\'s Homepage',
+					   'description' => 'Last summer (2014), I was fortunate enough to get a position as
+					   					an intern at Bit9 as part of the server team. Bit9 provides advanced
+					   					attack protection software to a large number of profile companies.
+					   					What makes their software so unique is it\'s ability to detect threats
+					   					at the kernel level which allows prevention of not only previously
+					   					seen attacks, but also even
+					   					<a href="https://blog.bit9.com/2014/03/31/zero-day-mitigation-how-bit9-blocks-the-latest-microsoft-word-vulnerability/"
+					   					class="content-link" target="_blank">zero-days.</a><br /><br />
+					   					I began my time at Bit9 working to improve the server team\'s test
+					   					suite for certificate states. The Bit9 console recognizes previously
+					   					seen certifcates and can either validate or invalidate them by assigning
+					   					states (Banned, Approved, or Unapproved). Additionally, a network 
+					   					administrator with access to the Bit9 console can assign states to
+					   					certificate publishers as he or she sees fit to prevent executables
+					   					signed by said publisher from running on any network machines. What
+					   					results are trees of certificates, each with their own, state, publisher, 
+					   					signature algorithm, etc., that sign one another.<br /><br />
+					   					I was tasked with testing that certificate states in these trees were
+					   					determined correctly taking into account all the certificates at
+					   					higher levels. For instance, if a certificate signed by Verisign
+					   					that was Banned had signed a number of certificates, any certificate
+					   					further down the tree published by Verisign should be Banned as well.
+					   					To test this, I used mainly SQL stored procedures, documenting thoroughly
+					   					to ensure my suite was exhaustive.<br /><br />Around two weeks into the
+					   					internship, I had an idea. Because the state propagation was very complex 
+					   					and confused many Bit9 cemployees, I believed a visual representation of 
+					   					the trees would be a great tool. As such, I suggested the idea to my
+					   					advisor, and with his approval I began mocking up wireframes for a web 
+					   					app in my spare time.<br /><br />After finishing the SQL test suite,
+					   					I began work on the GUI. I built the front end using HTML, jQuery, and CSS.
+					   					To build the tree view, I used a jQuery plugin called jsTree.
+					   					I also needed to build a backend since the application would be making
+					   					calls to a database for certificate information retreival. This was built
+					   					using PHP and fit into the existing Bit9 server framework.<br /><br />
+					   					By the end of the summer, I had a working application and got the chance
+					   					to present it in front of around twenty company employees, one of whom
+					   					approached me about accessing the application in hopes of gaining a better
+					   					understanding of how the software deals with certificates. Overall, my
+					   					time at Bit9 was extremely enjoyable and beneficial to me as a developer.
+										I\'ve since gone on to use the knowledge I gained there to create and
+										contribute to a number of web sites (including this one), and I\'ll
+										certainly never forget the experience.' 
+					   ),
 		'dyn' => array('title'       => 'Dyn Hackedemy: The Moore Center iOS App',
 					   'link'        => 'https://github.com/Hackademy2014/moore',
 					   'link-text'   => 'GitHub repository',
