@@ -1,6 +1,7 @@
 <?php require_once('classes.php'); ?>
 
-<DOCTYPE! html>
+<!DOCTYPE html>
+<html>
 <head>
 	<meta name="description" content="My personal website. Enjoy!"/>
 	<meta name="author" content="Lucas McLaughlin"/>
@@ -63,3 +64,4 @@
 	<!-- Bottom container div for whitespace -->
 	<div class="bottom-container"></div>
 </body>
+</html>

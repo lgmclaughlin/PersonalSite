@@ -17,10 +17,14 @@
 <div class="outer-content-div" id="past-prj-div">
 	<h1 class="project-category-title">Past Projects</h1>
 	<?php
-		$pastProjects = new Projects();
-		echo $pastProjects->generatePast();
+		$projects = new Projects();
+		echo $projects->generatePast();
 	?>
 </div>
 <div class="outer-content-div" id="current-prj-div">
-	
+	<h1 class="project-category-title">Current Projects</h1>
+	<?php
+		$projects = new Projects();
+		echo $projects->generateCurrent();
+	?>
 </div>
