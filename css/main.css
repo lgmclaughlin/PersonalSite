@@ -7895,35 +7895,38 @@ body {
   background-attachment: fixed;
   background-position: 50% 0%;
   font-family: 'Lato', sans-serif;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 /*********************/
 /* all PHP pages CSS */
 /*********************/
-/* line 55, ../scss/main.scss */
+/* line 56, ../scss/main.scss */
 html {
   overflow-y: scroll;
 }
 
-/* line 59, ../scss/main.scss */
+/* line 60, ../scss/main.scss */
 .content {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* line 64, ../scss/main.scss */
+/* line 65, ../scss/main.scss */
 a, a:visited, a:focus, a:active, a:hover {
   outline: 0 none !important;
   text-decoration: none !important;
 }
 
-/* line 69, ../scss/main.scss */
+/* line 70, ../scss/main.scss */
 button, button:visited, button:focus, button:active, button:hover {
   outline: 0 none !important;
   box-shadow: none !important;
 }
 
-/* line 76, ../scss/main.scss */
+/* line 77, ../scss/main.scss */
 .outer-content-div {
   margin-right: auto;
   margin-left: auto;
@@ -7945,48 +7948,48 @@ button, button:visited, button:focus, button:active, button:hover {
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 76, ../scss/main.scss */
+  /* line 77, ../scss/main.scss */
   .outer-content-div {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  /* line 76, ../scss/main.scss */
+  /* line 77, ../scss/main.scss */
   .outer-content-div {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 76, ../scss/main.scss */
+  /* line 77, ../scss/main.scss */
   .outer-content-div {
     width: 1170px;
   }
 }
-/* line 95, ../scss/main.scss */
+/* line 96, ../scss/main.scss */
 .outer-content-div .inner-content-div {
   margin-bottom: 80px;
 }
-/* line 99, ../scss/main.scss */
+/* line 100, ../scss/main.scss */
 .outer-content-div .content-main-title {
   text-align: center !important;
   padding: 10px 0px 20px 0px;
 }
-/* line 104, ../scss/main.scss */
+/* line 105, ../scss/main.scss */
 .outer-content-div .content-sub-title {
   margin-bottom: 30px;
   text-align: center;
 }
-/* line 109, ../scss/main.scss */
+/* line 110, ../scss/main.scss */
 .outer-content-div .content-p {
   padding-top: 15px;
   text-align: justify;
   line-height: 1.75;
 }
-/* line 115, ../scss/main.scss */
+/* line 116, ../scss/main.scss */
 .outer-content-div .content-link-align {
   text-align: center;
 }
-/* line 119, ../scss/main.scss */
+/* line 120, ../scss/main.scss */
 .outer-content-div .content-link, .outer-content-div a.content-link:visited, .outer-content-div a.content-link:active {
   color: #333;
   border-radius: 5px;
@@ -7997,11 +8000,10 @@ button, button:visited, button:focus, button:active, button:hover {
   padding-left: 2px;
   padding-right: 2px;
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 134, ../scss/main.scss */
+/* line 132, ../scss/main.scss */
 .outer-content-div a.content-link:hover {
   color: #777;
   border-radius: 5px;
@@ -8012,15 +8014,15 @@ button, button:visited, button:focus, button:active, button:hover {
   padding-left: 2px;
   padding-right: 2px;
 }
-/* line 145, ../scss/main.scss */
+/* line 143, ../scss/main.scss */
 .outer-content-div .content-image {
   float: right;
   display: inline;
-  margin: 0px 0px 0px 10px;
+  margin-bottom: 10px;
   padding-top: 50px;
 }
 
-/* line 154, ../scss/main.scss */
+/* line 152, ../scss/main.scss */
 .hidden-div {
   display: none;
 }
@@ -8028,33 +8030,33 @@ button, button:visited, button:focus, button:active, button:hover {
 /****************/
 /* home.php CSS */
 /****************/
-/* line 162, ../scss/main.scss */
+/* line 160, ../scss/main.scss */
 .home-content {
   margin: auto;
   text-align: center;
   padding-top: 50px;
 }
-/* line 167, ../scss/main.scss */
+/* line 165, ../scss/main.scss */
 .home-content .name {
   font-weight: 100;
   font-size: 40px;
 }
-/* line 172, ../scss/main.scss */
+/* line 170, ../scss/main.scss */
 .home-content .title {
   font-weight: 700;
   font-size: 60px;
 }
-/* line 177, ../scss/main.scss */
+/* line 175, ../scss/main.scss */
 .home-content .hobbies {
   font-size: 50px;
 }
 
-/* line 182, ../scss/main.scss */
+/* line 180, ../scss/main.scss */
 .social-icons {
   padding-top: 40px;
 }
 
-/* line 186, ../scss/main.scss */
+/* line 184, ../scss/main.scss */
 .social-icon {
   width: 30px;
   height: auto;
@@ -8062,7 +8064,7 @@ button, button:visited, button:focus, button:active, button:hover {
   margin-right: 15px;
 }
 
-/* line 193, ../scss/main.scss */
+/* line 191, ../scss/main.scss */
 hr {
   border: 0;
   height: 1px;
@@ -8075,19 +8077,19 @@ hr {
 /********************/
 /* projects.php CSS */
 /********************/
-/* line 206, ../scss/main.scss */
+/* line 204, ../scss/main.scss */
 .git-hub-link {
   width: 100%;
 }
 
-/* line 210, ../scss/main.scss */
+/* line 208, ../scss/main.scss */
 .git-hub-icon {
   padding-top: 40px;
   display: block;
   margin: auto;
 }
 
-/* line 216, ../scss/main.scss */
+/* line 214, ../scss/main.scss */
 .projects-page-description {
   width: 500px;
   padding-top: 10px;
@@ -8096,17 +8098,16 @@ hr {
   font-weight: normal;
 }
 
-/* line 224, ../scss/main.scss */
+/* line 222, ../scss/main.scss */
 .past-current-btns {
   margin-left: auto;
   margin-right: auto;
   width: 204px;
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 233, ../scss/main.scss */
+/* line 228, ../scss/main.scss */
 .past-current-btns .btn {
   background-color: transparent;
   border-top: none;
@@ -8116,41 +8117,106 @@ hr {
   font-size: 16px;
   font-weight: 300;
 }
-/* line 243, ../scss/main.scss */
+/* line 238, ../scss/main.scss */
 .past-current-btns .btn:hover {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 247, ../scss/main.scss */
+/* line 242, ../scss/main.scss */
 .past-current-btns .btn:visited, .past-current-btns .btn:active {
   background-color: transparent;
 }
-/* line 251, ../scss/main.scss */
+/* line 246, ../scss/main.scss */
 .past-current-btns .btn:focus {
   background-color: none;
 }
-/* line 255, ../scss/main.scss */
+/* line 250, ../scss/main.scss */
 .past-current-btns .active {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 259, ../scss/main.scss */
+/* line 254, ../scss/main.scss */
 .past-current-btns .past {
   border-right: 1px dashed rgba(20, 20, 20, 0.3);
   text-align: right;
   padding-right: 15px;
 }
-/* line 265, ../scss/main.scss */
+/* line 260, ../scss/main.scss */
 .past-current-btns .current {
   border-right: none;
   text-align: left;
   padding-left: 15px;
 }
 
-/* line 272, ../scss/main.scss */
+/* line 267, ../scss/main.scss */
 .btns-inactive {
   padding-top: 60px;
 }
 
-/* line 276, ../scss/main.scss */
+/* line 271, ../scss/main.scss */
 .btns-active {
   padding-top: 25px;
+}
+
+/***************/
+/* art.php CSS */
+/***************/
+/* line 279, ../scss/main.scss */
+.modal-image {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 283, ../scss/main.scss */
+.modal-active {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: auto !important;
+  height: auto !important;
+}
+
+/* line 291, ../scss/main.scss */
+.art-sketch {
+  display: block;
+  margin: 40px auto 0 auto;
+  padding: 10px;
+  height: auto;
+  -webkit-box-shadow: 0 0 10px #888888;
+  box-shadow: 0 0 10px #888888;
+}
+@media (min-width: 0px) {
+  /* line 291, ../scss/main.scss */
+  .art-sketch {
+    width: 600px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 291, ../scss/main.scss */
+  .art-sketch {
+    width: 600px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 291, ../scss/main.scss */
+  .art-sketch {
+    width: 776px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 291, ../scss/main.scss */
+  .art-sketch {
+    width: 936px;
+  }
+}
+
+/* line 317, ../scss/main.scss */
+.blur {
+  -webkit-filter: blur(5px) grayscale(50%);
+  -moz-filter: blur(5px) grayscale(50%);
+  filter: blur(5px) grayscale(50%);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
 }

@@ -2,7 +2,7 @@
 	<h1 class="content-main-title">Art</h1>
 	<div class="inner-content-div">
 		<p class="content-p">
-			Drawing and art has been a hobby of mine for my entire life.
+			Sketching and drawing have been hobbies of mine for my entire life.
 			I love the attention to detail it requires and the feeling of 
 			creating something others can enjoy. Ever so often, I sit down
 			for hours on end and get lost in a new sketch.<br /><br />Below,

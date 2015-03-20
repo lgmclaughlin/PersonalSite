@@ -368,11 +368,15 @@ class Art {
 
 		// Loop through each item and create the HTML of the content
 		$html = "";
+		$i = 0; // Loop counter
 		foreach($art as $sketch) {
-			$html .= "<div class='inner-content-div'>\n";
-			$html .= "	<h3 class='content-sub-title'>{$sketch['title']}</h3>\n";
-			$html .= "	<img src='{$sketch['src']}' class='art-sketch' />\n";
-			$html .= "</div>\n";
+			$html .= "	<div class='inner-content-div'>\n";
+			$html .= "		<h3 class='content-sub-title'>{$sketch['title']}</h3>\n";
+			$html .= "		<div class='modal-image' id='modal{$i}'>\n";
+			$html .= "			<img src='{$sketch['src']}' class='art-sketch' />\n";
+			$html .= "		</div>\n";
+			$html .= "	</div>\n";
+			$i++;
 		}
 
 		return $html;
