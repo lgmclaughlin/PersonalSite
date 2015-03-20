@@ -283,7 +283,7 @@ class Projects {
 	/**
 	 * Generates the past projects content for the Projects page
 	 * based on projects array. Loops through the array and renders 
-	 * project in HTML.
+	 * projects in HTML.
 	 *
 	 * @return The HTML for the past project content is returned
 	 */
@@ -295,7 +295,7 @@ class Projects {
 		$html = "";
 		foreach($pastProjects as $project) {
 			$html .= "<div class='inner-content-div'>\n";
-			$html .= "	<h3 class='content-title'>{$project['title']}</h3>\n";
+			$html .= "	<h3 class='content-sub-title'>{$project['title']}</h3>\n";
 			$html .= "	<h4 class='content-link-align'><a href='{$project['link']}' class='content-link' target='_blank'>{$project['link-text']}</a></h4>\n";
 			$html .= "	<p class='content-p'>{$project['description']}</p>\n";
 			$html .= "</div>\n";
@@ -307,7 +307,7 @@ class Projects {
 	/**
 	 * Generates the current projects content for the Projects page
 	 * based on current projects array. Loops through the array and renders 
-	 * project in HTML.
+	 * projects in HTML.
 	 *
 	 * @return The HTML for the current project content is returned
 	 */
@@ -319,9 +319,59 @@ class Projects {
 		$html = "";
 		foreach($currentProjects as $project) {
 			$html .= "<div class='inner-content-div'>\n";
-			$html .= "	<h3 class='content-title'>{$project['title']}</h3>\n";
+			$html .= "	<h3 class='content-sub-title'>{$project['title']}</h3>\n";
 			$html .= "	<h4 class='content-link-align'><a href='{$project['link']}' class='content-link' target='_blank'>{$project['link-text']}</a></h4>\n";
 			$html .= "	<p class='content-p'>{$project['description']}</p>\n";
+			$html .= "</div>\n";
+		}
+
+		return $html;
+	}
+}
+
+/**
+ * Class for rendering the pictures on the Art page
+ *
+ * This class takes care of creating the HTML for all
+ * of the pictures on the Art page.
+ */
+class Art {
+	/**
+	 * This array houses information for the pictures
+	 * on the Art page.
+	 */
+	private $art = array(
+		'imagine' => array('title' => 'Everything You Can Imagine is Real',
+					       'src'   => 'assets/images/imagine.jpg'
+					      ),
+		'agera'   => array('title' => 'Koenigsegg Agera',
+						   'src'   => 'assets/images/agera.jpg'
+						  ),
+		'lambo'   => array('title' => 'Lamborghini Gallardo Superleggera',
+		                   'src'   => 'assets/images/lambo.jpg'
+		                  ),
+		'jaguar'  => array('title' => 'Jaguar C-X16',
+						   'src'   => 'assets/images/jaguar.jpg'
+						  )
+	);
+
+	/**
+	 * Generates pictures of my drawings for the Art page
+	 * based on current art array. Loops through the array and renders 
+	 * art in HTML.
+	 *
+	 * @return The HTML for the current project content is returned
+	 */
+	public function generateArt() {
+		// Get the nav and class
+		$art = $this->art;
+
+		// Loop through each item and create the HTML of the content
+		$html = "";
+		foreach($art as $sketch) {
+			$html .= "<div class='inner-content-div'>\n";
+			$html .= "	<h3 class='content-sub-title'>{$sketch['title']}</h3>\n";
+			$html .= "	<img src='{$sketch['src']}' class='art-sketch' />\n";
 			$html .= "</div>\n";
 		}
 

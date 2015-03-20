@@ -44,6 +44,7 @@
 					include_once('projects.php');
 					break;
 				case 'art':
+					echo '<script type="text/javascript" src="assets/javascripts/art.js"></script>';
 					include_once('art.php');
 					break;
 				case 'music':

@@ -57,6 +57,9 @@ function setUpContent(clickedBtn) {
 }
 
 $(document).ready(function() {
+    // Animate page content opening
+    $('#projects-page-div').slideDown(200);
+
 	/**
 	 * Implement parallax scrolling
 	 */
@@ -66,7 +69,6 @@ $(document).ready(function() {
         img.src = $(document.body).css('background-image').replace('url', '').replace('(', '').replace(')', '').replace('"', '').replace('"', '');
         $(document.body).css('background-position', "50% " + (-window.pageYOffset / speed) + "px");
     });
-
 	$('#past-btn').click(function() {
 		setUpContent($(this));
 	});

@@ -7967,21 +7967,26 @@ button, button:visited, button:focus, button:active, button:hover {
   margin-bottom: 80px;
 }
 /* line 99, ../scss/main.scss */
-.outer-content-div .content-title {
+.outer-content-div .content-main-title {
+  text-align: center !important;
+  padding: 10px 0px 20px 0px;
+}
+/* line 104, ../scss/main.scss */
+.outer-content-div .content-sub-title {
   margin-bottom: 30px;
   text-align: center;
 }
-/* line 104, ../scss/main.scss */
+/* line 109, ../scss/main.scss */
 .outer-content-div .content-p {
   padding-top: 15px;
   text-align: justify;
   line-height: 1.75;
 }
-/* line 110, ../scss/main.scss */
+/* line 115, ../scss/main.scss */
 .outer-content-div .content-link-align {
   text-align: center;
 }
-/* line 114, ../scss/main.scss */
+/* line 119, ../scss/main.scss */
 .outer-content-div .content-link, .outer-content-div a.content-link:visited, .outer-content-div a.content-link:active {
   color: #333;
   border-radius: 5px;
@@ -7996,7 +8001,7 @@ button, button:visited, button:focus, button:active, button:hover {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 129, ../scss/main.scss */
+/* line 134, ../scss/main.scss */
 .outer-content-div a.content-link:hover {
   color: #777;
   border-radius: 5px;
@@ -8007,7 +8012,7 @@ button, button:visited, button:focus, button:active, button:hover {
   padding-left: 2px;
   padding-right: 2px;
 }
-/* line 140, ../scss/main.scss */
+/* line 145, ../scss/main.scss */
 .outer-content-div .content-image {
   float: right;
   display: inline;
@@ -8015,36 +8020,41 @@ button, button:visited, button:focus, button:active, button:hover {
   padding-top: 50px;
 }
 
+/* line 154, ../scss/main.scss */
+.hidden-div {
+  display: none;
+}
+
 /****************/
 /* home.php CSS */
 /****************/
-/* line 153, ../scss/main.scss */
+/* line 162, ../scss/main.scss */
 .home-content {
   margin: auto;
   text-align: center;
   padding-top: 50px;
 }
-/* line 158, ../scss/main.scss */
+/* line 167, ../scss/main.scss */
 .home-content .name {
   font-weight: 100;
   font-size: 40px;
 }
-/* line 163, ../scss/main.scss */
+/* line 172, ../scss/main.scss */
 .home-content .title {
   font-weight: 700;
   font-size: 60px;
 }
-/* line 168, ../scss/main.scss */
+/* line 177, ../scss/main.scss */
 .home-content .hobbies {
   font-size: 50px;
 }
 
-/* line 173, ../scss/main.scss */
+/* line 182, ../scss/main.scss */
 .social-icons {
   padding-top: 40px;
 }
 
-/* line 177, ../scss/main.scss */
+/* line 186, ../scss/main.scss */
 .social-icon {
   width: 30px;
   height: auto;
@@ -8052,7 +8062,7 @@ button, button:visited, button:focus, button:active, button:hover {
   margin-right: 15px;
 }
 
-/* line 184, ../scss/main.scss */
+/* line 193, ../scss/main.scss */
 hr {
   border: 0;
   height: 1px;
@@ -8065,19 +8075,19 @@ hr {
 /********************/
 /* projects.php CSS */
 /********************/
-/* line 197, ../scss/main.scss */
+/* line 206, ../scss/main.scss */
 .git-hub-link {
   width: 100%;
 }
 
-/* line 201, ../scss/main.scss */
+/* line 210, ../scss/main.scss */
 .git-hub-icon {
   padding-top: 40px;
   display: block;
   margin: auto;
 }
 
-/* line 207, ../scss/main.scss */
+/* line 216, ../scss/main.scss */
 .projects-page-description {
   width: 500px;
   padding-top: 10px;
@@ -8086,7 +8096,7 @@ hr {
   font-weight: normal;
 }
 
-/* line 215, ../scss/main.scss */
+/* line 224, ../scss/main.scss */
 .past-current-btns {
   margin-left: auto;
   margin-right: auto;
@@ -8096,7 +8106,7 @@ hr {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 224, ../scss/main.scss */
+/* line 233, ../scss/main.scss */
 .past-current-btns .btn {
   background-color: transparent;
   border-top: none;
@@ -8106,47 +8116,41 @@ hr {
   font-size: 16px;
   font-weight: 300;
 }
-/* line 234, ../scss/main.scss */
+/* line 243, ../scss/main.scss */
 .past-current-btns .btn:hover {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 238, ../scss/main.scss */
+/* line 247, ../scss/main.scss */
 .past-current-btns .btn:visited, .past-current-btns .btn:active {
   background-color: transparent;
 }
-/* line 242, ../scss/main.scss */
+/* line 251, ../scss/main.scss */
 .past-current-btns .btn:focus {
   background-color: none;
 }
-/* line 246, ../scss/main.scss */
+/* line 255, ../scss/main.scss */
 .past-current-btns .active {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 250, ../scss/main.scss */
+/* line 259, ../scss/main.scss */
 .past-current-btns .past {
   border-right: 1px dashed rgba(20, 20, 20, 0.3);
   text-align: right;
   padding-right: 15px;
 }
-/* line 256, ../scss/main.scss */
+/* line 265, ../scss/main.scss */
 .past-current-btns .current {
   border-right: none;
   text-align: left;
   padding-left: 15px;
 }
 
-/* line 263, ../scss/main.scss */
+/* line 272, ../scss/main.scss */
 .btns-inactive {
   padding-top: 60px;
 }
 
-/* line 267, ../scss/main.scss */
+/* line 276, ../scss/main.scss */
 .btns-active {
   padding-top: 25px;
-}
-
-/* line 271, ../scss/main.scss */
-.project-category-title {
-  text-align: center !important;
-  padding: 10px 0px 20px 0px;
 }

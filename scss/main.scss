@@ -96,7 +96,12 @@ button, button:visited, button:focus, button:active, button:hover {
 		margin-bottom: 80px;
 	}
 
-	.content-title {
+	.content-main-title {
+		text-align: center !important;
+		padding: 10px 0px 20px 0px;
+	}
+
+	.content-sub-title {
 		margin-bottom: 30px;
 		text-align: center;
 	}
@@ -144,6 +149,10 @@ button, button:visited, button:focus, button:active, button:hover {
 		padding-top: 50px;
 	}
 
+}
+
+.hidden-div {
+	display: none;
 }
 
 /****************/
@@ -268,10 +277,7 @@ hr {
 	padding-top: 25px;
 }
 
-.project-category-title {
-	text-align: center !important;
-	padding: 10px 0px 20px 0px;
-}
+
 
 
 
