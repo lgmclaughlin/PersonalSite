@@ -2,13 +2,19 @@ $(document).ready(function() {
 	/**
 	 * Implement parallax scrolling
 	 */
-	$('#art-page-div').slideDown(200);
+	 /**
+	 * Implement parallax scrolling
+	 */
+	$(window).scroll(function() {
+        var speed = 12;
+        var img = new Image;
+        img.src = $(document.body).css('background-image').replace('url', '').replace('(', '').replace(')', '').replace('"', '').replace('"', '');
+        $(document.body).css('background-position', "50% " + (-window.pageYOffset / speed) + "px");
+    });
+
+	$('#art-page-div').slideDown(600);
 
 	/**
 	 * Select all modals and add modal functionality
 	 */
-	$('div[id^="modal"]').click(function () {
-		$(this).toggleClass("modal-active");
-		$("body").toggleClass("blur");
-	});
 });

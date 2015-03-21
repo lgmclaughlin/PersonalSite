@@ -7861,72 +7861,68 @@ button.close {
 
 /* line 17, ../scss/main.scss */
 .navbar-nav {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 0 30px 0 30px;
 }
 
-/* line 22, ../scss/main.scss */
+/* line 21, ../scss/main.scss */
 .navbar-link {
   width: 110px;
   float: left;
 }
 
-/* line 27, ../scss/main.scss */
+/* line 26, ../scss/main.scss */
 .top-container {
   color: transparent;
   padding-top: 25px;
 }
 
-/* line 32, ../scss/main.scss */
+/* line 31, ../scss/main.scss */
 .main-container {
   background-color: #fbfbfb;
   min-height: 90%;
 }
 
-/* line 37, ../scss/main.scss */
+/* line 36, ../scss/main.scss */
 .bottom-container {
   padding-top: 50px;
 }
 
-/* line 41, ../scss/main.scss */
+/* line 40, ../scss/main.scss */
 body {
   background-image: url("../assets/images/home_background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 0%;
-  font-family: 'Lato', sans-serif;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  font-family: 'Lato', palatino linotype, sans-serif;
 }
 
 /*********************/
 /* all PHP pages CSS */
 /*********************/
-/* line 56, ../scss/main.scss */
+/* line 54, ../scss/main.scss */
 html {
   overflow-y: scroll;
 }
 
-/* line 60, ../scss/main.scss */
+/* line 58, ../scss/main.scss */
 .content {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* line 65, ../scss/main.scss */
+/* line 63, ../scss/main.scss */
 a, a:visited, a:focus, a:active, a:hover {
   outline: 0 none !important;
   text-decoration: none !important;
 }
 
-/* line 70, ../scss/main.scss */
+/* line 68, ../scss/main.scss */
 button, button:visited, button:focus, button:active, button:hover {
   outline: 0 none !important;
   box-shadow: none !important;
 }
 
-/* line 77, ../scss/main.scss */
+/* line 75, ../scss/main.scss */
 .outer-content-div {
   margin-right: auto;
   margin-left: auto;
@@ -7948,48 +7944,79 @@ button, button:visited, button:focus, button:active, button:hover {
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 77, ../scss/main.scss */
+  /* line 75, ../scss/main.scss */
   .outer-content-div {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  /* line 77, ../scss/main.scss */
+  /* line 75, ../scss/main.scss */
   .outer-content-div {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 77, ../scss/main.scss */
+  /* line 75, ../scss/main.scss */
   .outer-content-div {
     width: 1170px;
   }
 }
-/* line 96, ../scss/main.scss */
+/* line 94, ../scss/main.scss */
 .outer-content-div .inner-content-div {
-  margin-bottom: 80px;
+  margin: 30px auto 80px auto;
 }
-/* line 100, ../scss/main.scss */
+/* line 98, ../scss/main.scss */
 .outer-content-div .content-main-title {
   text-align: center !important;
   padding: 10px 0px 20px 0px;
 }
-/* line 105, ../scss/main.scss */
+/* line 103, ../scss/main.scss */
+.outer-content-div .content-nav {
+  width: 495px;
+  margin: 0 auto 0 auto;
+}
+/* line 108, ../scss/main.scss */
+.outer-content-div .btn-nav {
+  font-size: 16px;
+  color: #eee;
+  border: none;
+  background-color: #aaa;
+}
+/* line 115, ../scss/main.scss */
+.outer-content-div .content-nav-link, .outer-content-div a.content-link:visited, .outer-content-div a.content-link:active {
+  text-align: center;
+  color: #333;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: block;
+}
+/* line 122, ../scss/main.scss */
+.outer-content-div a.content-nav-link:hover {
+  color: #777;
+  border-radius: 5px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  padding: 0 2px 0 2px;
+}
+/* line 132, ../scss/main.scss */
 .outer-content-div .content-sub-title {
   margin-bottom: 30px;
   text-align: center;
 }
-/* line 110, ../scss/main.scss */
+/* line 137, ../scss/main.scss */
 .outer-content-div .content-p {
   padding-top: 15px;
   text-align: justify;
   line-height: 1.75;
 }
-/* line 116, ../scss/main.scss */
+/* line 143, ../scss/main.scss */
 .outer-content-div .content-link-align {
   text-align: center;
 }
-/* line 120, ../scss/main.scss */
+/* line 147, ../scss/main.scss */
 .outer-content-div .content-link, .outer-content-div a.content-link:visited, .outer-content-div a.content-link:active {
   color: #333;
   border-radius: 5px;
@@ -8003,7 +8030,7 @@ button, button:visited, button:focus, button:active, button:hover {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 132, ../scss/main.scss */
+/* line 159, ../scss/main.scss */
 .outer-content-div a.content-link:hover {
   color: #777;
   border-radius: 5px;
@@ -8014,7 +8041,7 @@ button, button:visited, button:focus, button:active, button:hover {
   padding-left: 2px;
   padding-right: 2px;
 }
-/* line 143, ../scss/main.scss */
+/* line 170, ../scss/main.scss */
 .outer-content-div .content-image {
   float: right;
   display: inline;
@@ -8022,7 +8049,7 @@ button, button:visited, button:focus, button:active, button:hover {
   padding-top: 50px;
 }
 
-/* line 152, ../scss/main.scss */
+/* line 179, ../scss/main.scss */
 .hidden-div {
   display: none;
 }
@@ -8030,33 +8057,33 @@ button, button:visited, button:focus, button:active, button:hover {
 /****************/
 /* home.php CSS */
 /****************/
-/* line 160, ../scss/main.scss */
+/* line 187, ../scss/main.scss */
 .home-content {
   margin: auto;
   text-align: center;
   padding-top: 50px;
 }
-/* line 165, ../scss/main.scss */
+/* line 192, ../scss/main.scss */
 .home-content .name {
   font-weight: 100;
   font-size: 40px;
 }
-/* line 170, ../scss/main.scss */
+/* line 197, ../scss/main.scss */
 .home-content .title {
   font-weight: 700;
   font-size: 60px;
 }
-/* line 175, ../scss/main.scss */
+/* line 202, ../scss/main.scss */
 .home-content .hobbies {
   font-size: 50px;
 }
 
-/* line 180, ../scss/main.scss */
+/* line 207, ../scss/main.scss */
 .social-icons {
   padding-top: 40px;
 }
 
-/* line 184, ../scss/main.scss */
+/* line 211, ../scss/main.scss */
 .social-icon {
   width: 30px;
   height: auto;
@@ -8064,7 +8091,7 @@ button, button:visited, button:focus, button:active, button:hover {
   margin-right: 15px;
 }
 
-/* line 191, ../scss/main.scss */
+/* line 218, ../scss/main.scss */
 hr {
   border: 0;
   height: 1px;
@@ -8077,19 +8104,19 @@ hr {
 /********************/
 /* projects.php CSS */
 /********************/
-/* line 204, ../scss/main.scss */
+/* line 231, ../scss/main.scss */
 .git-hub-link {
   width: 100%;
 }
 
-/* line 208, ../scss/main.scss */
+/* line 235, ../scss/main.scss */
 .git-hub-icon {
   padding-top: 40px;
   display: block;
   margin: auto;
 }
 
-/* line 214, ../scss/main.scss */
+/* line 241, ../scss/main.scss */
 .projects-page-description {
   width: 500px;
   padding-top: 10px;
@@ -8098,16 +8125,15 @@ hr {
   font-weight: normal;
 }
 
-/* line 222, ../scss/main.scss */
+/* line 249, ../scss/main.scss */
 .past-current-btns {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
   width: 204px;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 228, ../scss/main.scss */
+/* line 254, ../scss/main.scss */
 .past-current-btns .btn {
   background-color: transparent;
   border-top: none;
@@ -8117,41 +8143,41 @@ hr {
   font-size: 16px;
   font-weight: 300;
 }
-/* line 238, ../scss/main.scss */
+/* line 264, ../scss/main.scss */
 .past-current-btns .btn:hover {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 242, ../scss/main.scss */
+/* line 268, ../scss/main.scss */
 .past-current-btns .btn:visited, .past-current-btns .btn:active {
   background-color: transparent;
 }
-/* line 246, ../scss/main.scss */
+/* line 272, ../scss/main.scss */
 .past-current-btns .btn:focus {
   background-color: none;
 }
-/* line 250, ../scss/main.scss */
+/* line 276, ../scss/main.scss */
 .past-current-btns .active {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 254, ../scss/main.scss */
+/* line 280, ../scss/main.scss */
 .past-current-btns .past {
   border-right: 1px dashed rgba(20, 20, 20, 0.3);
   text-align: right;
   padding-right: 15px;
 }
-/* line 260, ../scss/main.scss */
+/* line 286, ../scss/main.scss */
 .past-current-btns .current {
   border-right: none;
   text-align: left;
   padding-left: 15px;
 }
 
-/* line 267, ../scss/main.scss */
+/* line 293, ../scss/main.scss */
 .btns-inactive {
   padding-top: 60px;
 }
 
-/* line 271, ../scss/main.scss */
+/* line 297, ../scss/main.scss */
 .btns-active {
   padding-top: 25px;
 }
@@ -8159,14 +8185,14 @@ hr {
 /***************/
 /* art.php CSS */
 /***************/
-/* line 279, ../scss/main.scss */
+/* line 305, ../scss/main.scss */
 .modal-image {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-/* line 283, ../scss/main.scss */
+/* line 309, ../scss/main.scss */
 .modal-active {
   position: fixed;
   top: 50%;
@@ -8175,7 +8201,7 @@ hr {
   height: auto !important;
 }
 
-/* line 291, ../scss/main.scss */
+/* line 317, ../scss/main.scss */
 .art-sketch {
   display: block;
   margin: 40px auto 0 auto;
@@ -8183,33 +8209,34 @@ hr {
   height: auto;
   -webkit-box-shadow: 0 0 10px #888888;
   box-shadow: 0 0 10px #888888;
+  border-radius: 10px;
 }
 @media (min-width: 0px) {
-  /* line 291, ../scss/main.scss */
+  /* line 317, ../scss/main.scss */
   .art-sketch {
     width: 600px;
   }
 }
 @media (min-width: 768px) {
-  /* line 291, ../scss/main.scss */
+  /* line 317, ../scss/main.scss */
   .art-sketch {
     width: 600px;
   }
 }
 @media (min-width: 992px) {
-  /* line 291, ../scss/main.scss */
+  /* line 317, ../scss/main.scss */
   .art-sketch {
     width: 776px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 291, ../scss/main.scss */
+  /* line 317, ../scss/main.scss */
   .art-sketch {
     width: 936px;
   }
 }
 
-/* line 317, ../scss/main.scss */
+/* line 344, ../scss/main.scss */
 .blur {
   -webkit-filter: blur(5px) grayscale(50%);
   -moz-filter: blur(5px) grayscale(50%);

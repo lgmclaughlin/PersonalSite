@@ -291,10 +291,19 @@ class Projects {
 		// Get the nav and class
 		$pastProjects = $this->pastProjects;
 
+		// Create the navbar
+		$html = "<div class='btn-group-vertical content-nav'>\n";
+		//$html = "	<div class='btn-group-vertical'>\n";
+		foreach($pastProjects as $key => $project) {
+			$html .= "		<button type='button' class='btn btn-default btn-nav'>{$project['title']}</button>\n";
+		}
+		//$html .= "	</div>\n";
+		$html .= "</div>\n";
+
 		// Loop through each item and create the HTML of the content
-		$html = "";
-		foreach($pastProjects as $project) {
+		foreach($pastProjects as $key => $project) {
 			$html .= "<div class='inner-content-div'>\n";
+			$html .= "	<a name='{$key}'></a>\n";
 			$html .= "	<h3 class='content-sub-title'>{$project['title']}</h3>\n";
 			$html .= "	<h4 class='content-link-align'><a href='{$project['link']}' class='content-link' target='_blank'>{$project['link-text']}</a></h4>\n";
 			$html .= "	<p class='content-p'>{$project['description']}</p>\n";

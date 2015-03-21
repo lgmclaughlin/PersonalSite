@@ -69,6 +69,7 @@ $(document).ready(function() {
         img.src = $(document.body).css('background-image').replace('url', '').replace('(', '').replace(')', '').replace('"', '').replace('"', '');
         $(document.body).css('background-position', "50% " + (-window.pageYOffset / speed) + "px");
     });
+    
 	$('#past-btn').click(function() {
 		setUpContent($(this));
 	});
