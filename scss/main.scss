@@ -1,3 +1,9 @@
+/**
+ * Custom Sass/CSS for my personal site
+ *
+ * Author: Lucas McLaughlin
+ */
+
 @import "compass";
 @import "bootstrap";
 
@@ -87,12 +93,12 @@ button, button:visited, button:focus, button:active, button:hover {
     }
 }
 
-.title-and-content-div:before {
+.title-and-content-nav-div:before {
     content: " ";
     display: table;
 }
 
-.title-and-content-div {
+.title-and-content-nav-div {
     // Scale the title and nav div if the page
     // gets scaled small
     @media (min-width: 0px) {
@@ -144,6 +150,7 @@ button, button:visited, button:focus, button:active, button:hover {
 
     .btn-nav, button.btn-nav:visited, button.btn-nav:focus, button.btn-nav:active {
         font-size: 17px;
+        font-weight: normal;
         padding: 15px 30px 15px 30px;
         width: 100%;
         color: #333;
@@ -179,13 +186,10 @@ button, button:visited, button:focus, button:active, button:hover {
         font-size: 10px;
         height: 15px !important;
         padding-top: 0px;
-        border-radius: 0 0 5px 5px;
         border: none;
-        border-top: 1px dashed #333;
         font-size: 10px;
         width: 100%;
         color: #333;
-        //border: none;
         background-color: #ddd;
     }
 
@@ -196,12 +200,6 @@ button, button:visited, button:focus, button:active, button:hover {
     .content-sub-title, {
         margin-bottom: 30px;
         text-align: center;
-    }
-
-    .content-p {
-        padding-top: 15px;
-        text-align: justify;
-        line-height: 1.75;
     }
 
     .content-link-align {
@@ -229,6 +227,16 @@ button, button:visited, button:focus, button:active, button:hover {
         border-left: 1px solid #aaa;
         padding-left: 2px;
         padding-right: 2px;
+    }
+
+    .desc-p {
+        margin-bottom: 55px;
+    }
+
+    .content-p {
+        padding-top: 15px;
+        text-align: justify;
+        line-height: 1.75;
     }
 
     .content-image {
@@ -392,7 +400,7 @@ hr {
 
 .art-sketch {
     display: block;
-    margin: 40px auto 0 auto;
+    margin: 40px auto 10px auto;
     padding: 10px;
     height: auto;
     width: 100%;

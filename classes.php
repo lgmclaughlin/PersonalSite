@@ -306,12 +306,12 @@ class Projects {
         $html = "<div class='outer-content-div' id='{$prefix}-div'>\n";
 
         // Create the title and top anchor
-        $html .= "  <div class='title-and-content-div'>";
+        $html .= "  <div class='title-and-content-nav-div'>";
         $html .= "      <a name='{$prefix}-nav'></a>\n";
         $html .= "      <h1 class='content-main-title'>{$pageTitle}</h1>\n";
-        $html .= "      <div class='btn-group-vertical content-nav'>\n";
         
         // Create the project content nav bar
+        $html .= "      <div class='btn-group-vertical content-nav'>\n";
         foreach($projects as $key => $project) {
             $html .= "          <button type='button' class='btn btn-default btn-nav' onclick=\"location.href ='#{$key}'\">{$project['title']}</button>\n";
         }
@@ -349,6 +349,16 @@ class Projects {
  * of the pictures on the Art page.
  */
 class Art {
+    // The page description placed under the title
+    private $pageDesc = 'Sketching and drawing have been hobbies of mine for my entire life.
+                I love the attention to detail it requires and the feeling of 
+                creating something others can enjoy. Ever so often, I sit down
+                for hours on end and get lost in a new sketch.<br /><br />Below,
+                I\'ve included pictures of some of my favorites sketches I\'ve 
+                done over the years. While I certainly don\'t claim to be an
+                expert, I still love sharing my work with others in hopes that
+                someone can enjoy it!';
+
     /**
      * This array houses information for the pictures
      * on the Art page.
@@ -376,21 +386,52 @@ class Art {
      * @return The HTML for the current project content is returned
      */
     public function generateArt() {
-        // Get the nav and class
+        // Get the the art array, prefix for ids/names, 
+        // the page title, and the page description
         $art = $this->art;
+        $prefix = 'art-page';
+        $pageTitle = 'Art';
+        $pageDesc = $this->pageDesc;
+
+        // Create the html with the title and page description
+        $html = "<div class='outer-content-div' id='{$prefix}-div'>\n";
+        $html .= "  <div class='title-and-content-nav-div'>\n";
+        $html .= "      <a name='{$prefix}-nav'></a>\n";
+        $html .= "      <h1 class='content-main-title'>{$pageTitle}</h1>\n";
+        $html .= "      <div class='remaining-content-div'>\n";
+        $html .= "          <p class='desc-p content-p'>{$pageDesc}</h1>\n";
+        $html .= "      </div>\n";
+        
+        // Create the project content nav bar
+        $html .= "      <div class='btn-group-vertical content-nav'>\n";
+        foreach($art as $key => $sketch) {
+            $html .= "          <button type='button' class='btn btn-default btn-nav' onclick=\"location.href ='#{$key}'\">{$sketch['title']}</button>\n";
+        }
+        $html .= "      </div>\n";
+
+        // Close the title/nav div
+        $html .= "  </div>\n";
 
         // Loop through each item and create the HTML of the content
-        $html = "";
+        $html .= "  <div class='remaining-content-div' id='{$prefix}-div'>\n";
         $i = 0; // Loop counter
-        foreach($art as $sketch) {
-            $html .= "  <div class='inner-content-div'>\n";
-            $html .= "      <h3 class='content-sub-title'>{$sketch['title']}</h3>\n";
-            $html .= "      <div class='modal-image' id='modal{$i}'>\n";
-            $html .= "          <img src='{$sketch['src']}' class='art-sketch' />\n";
+        foreach($art as $key => $sketch) {
+            $html .= "      <div class='inner-content-div'>\n";
+            $html .= "          <a name='{$key}'></a>\n";
+            $html .= "          <h3 class='content-sub-title'>{$sketch['title']}</h3>\n";
+            $html .= "          <div class='modal-image' id='modal{$i}'>\n";
+            $html .= "              <img src='{$sketch['src']}' class='art-sketch' />\n";
+            $html .= "          </div>\n";
+            $html .= "          <div class='content-nav'>\n";
+            $html .= "              <button type='button' class='btn btn-default btn-to-top' onclick=\"location.href = '#{$prefix}-nav'\">To Top</button>\n";
+            $html .= "          </div>\n";
             $html .= "      </div>\n";
-            $html .= "  </div>\n";
-            $i++;
+            $i++;   
         }
+        $html .= "  </div>\n";
+
+        // Close the outermost div
+        $html .= "</div>\n";
 
         return $html;
     }
