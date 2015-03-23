@@ -43,8 +43,7 @@
 }
 
 .main-container {
-    background-color: $container-bgc-default;
-    min-height: 90%;
+    @include transition(all 0.5s ease);
 }
 
 .bottom-container {
@@ -233,17 +232,35 @@ button, button:visited, button:focus, button:active, button:hover {
         margin-bottom: 55px;
     }
 
+    .content-img-div:before {
+        height: 65px;
+        content: '';
+        display: block;
+        float: right;
+    }
+
+    .content-image {
+        // Don't display images if screen is too small
+        @media (min-width: 0px) {
+            visibility: hidden;
+            display: none;
+        }
+        @media (min-width: $screen-sm-min) { 
+            display: block;
+            visibility: visible;
+            clear: both;
+            margin: 5px 0 5px 20px;
+            padding: 5px;
+            @include box-shadow(0 0 10px #888);
+            border-radius: 5px;
+            float: right;
+        }
+    }
+
     .content-p {
         padding-top: 15px;
         text-align: justify;
         line-height: 1.75;
-    }
-
-    .content-image {
-        float: right;
-        display: inline;
-        margin-bottom: 10px;
-        padding-top: 50px;
     }
 }
 
@@ -386,16 +403,29 @@ hr {
 /* art.php CSS */
 /***************/
 
-.modal-image {
-    @include transition(all 0.5s ease);
+.active-modal-div {  
+    @include transition(all 0.3s ease);
 }
 
 .modal-active {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: auto !important;
-    height: auto !important;
+    transform: translate(-50%, -53%);
+    display: block;
+    max-height: 95%;
+    max-width: 95%;
+    margin: 40px auto 10px auto;
+    padding: 10px;
+    @include box-shadow(0 0 10px #888);
+    border-radius: 10px;
+    @include transition(all 0.3s ease);
+}
+
+.blur {
+    @include filter(blur(5px) grayscale(50%));
+    @include transform(scale(0.95));
+    @include transition(all 0.3s ease);
 }
 
 .art-sketch {
@@ -406,9 +436,4 @@ hr {
     width: 100%;
     @include box-shadow(0 0 10px #888);
     border-radius: 10px;
-}
-
-.blur {
-    @include filter(blur(5px) grayscale(50%));
-    @include transform(scale(0.9));
 }

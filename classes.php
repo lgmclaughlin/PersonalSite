@@ -92,6 +92,7 @@ class Projects {
         'sdn' => array('title'       => 'Fully Functional Software Defined Network',
                        'link'        => 'https://github.com/lgmclaughlin/SoftwareDefinedNetwork',
                        'link-text'   => 'GitHub repository',
+                       'image'       => 'assets/images/sdn.jpg',
                        'description' => 'This project implements a Software Defined Network. 
                                         An SDN effectively allows a Controller to sit on a network 
                                         and give Hosts commands to modify routes, firewall rules, 
@@ -112,6 +113,7 @@ class Projects {
         'bt9' => array('title'       => 'Bit9: Certificate Tree GUI Web Application',
                        'link'        => 'https://www.bit9.com/',
                        'link-text'   => 'Bit9\'s Homepage',
+                       'image'       => null,
                        'description' => 'Last summer (2014), I was fortunate enough to get a position as
                                         an intern at Bit9 as part of the server team. Bit9 provides advanced
                                         attack protection software to a large number of profile companies.
@@ -158,6 +160,7 @@ class Projects {
         'dyn' => array('title'       => 'Dyn Hackedemy: The Moore Center iOS App',
                        'link'        => 'https://github.com/Hackademy2014/moore',
                        'link-text'   => 'GitHub repository',
+                       'image'       => 'assets/images/hackademy2014.jpg',
                        'description' => 'At the beginning of the summer after my sophomore year in college, I 
                                         was fortunate enough to participage in an event called Dyn Hackedemy 2014.
                                         It was a four-day hackathon with the end goal of creating apps for six differnet 
@@ -194,6 +197,7 @@ class Projects {
         'chl' => array('title'       => 'The Community Healthlink Website',
                        'link'        => 'http://communityhealthlink.org',
                        'link-text'   => 'Community Healthlink website',
+                       'image'       => 'assets/images/chl.jpg',
                        'description' => 'During freshman and sophomore year of college, I volunteered as webmaster for 
                                         a company called Community Healthlink, or CHL. At the time I came in,
                                         CHL was about two months away from releasing a completely new website, and
@@ -224,6 +228,7 @@ class Projects {
         'end' => array('title'       => 'Endicia: Templating for Administrative Pages',
                        'link'        => 'http://www.endicia.com/',
                        'link-text'   => 'Endicia\'s customer facing website',
+                       'image'       => 'assets/images/mockup.jpg',
                        'description' => 'As a final project for graduation, Worcester Polytechnic Institute,
                                         where I attend college, requires that students complete something called
                                         the <a href="https://www.wpi.edu/academics/ugradstudies/mqp.html" target="_blank" class="content-link">
@@ -257,6 +262,7 @@ class Projects {
         'adw' => array('title'       => 'Axiomatic Design Website',
                        'link'        => 'http://axiomaticdesign.org/',
                        'link-text'   => 'Axiomatic Design home page',
+                       'image'       => 'assets/images/axiomatic.jpg',
                        'description' => 'Before I had left for California, I was approached by one of the
                                         mechanical engineering professors at WPI about recreating his website
                                         about Axiomatic Design (AD). Being a mechanical engineering concept, I had
@@ -327,6 +333,9 @@ class Projects {
             $html .= "          <a name='{$key}'></a>\n";
             $html .= "          <h3 class='content-sub-title'>{$project['title']}</h3>\n";
             $html .= "          <h4 class='content-link-align'><a href='{$project['link']}' class='content-link' target='_blank'>{$project['link-text']}</a></h4>\n";
+            $html .= "          <div class='content-img-div'>\n";
+            $html .= "              <img src='{$project['image']}' class='content-image' />\n";
+            $html .= "          </div>\n";
             $html .= "          <p class='content-p'>{$project['description']}</p>\n";
             $html .= "          <div class='content-nav'>\n";
             $html .= "              <button type='button' class='btn btn-default btn-to-top' onclick=\"location.href = '#{$prefix}-nav'\">To Top</button>\n";
@@ -419,8 +428,8 @@ class Art {
             $html .= "      <div class='inner-content-div'>\n";
             $html .= "          <a name='{$key}'></a>\n";
             $html .= "          <h3 class='content-sub-title'>{$sketch['title']}</h3>\n";
-            $html .= "          <div class='modal-image' id='modal{$i}'>\n";
-            $html .= "              <img src='{$sketch['src']}' class='art-sketch' />\n";
+            $html .= "          <div class='modal-image'>\n";
+            $html .= "              <img src='{$sketch['src']}' class='art-sketch' id='modal{$i}' />\n";
             $html .= "          </div>\n";
             $html .= "          <div class='content-nav'>\n";
             $html .= "              <button type='button' class='btn btn-default btn-to-top' onclick=\"location.href = '#{$prefix}-nav'\">To Top</button>\n";
