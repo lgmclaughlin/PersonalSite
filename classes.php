@@ -97,7 +97,9 @@ class Projects {
                                         An SDN effectively allows a Controller to sit on a network 
                                         and give Hosts commands to modify routes, firewall rules, 
                                         NAT settings, network discovery caches, etc. while the 
-                                        network is still operating. The ability to change the network 
+                                        network is still operating. Furthermore, if a host has no route
+                                        to another host on the network, it can elevate packets and receive 
+                                        instructions from the controller. The ability to change the network 
                                         on the fly is extremely practical, and is commonly used in LANs, 
                                         WANs, and Data Centers.<br /><br />The project was completed on 
                                         December 12, 2014 by myself and my project partner, Batyrlan 
@@ -333,9 +335,11 @@ class Projects {
             $html .= "          <a name='{$key}'></a>\n";
             $html .= "          <h3 class='content-sub-title'>{$project['title']}</h3>\n";
             $html .= "          <h4 class='content-link-align'><a href='{$project['link']}' class='content-link' target='_blank'>{$project['link-text']}</a></h4>\n";
-            $html .= "          <div class='content-img-div'>\n";
-            $html .= "              <img src='{$project['image']}' class='content-image' />\n";
-            $html .= "          </div>\n";
+            if ($project['image']) {
+                $html .= "          <div class='content-img-div'>\n";
+                $html .= "              <img src='{$project['image']}' class='content-image' />\n";
+                $html .= "          </div>\n";
+            }
             $html .= "          <p class='content-p'>{$project['description']}</p>\n";
             $html .= "          <div class='content-nav'>\n";
             $html .= "              <button type='button' class='btn btn-default btn-to-top' onclick=\"location.href = '#{$prefix}-nav'\">To Top</button>\n";
