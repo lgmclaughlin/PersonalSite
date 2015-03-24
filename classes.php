@@ -396,7 +396,7 @@ class Art {
      * based on current art array. Loops through the array and renders 
      * art in HTML.
      *
-     * @return The HTML for the current project content is returned
+     * @return The HTML for the art content is returned
      */
     public function generateArt() {
         // Get the the art array, prefix for ids/names, 
@@ -450,4 +450,131 @@ class Art {
     }
 }
 
+/**
+ * Class for rendering the videos on the Music page
+ *
+ * This class takes care of creating the HTML for all
+ * of the videos on the Music page.
+ */
+class Music {
+    // The page description placed under the title
+    private $pageDesc = 'I\'ve had a strong passion for music since childhood, around four
+                        years of age to be exact. It was around that time that I first took
+                        pots and pans out of the cupboards and banged on them with spatulas
+                        as if I were playing the drums. Accordingly, my first instrument was
+                        a cheap drumset meant for practice. I taught myself all through middle
+                        school, and around 8th grade, I picked up the guitar.<br /><br />It
+                        wasn\'t until high school that I really made guitar my main instrument,
+                        practicing daily for hours. I took formal lessons here and there, but
+                        it all came back to just sitting in my room and experimenting with
+                        different sounds and creations.<br /><br />Towards the middle of
+                        my second year in college, I began singing and putting words to my
+                        melodies. I also joined the recording club at my school and learned
+                        how to get great recording quality without extremely expensive
+                        equipment. This freedom has spurred my creativity tenfold, and I\'ve
+                        since recorded numerous covers and original songs. My love for music
+                        is undying, and I certainly plan on continuing to record and write
+                        for the rest of my life.';
+
+    /**
+     * This array houses information for the videos
+     * on the Music page.
+     */
+    private $music = array(
+        'ateam'  => array('title' => 'The A Team - Ed Sheeran',
+                          'id'    => 'rVULhYXJ-Is'
+                         ),
+        'boston' => array('title' => 'Boston - Augustana (Live Cover)',
+                          'id'    => 'E6TZX-Dmg_s'
+                         ),
+        'swbl'   => array('title' => 'She Will Be Loved - Maroon 5',
+                          'id'    => 'erP4OpqrgtM'
+                         ),
+        'drftng' => array('title' => 'Drifting - Andy McKee',
+                          'id'    => '5BBBtTJ1avM'
+                         )
+    );
+
+    /**
+     * Generates videos of my covers for the Music page
+     * based on current music array. Loops through the array and renders 
+     * videos in HTML.
+     *
+     * @return The HTML for the Music page is returned
+     */
+    public function generateMusic() {
+        // Get the music array, prefix for ids/names, 
+        // the page title, and the page description
+        $music = $this->music;
+        $prefix = 'music-page';
+        $pageTitle = 'Music';
+        $pageDesc = $this->pageDesc;
+
+        // Create the html with the title and page description
+        $html = "<div class='outer-content-div' id='{$prefix}-div'>\n";
+        $html .= "  <div class='title-and-content-nav-div'>\n";
+        $html .= "      <a name='{$prefix}-nav'></a>\n";
+        $html .= "      <h1 class='content-main-title'>{$pageTitle}</h1>\n";
+        $html .= "      <div class='remaining-content-div'>\n";
+        $html .= "          <p class='desc-p content-p'>{$pageDesc}</h1>\n";
+        $html .= "      </div>\n";
+        
+        // Create the project content nav bar
+        $html .= "      <div class='btn-group-vertical content-nav'>\n";
+        foreach($music as $key => $video) {
+            $html .= "          <button type='button' class='btn btn-default btn-nav' onclick=\"location.href ='#{$key}'\">{$video['title']}</button>\n";
+        }
+        $html .= "      </div>\n";
+
+        // Close the title/nav div
+        $html .= "  </div>\n";
+
+        // Loop through each item and create the HTML of the content;
+        // For videos, this requires getting description and view counter
+        // for each
+        $html .= "  <div class='remaining-content-div' id='{$prefix}-div'>\n";
+        $i = 0; // Loop counter
+        foreach($music as $key => $video) {
+            // Get video JSON
+            $json = file_get_contents("http://gdata.youtube.com/feeds/api/videos/" . $video['id'] . "?v=2&alt=json");
+            $json = json_decode($json, true);
+
+            // Get video information
+            $videoDesc  = $json['entry']['media$group']['media$description']['$t'];
+            $videoViews = $json['entry']['yt$statistics']['viewCount'];
+
+            $html .= "      <div class='inner-content-div'>\n";
+            $html .= "          <a name='{$key}'></a>\n";
+            $html .= "          <h3 class='content-sub-title'>{$video['title']}</h3>\n";
+            $html .= "          <div class='modal-video'>\n";
+            $html .= "              <div class='music-video-wrapper'>\n";
+            $html .= "                  <iframe src='http://www.youtube.com/v/{$video['id']}' class='music-video' id='modal{$i}'></iframe>\n";
+            $html .= "              </div>\n";
+            $html .= "          </div>\n";
+            $html .= "          <div class='music-video-info'>\n";
+            $html .= "              <div class='music-video-views'>\n";
+            $html .= "                  <p class='video-views-txt'>Views</p>\n";
+            $html .= "                  <h5 class='video-views-txt'>{$videoViews}</h5>\n";
+            $html .= "              </div>\n";
+            $html .= "              <div class='music-video-desc'>\n";
+            $html .= "                  <p class='video-desc-p'>{$videoDesc}</h1>\n";
+            $html .= "              </div>\n";
+            $html .= "          </div>\n";
+            $html .= "          <div class='content-nav'>\n";
+            $html .= "              <button type='button' class='btn btn-default btn-to-top' onclick=\"location.href = '#{$prefix}-nav'\">To Top</button>\n";
+            $html .= "          </div>\n";
+            $html .= "      </div>\n";
+            $i++;   
+        }
+        $html .= "  </div>\n";
+
+        // Close the outermost div
+        $html .= "</div>\n";
+
+        return $html;
+    }
+
+
+
+}
 ?>

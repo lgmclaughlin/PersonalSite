@@ -8304,9 +8304,9 @@ hr {
   padding-top: 25px;
 }
 
-/***************/
-/* art.php CSS */
-/***************/
+/*****************************/
+/* art.php and music.php CSS */
+/*****************************/
 /* line 406, ../scss/main.scss */
 .active-modal-div {
   -webkit-transition: all 0.3s ease;
@@ -8358,4 +8358,46 @@ hr {
   -webkit-box-shadow: 0 0 10px #888888;
   box-shadow: 0 0 10px #888888;
   border-radius: 10px;
+}
+
+/* line 441, ../scss/main.scss */
+.music-video-info {
+  display: block;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 15px auto 5px auto;
+  width: 95%;
+}
+/* line 449, ../scss/main.scss */
+.music-video-info .video-views-text {
+  text-align: center;
+  margin: auto;
+}
+/* line 454, ../scss/main.scss */
+.music-video-info .music-video-desc {
+  line-height: 1.5;
+}
+
+/* line 459, ../scss/main.scss */
+.music-video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  margin: 40px auto 10px auto;
+  display: block;
+  height: 0;
+  color: #333;
+}
+/* line 467, ../scss/main.scss */
+.music-video-wrapper iframe {
+  position: absolute;
+  padding: 10px;
+  height: 100% !important;
+  width: 100% !important;
+  top: 0;
+  left: 0;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px #888888;
+  box-shadow: 0 0 10px #888888;
 }

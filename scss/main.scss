@@ -399,9 +399,9 @@ hr {
     padding-top: 25px;
 }
 
-/***************/
-/* art.php CSS */
-/***************/
+/*****************************/
+/* art.php and music.php CSS */
+/*****************************/
 
 .active-modal-div {  
     @include transition(all 0.3s ease);
@@ -437,3 +437,43 @@ hr {
     @include box-shadow(0 0 10px #888);
     border-radius: 10px;
 }
+
+.music-video-info {
+    display: block;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 15px auto 5px auto;
+    width: 95%;
+
+    .video-views-text {
+        text-align: center;
+        margin: auto;
+    }
+
+    .music-video-desc {
+        line-height: 1.5;
+    }
+}
+
+.music-video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; // 16:9
+    margin: 40px auto 10px auto;
+    display: block;
+    height: 0;
+    color: #333;
+
+    iframe {
+        position: absolute;
+        padding: 10px;
+        height: 100% !important;
+        width: 100% !important;
+        top: 0;
+        left: 0;
+        border: none;
+        border-radius: 10px;
+        @include box-shadow(0 0 10px #888);
+    }
+}
+
