@@ -553,11 +553,10 @@ class Music {
             $html .= "          </div>\n";
             $html .= "          <div class='music-video-info'>\n";
             $html .= "              <div class='music-video-views'>\n";
-            $html .= "                  <p class='video-views-txt'>Views</p>\n";
-            $html .= "                  <h5 class='video-views-txt'>{$videoViews}</h5>\n";
+            $html .= "                  <h4 class='video-views-h'>Views: {$videoViews}</h4>\n";
             $html .= "              </div>\n";
             $html .= "              <div class='music-video-desc'>\n";
-            $html .= "                  <p class='video-desc-p'>{$videoDesc}</h1>\n";
+            $html .= "                  <p class='video-desc-p'>{$videoDesc}</p>\n";
             $html .= "              </div>\n";
             $html .= "          </div>\n";
             $html .= "          <div class='content-nav'>\n";

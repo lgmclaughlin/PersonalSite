@@ -438,24 +438,6 @@ hr {
     border-radius: 10px;
 }
 
-.music-video-info {
-    display: block;
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 15px auto 5px auto;
-    width: 95%;
-
-    .video-views-text {
-        text-align: center;
-        margin: auto;
-    }
-
-    .music-video-desc {
-        line-height: 1.5;
-    }
-}
-
 .music-video-wrapper {
     position: relative;
     padding-bottom: 56.25%; // 16:9
@@ -477,3 +459,26 @@ hr {
     }
 }
 
+.music-video-info {
+    // Remove description div styling if page too small
+    @media (min-width: 0px) {
+        width: 100%;
+    }
+    @media (min-width: $screen-sm-min) {
+        display: block;
+        padding: 15px 15px 10px 15px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 10px auto 5px auto;
+        width: 95%;
+    }
+
+    .video-views-h {
+        text-align: center;
+        margin: auto;
+    }
+
+    .music-video-desc {
+        line-height: 1.5;
+    }
+}

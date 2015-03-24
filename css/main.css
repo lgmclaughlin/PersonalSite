@@ -8361,25 +8361,6 @@ hr {
 }
 
 /* line 441, ../scss/main.scss */
-.music-video-info {
-  display: block;
-  padding: 15px;
-  background-color: #fff;
-  border-radius: 10px;
-  margin: 15px auto 5px auto;
-  width: 95%;
-}
-/* line 449, ../scss/main.scss */
-.music-video-info .video-views-text {
-  text-align: center;
-  margin: auto;
-}
-/* line 454, ../scss/main.scss */
-.music-video-info .music-video-desc {
-  line-height: 1.5;
-}
-
-/* line 459, ../scss/main.scss */
 .music-video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -8388,7 +8369,7 @@ hr {
   height: 0;
   color: #333;
 }
-/* line 467, ../scss/main.scss */
+/* line 449, ../scss/main.scss */
 .music-video-wrapper iframe {
   position: absolute;
   padding: 10px;
@@ -8400,4 +8381,31 @@ hr {
   border-radius: 10px;
   -webkit-box-shadow: 0 0 10px #888888;
   box-shadow: 0 0 10px #888888;
+}
+
+@media (min-width: 0px) {
+  /* line 462, ../scss/main.scss */
+  .music-video-info {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 462, ../scss/main.scss */
+  .music-video-info {
+    display: block;
+    padding: 15px 15px 10px 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px auto 5px auto;
+    width: 95%;
+  }
+}
+/* line 476, ../scss/main.scss */
+.music-video-info .video-views-h {
+  text-align: center;
+  margin: auto;
+}
+/* line 481, ../scss/main.scss */
+.music-video-info .music-video-desc {
+  line-height: 1.5;
 }
