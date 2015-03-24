@@ -12,7 +12,8 @@ $(document).ready(function() {
         $(document.body).css('background-position', "50% " + (-window.pageYOffset / speed) + "px");
     });
 
-    $('#art-page-div').slideDown(600);
+    // Unhide the outer content div
+    $('#art-page-div').toggle();
 
     /**
      * Select all modals and add modal functionality

@@ -2,9 +2,6 @@ $(document).ready(function() {
     /**
      * Implement parallax scrolling
      */
-     /**
-     * Implement parallax scrolling
-     */
     $(window).scroll(function() {
         var speed = 12;
         var img = new Image;
@@ -12,5 +9,12 @@ $(document).ready(function() {
         $(document.body).css('background-position', "50% " + (-window.pageYOffset / speed) + "px");
     });
 
-    $('#music-page-div').slideDown(600);
+    // Unhide the outer content div
+    $('#music-page-div').toggle();
+
+    // Look for errors when YouTube videos are grabbed
+    // and refresh if there is an error
+    $('.music-video').bind('error', function() {
+        window.location.reload();
+    });
 });

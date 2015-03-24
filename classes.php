@@ -535,7 +535,14 @@ class Music {
         $html .= "  <div class='remaining-content-div' id='{$prefix}-div'>\n";
         foreach($music as $key => $video) {
             // Get video JSON
-            $json = file_get_contents("http://gdata.youtube.com/feeds/api/videos/" . $video['id'] . "?v=2&alt=json");
+            // Suppress errors
+            @$json = file_get_contents("http://gdata.youtube.com/feeds/api/videos/" . $video['id'] . "?v=2&alt=json");
+           
+            // Check for errors retrieving from YouTube
+            if (!$json) {
+                echo '<h4 class="error-p">Failed to retrieve ' . $video['title'] . '.<br />Please try refreshing.</h4>';
+            }
+
             $json = json_decode($json, true);
 
             // Get video information

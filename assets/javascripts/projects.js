@@ -57,9 +57,6 @@ function setUpContent(clickedBtn) {
 }
 
 $(document).ready(function() {
-    // Animate page content opening
-    $('#projects-page-div').slideDown(200);
-
     /**
      * Implement parallax scrolling
      */

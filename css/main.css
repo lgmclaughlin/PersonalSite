@@ -8386,19 +8386,18 @@ img.art-sketch:hover {
   top: 0;
   left: 0;
   border: none;
-  border-radius: 10px;
   -webkit-box-shadow: 0 0 10px #888888;
   box-shadow: 0 0 10px #888888;
 }
 
 @media (min-width: 0px) {
-  /* line 467, ../scss/main.scss */
+  /* line 466, ../scss/main.scss */
   .music-video-info {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 467, ../scss/main.scss */
+  /* line 466, ../scss/main.scss */
   .music-video-info {
     display: block;
     padding: 15px 15px 10px 15px;
@@ -8408,12 +8407,12 @@ img.art-sketch:hover {
     width: 95%;
   }
 }
-/* line 481, ../scss/main.scss */
+/* line 480, ../scss/main.scss */
 .music-video-info .video-views-h {
   text-align: center;
   margin: auto;
 }
-/* line 486, ../scss/main.scss */
+/* line 485, ../scss/main.scss */
 .music-video-info .music-video-desc {
   line-height: 1.5;
 }
@@ -8421,14 +8420,14 @@ img.art-sketch:hover {
 /*****************/
 /* error.php CSS */
 /*****************/
-/* line 495, ../scss/main.scss */
+/* line 494, ../scss/main.scss */
 .error-title {
   text-align: center;
   font-weight: 300;
   padding-top: 70px;
 }
 
-/* line 501, ../scss/main.scss */
+/* line 500, ../scss/main.scss */
 .error-p {
   text-align: center;
   font-size: 15px;
