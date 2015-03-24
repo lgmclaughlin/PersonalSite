@@ -533,7 +533,6 @@ class Music {
         // For videos, this requires getting description and view counter
         // for each
         $html .= "  <div class='remaining-content-div' id='{$prefix}-div'>\n";
-        $i = 0; // Loop counter
         foreach($music as $key => $video) {
             // Get video JSON
             $json = file_get_contents("http://gdata.youtube.com/feeds/api/videos/" . $video['id'] . "?v=2&alt=json");
@@ -548,7 +547,7 @@ class Music {
             $html .= "          <h3 class='content-sub-title'>{$video['title']}</h3>\n";
             $html .= "          <div class='modal-video'>\n";
             $html .= "              <div class='music-video-wrapper'>\n";
-            $html .= "                  <iframe src='http://www.youtube.com/v/{$video['id']}' class='music-video' id='modal{$i}'></iframe>\n";
+            $html .= "                  <iframe src='http://www.youtube.com/v/{$video['id']}' class='music-video'></iframe>\n";
             $html .= "              </div>\n";
             $html .= "          </div>\n";
             $html .= "          <div class='music-video-info'>\n";
@@ -563,7 +562,6 @@ class Music {
             $html .= "              <button type='button' class='btn btn-default btn-to-top' onclick=\"location.href = '#{$prefix}-nav'\">To Top</button>\n";
             $html .= "          </div>\n";
             $html .= "      </div>\n";
-            $i++;   
         }
         $html .= "  </div>\n";
 
