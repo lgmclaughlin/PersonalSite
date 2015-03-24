@@ -454,7 +454,6 @@ img.art-sketch:hover {
 
     iframe {
         position: absolute;
-        padding: 10px;
         height: 100% !important;
         width: 100% !important;
         top: 0;
@@ -487,4 +486,19 @@ img.art-sketch:hover {
     .music-video-desc {
         line-height: 1.5;
     }
+}
+
+/*****************/
+/* error.php CSS */
+/*****************/
+
+.error-title {
+    text-align: center;
+    font-weight: 300;
+    padding-top: 70px;
+}
+
+.error-p {
+    text-align: center;
+    font-size: 15px;
 }

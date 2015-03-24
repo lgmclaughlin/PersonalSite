@@ -8381,7 +8381,6 @@ img.art-sketch:hover {
 /* line 455, ../scss/main.scss */
 .music-video-wrapper iframe {
   position: absolute;
-  padding: 10px;
   height: 100% !important;
   width: 100% !important;
   top: 0;
@@ -8393,13 +8392,13 @@ img.art-sketch:hover {
 }
 
 @media (min-width: 0px) {
-  /* line 468, ../scss/main.scss */
+  /* line 467, ../scss/main.scss */
   .music-video-info {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 468, ../scss/main.scss */
+  /* line 467, ../scss/main.scss */
   .music-video-info {
     display: block;
     padding: 15px 15px 10px 15px;
@@ -8409,12 +8408,28 @@ img.art-sketch:hover {
     width: 95%;
   }
 }
-/* line 482, ../scss/main.scss */
+/* line 481, ../scss/main.scss */
 .music-video-info .video-views-h {
   text-align: center;
   margin: auto;
 }
-/* line 487, ../scss/main.scss */
+/* line 486, ../scss/main.scss */
 .music-video-info .music-video-desc {
   line-height: 1.5;
+}
+
+/*****************/
+/* error.php CSS */
+/*****************/
+/* line 495, ../scss/main.scss */
+.error-title {
+  text-align: center;
+  font-weight: 300;
+  padding-top: 70px;
+}
+
+/* line 501, ../scss/main.scss */
+.error-p {
+  text-align: center;
+  font-size: 15px;
 }
