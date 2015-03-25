@@ -92,7 +92,7 @@ class Projects {
         'sdn' => array('title'       => 'Fully Functional Software Defined Network',
                        'link'        => 'https://github.com/lgmclaughlin/SoftwareDefinedNetwork',
                        'link-text'   => 'GitHub repository',
-                       'image'       => 'assets/images/sdn.jpg',
+                       'image'       => 'assets/images/sdn.svg',
                        'description' => 'This project implements a Software Defined Network. 
                                         An SDN effectively allows a Controller to sit on a network 
                                         and give Hosts commands to modify routes, firewall rules, 
