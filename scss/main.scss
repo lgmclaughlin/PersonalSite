@@ -7,6 +7,23 @@
 @import "compass";
 @import "bootstrap";
 
+/**********/
+/* Mixins */
+/**********/
+
+/**
+ * This mixin is for the social icons, and will
+ * take an image source and propagate it to the static
+ * and hover state of the icon (adding '.png' and '-h.png'
+ * respectively).
+ */
+@mixin social-icon-bg-img($src, $class) {
+    background-image: url("#{$src}.png");
+
+    &.#{$class}:hover {
+        background-image: url("#{$src}-h.png");
+    }
+}
 
 /*************/
 /* index.php */
@@ -288,6 +305,16 @@ button, button:visited, button:focus, button:active, button:hover {
     text-align: center;
     padding-top: 50px;
 
+    .name-link, a.name-link:active, a.name-link:visited, a.name-link:focus {
+        color: #333;
+        @include transition(all 0.3s ease);
+    }
+
+    a.name-link:hover {
+        color: #eee;
+        @include transition(all 0.3s ease);
+    }
+
     .name {
         font-weight: 100;
         font-size: 40px;
@@ -307,11 +334,44 @@ button, button:visited, button:focus, button:active, button:hover {
     padding-top: 40px;
 }
 
-.social-icon {
-    width: 30px;
-    height: auto;
-    margin-left: 15px;
-    margin-right: 15px;
+// Apply general settings to all icons
+.fb-icon, .fb-pages-icon, .yt-icon, .li-icon, .gh-icon {
+    background-size: 30px, 30px;
+    // Trick Chrome into thinking there is no image
+    // Otherwise, a thin outline will appear since there
+    // is no src
+    height: 0;
+    width: 0;
+    outline: none;
+    margin: 0 15px 0 15px;
+    // Add padding all around to allow 30x30 background img
+    padding: 15px 15px 15px 15px;
+    @include transition(all 0.3s ease);
+}
+
+// Set FB-icon background image for static and hover
+.fb-icon {
+    @include social-icon-bg-img("../assets/images/FB-icon", "fb-icon");
+}
+
+// Set fb-pages-icon background image for static and hover
+.fb-pages-icon {
+    @include social-icon-bg-img("../assets/images/FB-pages-icon", "fb-pages-icon");
+}
+
+// Set yt-icon background image for static and hover
+.yt-icon {
+    @include social-icon-bg-img("../assets/images/YT-icon", "yt-icon");
+}
+
+// Set li-icon background image for static and hover
+.li-icon {
+    @include social-icon-bg-img("../assets/images/LI-icon", "li-icon");
+}
+
+// Set gh-icon background image for static and hover
+.gh-icon {
+    @include social-icon-bg-img("../assets/images/GH-icon", "gh-icon");
 }
 
 hr {

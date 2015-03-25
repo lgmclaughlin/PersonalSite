@@ -215,7 +215,7 @@ class Projects {
                                         in creating sites with CMSs. In order to fix some issues with the underlying
                                         theme chose by CHL, I even dug into and modified the Joomla template HTML and code.
                                         <br /><br />There have certainly been slight changes to the site since I left,
-                                        but almost all of them were created while I was there. Looking back, there are
+                                        but almost all of the current pages were created while I was there. Looking back, there are
                                         many things I would have changed; however, I see this as a sign
                                         of improvement in my knowledge of web design.'
                         )

@@ -7852,10 +7852,19 @@ button.close {
     display: none !important;
   }
 }
+/**********/
+/* Mixins */
+/**********/
+/**
+ * This mixin is for the social icons, and will
+ * take an image source and propagate it to the static
+ * and hover state of the icon (adding '.png' and '-h.png'
+ * respectively).
+ */
 /*************/
 /* index.php */
 /*************/
-/* line 15, ../scss/main.scss */
+/* line 32, ../scss/main.scss */
 .nav-container {
   margin: auto;
   text-align: center;
@@ -7863,48 +7872,48 @@ button.close {
   font-weight: 300;
 }
 @media (min-width: 0px) {
-  /* line 15, ../scss/main.scss */
+  /* line 32, ../scss/main.scss */
   .nav-container {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 15, ../scss/main.scss */
+  /* line 32, ../scss/main.scss */
   .nav-container {
     width: 612px;
   }
 }
 
-/* line 31, ../scss/main.scss */
+/* line 48, ../scss/main.scss */
 .navbar-nav {
   padding: 0 30px 0 30px;
 }
 
-/* line 35, ../scss/main.scss */
+/* line 52, ../scss/main.scss */
 .navbar-link {
   width: 110px;
   float: left;
 }
 
-/* line 40, ../scss/main.scss */
+/* line 57, ../scss/main.scss */
 .top-container {
   color: transparent;
   padding-top: 25px;
 }
 
-/* line 45, ../scss/main.scss */
+/* line 62, ../scss/main.scss */
 .main-container {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-/* line 49, ../scss/main.scss */
+/* line 66, ../scss/main.scss */
 .bottom-container {
   padding-top: 50px;
 }
 
-/* line 53, ../scss/main.scss */
+/* line 70, ../scss/main.scss */
 body {
   background-image: url("../assets/images/home_background.jpg");
   background-repeat: no-repeat;
@@ -7916,99 +7925,99 @@ body {
 /*********************/
 /* all PHP pages CSS */
 /*********************/
-/* line 69, ../scss/main.scss */
+/* line 86, ../scss/main.scss */
 html {
   overflow-y: scroll;
 }
 
-/* line 73, ../scss/main.scss */
+/* line 90, ../scss/main.scss */
 .content {
   padding: 0 15px 0 15px;
 }
 
-/* line 77, ../scss/main.scss */
+/* line 94, ../scss/main.scss */
 a, a:visited, a:focus, a:active, a:hover {
   outline: 0 none !important;
   text-decoration: none !important;
 }
 
-/* line 82, ../scss/main.scss */
+/* line 99, ../scss/main.scss */
 button, button:visited, button:focus, button:active, button:hover {
   outline: 0 none !important;
   box-shadow: none !important;
 }
 
 @media (min-width: 0px) {
-  /* line 87, ../scss/main.scss */
+  /* line 104, ../scss/main.scss */
   .container {
     width: 100%;
   }
 }
 
-/* line 95, ../scss/main.scss */
+/* line 112, ../scss/main.scss */
 .title-and-content-nav-div:before {
   content: " ";
   display: table;
 }
 
 @media (min-width: 0px) {
-  /* line 100, ../scss/main.scss */
+  /* line 117, ../scss/main.scss */
   .title-and-content-nav-div {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 100, ../scss/main.scss */
+  /* line 117, ../scss/main.scss */
   .title-and-content-nav-div {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  /* line 100, ../scss/main.scss */
+  /* line 117, ../scss/main.scss */
   .title-and-content-nav-div {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 100, ../scss/main.scss */
+  /* line 117, ../scss/main.scss */
   .title-and-content-nav-div {
     width: 1170px;
   }
 }
-/* line 116, ../scss/main.scss */
+/* line 133, ../scss/main.scss */
 .title-and-content-nav-div .content-main-title {
   text-align: center !important;
   padding: 30px 0px 25px 0px;
 }
 @media (min-width: 0px) {
-  /* line 121, ../scss/main.scss */
+  /* line 138, ../scss/main.scss */
   .title-and-content-nav-div .content-nav {
     width: 100%;
     margin: 20px 0 50px 0;
   }
 }
 @media (min-width: 768px) {
-  /* line 121, ../scss/main.scss */
+  /* line 138, ../scss/main.scss */
   .title-and-content-nav-div .content-nav {
     width: 450px;
     margin: 20px 150px 50px 150px;
   }
 }
 @media (min-width: 992px) {
-  /* line 121, ../scss/main.scss */
+  /* line 138, ../scss/main.scss */
   .title-and-content-nav-div .content-nav {
     width: 582px;
     margin: 20px 194px 50px 194px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 121, ../scss/main.scss */
+  /* line 138, ../scss/main.scss */
   .title-and-content-nav-div .content-nav {
     width: 702px;
     margin: 20px 234px 50px 234px;
   }
 }
-/* line 150, ../scss/main.scss */
+/* line 167, ../scss/main.scss */
 .title-and-content-nav-div .btn-nav, .title-and-content-nav-div button.btn-nav:visited, .title-and-content-nav-div button.btn-nav:focus, .title-and-content-nav-div button.btn-nav:active {
   font-size: 17px;
   font-weight: normal;
@@ -8018,12 +8027,12 @@ button, button:visited, button:focus, button:active, button:hover {
   border: none;
   background-color: #ddd;
 }
-/* line 160, ../scss/main.scss */
+/* line 177, ../scss/main.scss */
 .title-and-content-nav-div button.btn-nav:hover {
   background-color: #eee;
 }
 
-/* line 165, ../scss/main.scss */
+/* line 182, ../scss/main.scss */
 .remaining-content-div {
   margin-right: auto;
   margin-left: auto;
@@ -8041,28 +8050,28 @@ button, button:visited, button:focus, button:active, button:hover {
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 165, ../scss/main.scss */
+  /* line 182, ../scss/main.scss */
   .remaining-content-div {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  /* line 165, ../scss/main.scss */
+  /* line 182, ../scss/main.scss */
   .remaining-content-div {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 165, ../scss/main.scss */
+  /* line 182, ../scss/main.scss */
   .remaining-content-div {
     width: 1170px;
   }
 }
-/* line 180, ../scss/main.scss */
+/* line 197, ../scss/main.scss */
 .remaining-content-div .inner-content-div {
   margin: 30px auto 80px auto;
 }
-/* line 184, ../scss/main.scss */
+/* line 201, ../scss/main.scss */
 .remaining-content-div .btn-to-top, .remaining-content-div button.btn-to-top:visited, .remaining-content-div button.btn-to-top:focus, .remaining-content-div button.btn-to-top:active {
   font-size: 10px;
   height: 15px !important;
@@ -8073,20 +8082,20 @@ button, button:visited, button:focus, button:active, button:hover {
   color: #333;
   background-color: #ddd;
 }
-/* line 195, ../scss/main.scss */
+/* line 212, ../scss/main.scss */
 .remaining-content-div button.btn-to-top:hover {
   background-color: #eee;
 }
-/* line 199, ../scss/main.scss */
+/* line 216, ../scss/main.scss */
 .remaining-content-div .content-sub-title {
   margin-bottom: 30px;
   text-align: center;
 }
-/* line 204, ../scss/main.scss */
+/* line 221, ../scss/main.scss */
 .remaining-content-div .content-link-align {
   text-align: center;
 }
-/* line 208, ../scss/main.scss */
+/* line 225, ../scss/main.scss */
 .remaining-content-div .content-link, .remaining-content-div a.content-link:visited, .remaining-content-div a.content-link:active {
   color: #333;
   border-radius: 5px;
@@ -8100,7 +8109,7 @@ button, button:visited, button:focus, button:active, button:hover {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 220, ../scss/main.scss */
+/* line 237, ../scss/main.scss */
 .remaining-content-div a.content-link:hover {
   color: #777;
   border-radius: 5px;
@@ -8111,11 +8120,11 @@ button, button:visited, button:focus, button:active, button:hover {
   padding-left: 2px;
   padding-right: 2px;
 }
-/* line 231, ../scss/main.scss */
+/* line 248, ../scss/main.scss */
 .remaining-content-div .desc-p {
   margin-bottom: 55px;
 }
-/* line 235, ../scss/main.scss */
+/* line 252, ../scss/main.scss */
 .remaining-content-div .content-img-div:before {
   height: 65px;
   content: '';
@@ -8123,14 +8132,14 @@ button, button:visited, button:focus, button:active, button:hover {
   float: right;
 }
 @media (min-width: 0px) {
-  /* line 242, ../scss/main.scss */
+  /* line 259, ../scss/main.scss */
   .remaining-content-div .content-image {
     visibility: hidden;
     display: none;
   }
 }
 @media (min-width: 768px) {
-  /* line 242, ../scss/main.scss */
+  /* line 259, ../scss/main.scss */
   .remaining-content-div .content-image {
     display: block;
     visibility: visible;
@@ -8142,33 +8151,33 @@ button, button:visited, button:focus, button:active, button:hover {
     float: right;
   }
 }
-/* line 259, ../scss/main.scss */
+/* line 276, ../scss/main.scss */
 .remaining-content-div .content-p {
   padding-top: 15px;
   text-align: justify;
   line-height: 1.75;
 }
 
-/* line 266, ../scss/main.scss */
+/* line 283, ../scss/main.scss */
 .outer-content-div {
   display: none;
   background-color: #eee;
   margin: 42px auto 0 auto;
 }
 @media (min-width: 768px) {
-  /* line 266, ../scss/main.scss */
+  /* line 283, ../scss/main.scss */
   .outer-content-div {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  /* line 266, ../scss/main.scss */
+  /* line 283, ../scss/main.scss */
   .outer-content-div {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 266, ../scss/main.scss */
+  /* line 283, ../scss/main.scss */
   .outer-content-div {
     width: 1170px;
   }
@@ -8177,41 +8186,105 @@ button, button:visited, button:focus, button:active, button:hover {
 /****************/
 /* home.php CSS */
 /****************/
-/* line 286, ../scss/main.scss */
+/* line 303, ../scss/main.scss */
 .home-content {
   margin: auto;
   text-align: center;
   padding-top: 50px;
 }
-/* line 291, ../scss/main.scss */
+/* line 308, ../scss/main.scss */
+.home-content .name-link, .home-content a.name-link:active, .home-content a.name-link:visited, .home-content a.name-link:focus {
+  color: #333;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 313, ../scss/main.scss */
+.home-content a.name-link:hover {
+  color: #eee;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 318, ../scss/main.scss */
 .home-content .name {
   font-weight: 100;
   font-size: 40px;
 }
-/* line 296, ../scss/main.scss */
+/* line 323, ../scss/main.scss */
 .home-content .title {
   font-weight: 700;
   font-size: 60px;
 }
-/* line 301, ../scss/main.scss */
+/* line 328, ../scss/main.scss */
 .home-content .hobbies {
   font-size: 50px;
 }
 
-/* line 306, ../scss/main.scss */
+/* line 333, ../scss/main.scss */
 .social-icons {
   padding-top: 40px;
 }
 
-/* line 310, ../scss/main.scss */
-.social-icon {
-  width: 30px;
-  height: auto;
-  margin-left: 15px;
-  margin-right: 15px;
+/* line 338, ../scss/main.scss */
+.fb-icon, .fb-pages-icon, .yt-icon, .li-icon, .gh-icon {
+  background-size: 30px, 30px;
+  height: 0;
+  width: 0;
+  outline: none;
+  margin: 0 15px 0 15px;
+  padding: 15px 15px 15px 15px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-/* line 317, ../scss/main.scss */
+/* line 353, ../scss/main.scss */
+.fb-icon {
+  background-image: url("../assets/images/FB-icon.png");
+}
+/* line 23, ../scss/main.scss */
+.fb-icon.fb-icon:hover {
+  background-image: url("../assets/images/FB-icon-h.png");
+}
+
+/* line 358, ../scss/main.scss */
+.fb-pages-icon {
+  background-image: url("../assets/images/FB-pages-icon.png");
+}
+/* line 23, ../scss/main.scss */
+.fb-pages-icon.fb-pages-icon:hover {
+  background-image: url("../assets/images/FB-pages-icon-h.png");
+}
+
+/* line 363, ../scss/main.scss */
+.yt-icon {
+  background-image: url("../assets/images/YT-icon.png");
+}
+/* line 23, ../scss/main.scss */
+.yt-icon.yt-icon:hover {
+  background-image: url("../assets/images/YT-icon-h.png");
+}
+
+/* line 368, ../scss/main.scss */
+.li-icon {
+  background-image: url("../assets/images/LI-icon.png");
+}
+/* line 23, ../scss/main.scss */
+.li-icon.li-icon:hover {
+  background-image: url("../assets/images/LI-icon-h.png");
+}
+
+/* line 373, ../scss/main.scss */
+.gh-icon {
+  background-image: url("../assets/images/GH-icon.png");
+}
+/* line 23, ../scss/main.scss */
+.gh-icon.gh-icon:hover {
+  background-image: url("../assets/images/GH-icon-h.png");
+}
+
+/* line 377, ../scss/main.scss */
 hr {
   border: 0;
   height: 1px;
@@ -8224,19 +8297,19 @@ hr {
 /********************/
 /* projects.php CSS */
 /********************/
-/* line 330, ../scss/main.scss */
+/* line 390, ../scss/main.scss */
 .git-hub-link {
   width: 100%;
 }
 
-/* line 334, ../scss/main.scss */
+/* line 394, ../scss/main.scss */
 .git-hub-icon {
   padding-top: 40px;
   display: block;
   margin: auto;
 }
 
-/* line 340, ../scss/main.scss */
+/* line 400, ../scss/main.scss */
 .projects-page-description {
   width: 500px;
   padding-top: 10px;
@@ -8245,7 +8318,7 @@ hr {
   font-weight: normal;
 }
 
-/* line 348, ../scss/main.scss */
+/* line 408, ../scss/main.scss */
 .past-current-btns {
   margin-left: auto;
   margin-right: auto;
@@ -8254,7 +8327,7 @@ hr {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 354, ../scss/main.scss */
+/* line 414, ../scss/main.scss */
 .past-current-btns .btn {
   background-color: transparent;
   border-top: none;
@@ -8264,41 +8337,41 @@ hr {
   font-size: 16px;
   font-weight: 300;
 }
-/* line 364, ../scss/main.scss */
+/* line 424, ../scss/main.scss */
 .past-current-btns .btn:hover {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 368, ../scss/main.scss */
+/* line 428, ../scss/main.scss */
 .past-current-btns .btn:visited, .past-current-btns .btn:active {
   background-color: transparent;
 }
-/* line 372, ../scss/main.scss */
+/* line 432, ../scss/main.scss */
 .past-current-btns .btn:focus {
   background-color: none;
 }
-/* line 376, ../scss/main.scss */
+/* line 436, ../scss/main.scss */
 .past-current-btns .active {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 380, ../scss/main.scss */
+/* line 440, ../scss/main.scss */
 .past-current-btns .past {
   border-right: 1px dashed rgba(20, 20, 20, 0.3);
   text-align: right;
   padding-right: 15px;
 }
-/* line 386, ../scss/main.scss */
+/* line 446, ../scss/main.scss */
 .past-current-btns .current {
   border-right: none;
   text-align: left;
   padding-left: 15px;
 }
 
-/* line 393, ../scss/main.scss */
+/* line 453, ../scss/main.scss */
 .btns-inactive {
   padding-top: 60px;
 }
 
-/* line 397, ../scss/main.scss */
+/* line 457, ../scss/main.scss */
 .btns-active {
   padding-top: 25px;
 }
@@ -8306,14 +8379,14 @@ hr {
 /*****************************/
 /* art.php and music.php CSS */
 /*****************************/
-/* line 405, ../scss/main.scss */
+/* line 465, ../scss/main.scss */
 .active-modal-div {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-/* line 409, ../scss/main.scss */
+/* line 469, ../scss/main.scss */
 .modal-active {
   position: fixed;
   top: 50%;
@@ -8332,12 +8405,12 @@ hr {
   transition: all 0.3s ease;
 }
 
-/* line 424, ../scss/main.scss */
+/* line 484, ../scss/main.scss */
 img.modal-active:hover {
   background-color: #999;
 }
 
-/* line 428, ../scss/main.scss */
+/* line 488, ../scss/main.scss */
 .blur {
   -webkit-filter: blur(5px) grayscale(50%);
   -moz-filter: blur(5px) grayscale(50%);
@@ -8352,7 +8425,7 @@ img.modal-active:hover {
   transition: all 0.3s ease;
 }
 
-/* line 434, ../scss/main.scss */
+/* line 494, ../scss/main.scss */
 .art-sketch {
   display: block;
   margin: 40px auto 10px auto;
@@ -8363,13 +8436,13 @@ img.modal-active:hover {
   border-radius: 10px;
 }
 
-/* line 443, ../scss/main.scss */
+/* line 503, ../scss/main.scss */
 img.art-sketch:hover {
   -webkit-box-shadow: 0 0 20px #cccccc;
   box-shadow: 0 0 20px #cccccc;
 }
 
-/* line 447, ../scss/main.scss */
+/* line 507, ../scss/main.scss */
 .music-video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -8378,7 +8451,7 @@ img.art-sketch:hover {
   height: 0;
   color: #333;
 }
-/* line 455, ../scss/main.scss */
+/* line 515, ../scss/main.scss */
 .music-video-wrapper iframe {
   position: absolute;
   height: 100% !important;
@@ -8391,13 +8464,13 @@ img.art-sketch:hover {
 }
 
 @media (min-width: 0px) {
-  /* line 466, ../scss/main.scss */
+  /* line 526, ../scss/main.scss */
   .music-video-info {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 466, ../scss/main.scss */
+  /* line 526, ../scss/main.scss */
   .music-video-info {
     display: block;
     padding: 15px 15px 10px 15px;
@@ -8407,12 +8480,12 @@ img.art-sketch:hover {
     width: 95%;
   }
 }
-/* line 480, ../scss/main.scss */
+/* line 540, ../scss/main.scss */
 .music-video-info .video-views-h {
   text-align: center;
   margin: auto;
 }
-/* line 485, ../scss/main.scss */
+/* line 545, ../scss/main.scss */
 .music-video-info .music-video-desc {
   line-height: 1.5;
 }
@@ -8420,14 +8493,14 @@ img.art-sketch:hover {
 /*****************/
 /* error.php CSS */
 /*****************/
-/* line 494, ../scss/main.scss */
+/* line 554, ../scss/main.scss */
 .error-title {
   text-align: center;
   font-weight: 300;
   padding-top: 70px;
 }
 
-/* line 500, ../scss/main.scss */
+/* line 560, ../scss/main.scss */
 .error-p {
   text-align: center;
   font-size: 15px;
