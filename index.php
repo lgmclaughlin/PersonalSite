@@ -6,6 +6,7 @@
     <meta name="description" content="My personal website. Enjoy!"/>
     <meta name="author" content="Lucas McLaughlin"/>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="css/main.css" />
@@ -52,6 +53,7 @@
                         include_once('music.php');
                         break;
                     case 'about':
+                        echo '<script type="text/javascript" src="assets/javascripts/about.js"></script>';
                         include_once('about.php');
                         break;
                     default:

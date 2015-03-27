@@ -72,6 +72,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 0%;
+    background-size: auto 140%;
     font-family: 'Lato', palatino linotype, sans-serif;
 }
 
@@ -343,6 +344,7 @@ button, button:visited, button:focus, button:active, button:hover {
     height: 0;
     width: 0;
     outline: none;
+    background-repeat: no-repeat;
     margin: 0 15px 0 15px;
     // Add padding all around to allow 30x30 background img
     padding: 15px 15px 15px 15px;
@@ -545,6 +547,83 @@ img.art-sketch:hover {
     .music-video-desc {
         line-height: 1.5;
     }
+}
+
+/*****************/
+/* about.php CSS */
+/*****************/
+
+.about-btns-div {
+    margin: 15px auto 60px auto;
+    padding-bottom: 20px;
+    display: block;
+    height: 60px;
+
+    .about-btn, button.about-btn:visited, button.about-btn:focus, button.about-btn:active {
+        float: left;
+        font-size: 20px;
+        border-radius: 10px;
+        border: 3px solid #333;
+        color: #333;
+        background-color: transparent;
+        @include transition(all 0.3s ease);
+    }
+
+    button.about-btn:hover {
+        border-radius: 30px;
+        border-color: #999;
+    }
+
+    // If the page is scaled small, have the btns
+    // take up the entire width of the page
+    @media (min-width: 0px) {   
+        width: 100%;
+        display: block;
+
+        .about-btn, button.about-btn:visited, button.about-btn:focus, button.about-btn:active {
+            width: 60%;
+            height: 60px;
+            margin: 0 20% 15px 20%;
+        }
+    }
+    @media (min-width: $screen-sm-min) {
+        width: 360px;
+
+        .about-btn, button.about-btn:visited, button.about-btn:focus, button.about-btn:active {
+            width: 150px;
+            height: 60px;
+            margin: 0 15px 15px 15px;
+        }
+    }  
+}
+
+.left-about-p-div {
+    padding-bottom: 70px;
+}
+
+.right-about-img-div {
+    // If the page is scaled small, have the btns
+    // take up the entire width of the page
+    @media (min-width: 0px) {   
+        display: none;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        display: inline;
+        width: 187px;
+        float: right;
+        margin-left: 20px;
+    }
+
+    .about-img {
+        border-radius: 50%;
+        @include box-shadow(0 0 10px #333);
+        margin-bottom: 20px;
+    }
+} 
+
+.wpi-ul {
+    margin-top: 35px;
 }
 
 /*****************/

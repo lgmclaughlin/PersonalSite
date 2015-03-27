@@ -7919,105 +7919,106 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 0%;
+  background-size: auto 140%;
   font-family: 'Lato', palatino linotype, sans-serif;
 }
 
 /*********************/
 /* all PHP pages CSS */
 /*********************/
-/* line 86, ../scss/main.scss */
+/* line 87, ../scss/main.scss */
 html {
   overflow-y: scroll;
 }
 
-/* line 90, ../scss/main.scss */
+/* line 91, ../scss/main.scss */
 .content {
   padding: 0 15px 0 15px;
 }
 
-/* line 94, ../scss/main.scss */
+/* line 95, ../scss/main.scss */
 a, a:visited, a:focus, a:active, a:hover {
   outline: 0 none !important;
   text-decoration: none !important;
 }
 
-/* line 99, ../scss/main.scss */
+/* line 100, ../scss/main.scss */
 button, button:visited, button:focus, button:active, button:hover {
   outline: 0 none !important;
   box-shadow: none !important;
 }
 
 @media (min-width: 0px) {
-  /* line 104, ../scss/main.scss */
+  /* line 105, ../scss/main.scss */
   .container {
     width: 100%;
   }
 }
 
-/* line 112, ../scss/main.scss */
+/* line 113, ../scss/main.scss */
 .title-and-content-nav-div:before {
   content: " ";
   display: table;
 }
 
 @media (min-width: 0px) {
-  /* line 117, ../scss/main.scss */
+  /* line 118, ../scss/main.scss */
   .title-and-content-nav-div {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 117, ../scss/main.scss */
+  /* line 118, ../scss/main.scss */
   .title-and-content-nav-div {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  /* line 117, ../scss/main.scss */
+  /* line 118, ../scss/main.scss */
   .title-and-content-nav-div {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 117, ../scss/main.scss */
+  /* line 118, ../scss/main.scss */
   .title-and-content-nav-div {
     width: 1170px;
   }
 }
-/* line 133, ../scss/main.scss */
+/* line 134, ../scss/main.scss */
 .title-and-content-nav-div .content-main-title {
   text-align: center !important;
   padding: 30px 0px 25px 0px;
 }
 @media (min-width: 0px) {
-  /* line 138, ../scss/main.scss */
+  /* line 139, ../scss/main.scss */
   .title-and-content-nav-div .content-nav {
     width: 100%;
     margin: 20px 0 50px 0;
   }
 }
 @media (min-width: 768px) {
-  /* line 138, ../scss/main.scss */
+  /* line 139, ../scss/main.scss */
   .title-and-content-nav-div .content-nav {
     width: 450px;
     margin: 20px 150px 50px 150px;
   }
 }
 @media (min-width: 992px) {
-  /* line 138, ../scss/main.scss */
+  /* line 139, ../scss/main.scss */
   .title-and-content-nav-div .content-nav {
     width: 582px;
     margin: 20px 194px 50px 194px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 138, ../scss/main.scss */
+  /* line 139, ../scss/main.scss */
   .title-and-content-nav-div .content-nav {
     width: 702px;
     margin: 20px 234px 50px 234px;
   }
 }
-/* line 167, ../scss/main.scss */
+/* line 168, ../scss/main.scss */
 .title-and-content-nav-div .btn-nav, .title-and-content-nav-div button.btn-nav:visited, .title-and-content-nav-div button.btn-nav:focus, .title-and-content-nav-div button.btn-nav:active {
   font-size: 17px;
   font-weight: normal;
@@ -8027,12 +8028,12 @@ button, button:visited, button:focus, button:active, button:hover {
   border: none;
   background-color: #ddd;
 }
-/* line 177, ../scss/main.scss */
+/* line 178, ../scss/main.scss */
 .title-and-content-nav-div button.btn-nav:hover {
   background-color: #eee;
 }
 
-/* line 182, ../scss/main.scss */
+/* line 183, ../scss/main.scss */
 .remaining-content-div {
   margin-right: auto;
   margin-left: auto;
@@ -8050,28 +8051,28 @@ button, button:visited, button:focus, button:active, button:hover {
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 182, ../scss/main.scss */
+  /* line 183, ../scss/main.scss */
   .remaining-content-div {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  /* line 182, ../scss/main.scss */
+  /* line 183, ../scss/main.scss */
   .remaining-content-div {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 182, ../scss/main.scss */
+  /* line 183, ../scss/main.scss */
   .remaining-content-div {
     width: 1170px;
   }
 }
-/* line 197, ../scss/main.scss */
+/* line 198, ../scss/main.scss */
 .remaining-content-div .inner-content-div {
   margin: 30px auto 80px auto;
 }
-/* line 201, ../scss/main.scss */
+/* line 202, ../scss/main.scss */
 .remaining-content-div .btn-to-top, .remaining-content-div button.btn-to-top:visited, .remaining-content-div button.btn-to-top:focus, .remaining-content-div button.btn-to-top:active {
   font-size: 10px;
   height: 15px !important;
@@ -8082,20 +8083,20 @@ button, button:visited, button:focus, button:active, button:hover {
   color: #333;
   background-color: #ddd;
 }
-/* line 212, ../scss/main.scss */
+/* line 213, ../scss/main.scss */
 .remaining-content-div button.btn-to-top:hover {
   background-color: #eee;
 }
-/* line 216, ../scss/main.scss */
+/* line 217, ../scss/main.scss */
 .remaining-content-div .content-sub-title {
   margin-bottom: 30px;
   text-align: center;
 }
-/* line 221, ../scss/main.scss */
+/* line 222, ../scss/main.scss */
 .remaining-content-div .content-link-align {
   text-align: center;
 }
-/* line 225, ../scss/main.scss */
+/* line 226, ../scss/main.scss */
 .remaining-content-div .content-link, .remaining-content-div a.content-link:visited, .remaining-content-div a.content-link:active {
   color: #333;
   border-radius: 5px;
@@ -8109,7 +8110,7 @@ button, button:visited, button:focus, button:active, button:hover {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 237, ../scss/main.scss */
+/* line 238, ../scss/main.scss */
 .remaining-content-div a.content-link:hover {
   color: #777;
   border-radius: 5px;
@@ -8120,11 +8121,11 @@ button, button:visited, button:focus, button:active, button:hover {
   padding-left: 2px;
   padding-right: 2px;
 }
-/* line 248, ../scss/main.scss */
+/* line 249, ../scss/main.scss */
 .remaining-content-div .desc-p {
   margin-bottom: 55px;
 }
-/* line 252, ../scss/main.scss */
+/* line 253, ../scss/main.scss */
 .remaining-content-div .content-img-div:before {
   height: 65px;
   content: '';
@@ -8132,14 +8133,14 @@ button, button:visited, button:focus, button:active, button:hover {
   float: right;
 }
 @media (min-width: 0px) {
-  /* line 259, ../scss/main.scss */
+  /* line 260, ../scss/main.scss */
   .remaining-content-div .content-image {
     visibility: hidden;
     display: none;
   }
 }
 @media (min-width: 768px) {
-  /* line 259, ../scss/main.scss */
+  /* line 260, ../scss/main.scss */
   .remaining-content-div .content-image {
     display: block;
     visibility: visible;
@@ -8151,33 +8152,33 @@ button, button:visited, button:focus, button:active, button:hover {
     float: right;
   }
 }
-/* line 276, ../scss/main.scss */
+/* line 277, ../scss/main.scss */
 .remaining-content-div .content-p {
   padding-top: 15px;
   text-align: justify;
   line-height: 1.75;
 }
 
-/* line 283, ../scss/main.scss */
+/* line 284, ../scss/main.scss */
 .outer-content-div {
   display: none;
   background-color: #eee;
   margin: 42px auto 0 auto;
 }
 @media (min-width: 768px) {
-  /* line 283, ../scss/main.scss */
+  /* line 284, ../scss/main.scss */
   .outer-content-div {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  /* line 283, ../scss/main.scss */
+  /* line 284, ../scss/main.scss */
   .outer-content-div {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 283, ../scss/main.scss */
+  /* line 284, ../scss/main.scss */
   .outer-content-div {
     width: 1170px;
   }
@@ -8186,52 +8187,53 @@ button, button:visited, button:focus, button:active, button:hover {
 /****************/
 /* home.php CSS */
 /****************/
-/* line 303, ../scss/main.scss */
+/* line 304, ../scss/main.scss */
 .home-content {
   margin: auto;
   text-align: center;
   padding-top: 50px;
 }
-/* line 308, ../scss/main.scss */
+/* line 309, ../scss/main.scss */
 .home-content .name-link, .home-content a.name-link:active, .home-content a.name-link:visited, .home-content a.name-link:focus {
   color: #333;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 313, ../scss/main.scss */
+/* line 314, ../scss/main.scss */
 .home-content a.name-link:hover {
   color: #eee;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 318, ../scss/main.scss */
+/* line 319, ../scss/main.scss */
 .home-content .name {
   font-weight: 100;
   font-size: 40px;
 }
-/* line 323, ../scss/main.scss */
+/* line 324, ../scss/main.scss */
 .home-content .title {
   font-weight: 700;
   font-size: 60px;
 }
-/* line 328, ../scss/main.scss */
+/* line 329, ../scss/main.scss */
 .home-content .hobbies {
   font-size: 50px;
 }
 
-/* line 333, ../scss/main.scss */
+/* line 334, ../scss/main.scss */
 .social-icons {
   padding-top: 40px;
 }
 
-/* line 338, ../scss/main.scss */
+/* line 339, ../scss/main.scss */
 .fb-icon, .fb-pages-icon, .yt-icon, .li-icon, .gh-icon {
   background-size: 30px, 30px;
   height: 0;
   width: 0;
   outline: none;
+  background-repeat: no-repeat;
   margin: 0 15px 0 15px;
   padding: 15px 15px 15px 15px;
   -webkit-transition: all 0.3s ease;
@@ -8239,7 +8241,7 @@ button, button:visited, button:focus, button:active, button:hover {
   transition: all 0.3s ease;
 }
 
-/* line 353, ../scss/main.scss */
+/* line 355, ../scss/main.scss */
 .fb-icon {
   background-image: url("../assets/images/FB-icon.png");
 }
@@ -8248,7 +8250,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background-image: url("../assets/images/FB-icon-h.png");
 }
 
-/* line 358, ../scss/main.scss */
+/* line 360, ../scss/main.scss */
 .fb-pages-icon {
   background-image: url("../assets/images/FB-pages-icon.png");
 }
@@ -8257,7 +8259,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background-image: url("../assets/images/FB-pages-icon-h.png");
 }
 
-/* line 363, ../scss/main.scss */
+/* line 365, ../scss/main.scss */
 .yt-icon {
   background-image: url("../assets/images/YT-icon.png");
 }
@@ -8266,7 +8268,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background-image: url("../assets/images/YT-icon-h.png");
 }
 
-/* line 368, ../scss/main.scss */
+/* line 370, ../scss/main.scss */
 .li-icon {
   background-image: url("../assets/images/LI-icon.png");
 }
@@ -8275,7 +8277,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background-image: url("../assets/images/LI-icon-h.png");
 }
 
-/* line 373, ../scss/main.scss */
+/* line 375, ../scss/main.scss */
 .gh-icon {
   background-image: url("../assets/images/GH-icon.png");
 }
@@ -8284,7 +8286,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background-image: url("../assets/images/GH-icon-h.png");
 }
 
-/* line 377, ../scss/main.scss */
+/* line 379, ../scss/main.scss */
 hr {
   border: 0;
   height: 1px;
@@ -8297,19 +8299,19 @@ hr {
 /********************/
 /* projects.php CSS */
 /********************/
-/* line 390, ../scss/main.scss */
+/* line 392, ../scss/main.scss */
 .git-hub-link {
   width: 100%;
 }
 
-/* line 394, ../scss/main.scss */
+/* line 396, ../scss/main.scss */
 .git-hub-icon {
   padding-top: 40px;
   display: block;
   margin: auto;
 }
 
-/* line 400, ../scss/main.scss */
+/* line 402, ../scss/main.scss */
 .projects-page-description {
   width: 500px;
   padding-top: 10px;
@@ -8318,7 +8320,7 @@ hr {
   font-weight: normal;
 }
 
-/* line 408, ../scss/main.scss */
+/* line 410, ../scss/main.scss */
 .past-current-btns {
   margin-left: auto;
   margin-right: auto;
@@ -8327,7 +8329,7 @@ hr {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 414, ../scss/main.scss */
+/* line 416, ../scss/main.scss */
 .past-current-btns .btn {
   background-color: transparent;
   border-top: none;
@@ -8337,41 +8339,41 @@ hr {
   font-size: 16px;
   font-weight: 300;
 }
-/* line 424, ../scss/main.scss */
+/* line 426, ../scss/main.scss */
 .past-current-btns .btn:hover {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 428, ../scss/main.scss */
+/* line 430, ../scss/main.scss */
 .past-current-btns .btn:visited, .past-current-btns .btn:active {
   background-color: transparent;
 }
-/* line 432, ../scss/main.scss */
+/* line 434, ../scss/main.scss */
 .past-current-btns .btn:focus {
   background-color: none;
 }
-/* line 436, ../scss/main.scss */
+/* line 438, ../scss/main.scss */
 .past-current-btns .active {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 440, ../scss/main.scss */
+/* line 442, ../scss/main.scss */
 .past-current-btns .past {
   border-right: 1px dashed rgba(20, 20, 20, 0.3);
   text-align: right;
   padding-right: 15px;
 }
-/* line 446, ../scss/main.scss */
+/* line 448, ../scss/main.scss */
 .past-current-btns .current {
   border-right: none;
   text-align: left;
   padding-left: 15px;
 }
 
-/* line 453, ../scss/main.scss */
+/* line 455, ../scss/main.scss */
 .btns-inactive {
   padding-top: 60px;
 }
 
-/* line 457, ../scss/main.scss */
+/* line 459, ../scss/main.scss */
 .btns-active {
   padding-top: 25px;
 }
@@ -8379,14 +8381,14 @@ hr {
 /*****************************/
 /* art.php and music.php CSS */
 /*****************************/
-/* line 465, ../scss/main.scss */
+/* line 467, ../scss/main.scss */
 .active-modal-div {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-/* line 469, ../scss/main.scss */
+/* line 471, ../scss/main.scss */
 .modal-active {
   position: fixed;
   top: 50%;
@@ -8405,12 +8407,12 @@ hr {
   transition: all 0.3s ease;
 }
 
-/* line 484, ../scss/main.scss */
+/* line 486, ../scss/main.scss */
 img.modal-active:hover {
   background-color: #999;
 }
 
-/* line 488, ../scss/main.scss */
+/* line 490, ../scss/main.scss */
 .blur {
   -webkit-filter: blur(5px) grayscale(50%);
   -moz-filter: blur(5px) grayscale(50%);
@@ -8425,7 +8427,7 @@ img.modal-active:hover {
   transition: all 0.3s ease;
 }
 
-/* line 494, ../scss/main.scss */
+/* line 496, ../scss/main.scss */
 .art-sketch {
   display: block;
   margin: 40px auto 10px auto;
@@ -8436,13 +8438,13 @@ img.modal-active:hover {
   border-radius: 10px;
 }
 
-/* line 503, ../scss/main.scss */
+/* line 505, ../scss/main.scss */
 img.art-sketch:hover {
   -webkit-box-shadow: 0 0 20px #cccccc;
   box-shadow: 0 0 20px #cccccc;
 }
 
-/* line 507, ../scss/main.scss */
+/* line 509, ../scss/main.scss */
 .music-video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -8451,7 +8453,7 @@ img.art-sketch:hover {
   height: 0;
   color: #333;
 }
-/* line 515, ../scss/main.scss */
+/* line 517, ../scss/main.scss */
 .music-video-wrapper iframe {
   position: absolute;
   height: 100% !important;
@@ -8464,13 +8466,13 @@ img.art-sketch:hover {
 }
 
 @media (min-width: 0px) {
-  /* line 526, ../scss/main.scss */
+  /* line 528, ../scss/main.scss */
   .music-video-info {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 526, ../scss/main.scss */
+  /* line 528, ../scss/main.scss */
   .music-video-info {
     display: block;
     padding: 15px 15px 10px 15px;
@@ -8480,27 +8482,113 @@ img.art-sketch:hover {
     width: 95%;
   }
 }
-/* line 540, ../scss/main.scss */
+/* line 542, ../scss/main.scss */
 .music-video-info .video-views-h {
   text-align: center;
   margin: auto;
 }
-/* line 545, ../scss/main.scss */
+/* line 547, ../scss/main.scss */
 .music-video-info .music-video-desc {
   line-height: 1.5;
 }
 
 /*****************/
+/* about.php CSS */
+/*****************/
+/* line 556, ../scss/main.scss */
+.about-btns-div {
+  margin: 15px auto 60px auto;
+  padding-bottom: 20px;
+  display: block;
+  height: 60px;
+}
+/* line 562, ../scss/main.scss */
+.about-btns-div .about-btn, .about-btns-div button.about-btn:visited, .about-btns-div button.about-btn:focus, .about-btns-div button.about-btn:active {
+  float: left;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 3px solid #333;
+  color: #333;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 572, ../scss/main.scss */
+.about-btns-div button.about-btn:hover {
+  border-radius: 30px;
+  border-color: #999;
+}
+@media (min-width: 0px) {
+  /* line 556, ../scss/main.scss */
+  .about-btns-div {
+    width: 100%;
+    display: block;
+  }
+  /* line 583, ../scss/main.scss */
+  .about-btns-div .about-btn, .about-btns-div button.about-btn:visited, .about-btns-div button.about-btn:focus, .about-btns-div button.about-btn:active {
+    width: 60%;
+    height: 60px;
+    margin: 0 20% 15px 20%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 556, ../scss/main.scss */
+  .about-btns-div {
+    width: 360px;
+  }
+  /* line 592, ../scss/main.scss */
+  .about-btns-div .about-btn, .about-btns-div button.about-btn:visited, .about-btns-div button.about-btn:focus, .about-btns-div button.about-btn:active {
+    width: 150px;
+    height: 60px;
+    margin: 0 15px 15px 15px;
+  }
+}
+
+/* line 600, ../scss/main.scss */
+.left-about-p-div {
+  padding-bottom: 70px;
+}
+
+@media (min-width: 0px) {
+  /* line 604, ../scss/main.scss */
+  .right-about-img-div {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  /* line 604, ../scss/main.scss */
+  .right-about-img-div {
+    display: inline;
+    width: 187px;
+    float: right;
+    margin-left: 20px;
+  }
+}
+/* line 618, ../scss/main.scss */
+.right-about-img-div .about-img {
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px #333333;
+  box-shadow: 0 0 10px #333333;
+  margin-bottom: 20px;
+}
+
+/* line 625, ../scss/main.scss */
+.wpi-ul {
+  margin-top: 35px;
+}
+
+/*****************/
 /* error.php CSS */
 /*****************/
-/* line 554, ../scss/main.scss */
+/* line 633, ../scss/main.scss */
 .error-title {
   text-align: center;
   font-weight: 300;
   padding-top: 70px;
 }
 
-/* line 560, ../scss/main.scss */
+/* line 639, ../scss/main.scss */
 .error-p {
   text-align: center;
   font-size: 15px;
