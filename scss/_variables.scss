@@ -361,11 +361,12 @@ $container-lg:                 $container-large-desktop !default;
 //##
 
 // Important widths and counts to determin navbar width
-$navbar-default-link-width:                110px !default;
 $navbar-number-of-links:                   5 !default;
+$navbar-default-link-width:                100%/$navbar-number-of-links !default;
+$desired-link-width:                       120px; // Desired width of links, actual width determined with percentages
 
 // Basics of a navbar
-$navbar-width:                     62px + $navbar-default-link-width * $navbar-number-of-links !default; // I don't want the navbar resizing, so fix the width; extra 63 is to provide space for psuedo-elements and fluid and collapse divs
+$navbar-width:                     64px + $desired-link-width * $navbar-number-of-links !default; // I don't want the navbar resizing, so fix the width; extra 64 is to provide space for psuedo-elements and fluid and collapse divs
 $navbar-height:                    60px !default;
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;

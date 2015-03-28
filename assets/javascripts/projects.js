@@ -29,6 +29,8 @@ function setUpContent(clickedBtn) {
         $('#git-hub-link').slideDown();
         // Hide the correct div, past or current
         clickedDiv.slideUp();
+        // Hide the footer
+        $('#footer').slideUp();
     } else {
         // Otherwise, always remove the active state
         // from the other element and add it to the new one
@@ -52,6 +54,8 @@ function setUpContent(clickedBtn) {
         } else {
             // Display the correct div, past or current
             clickedDiv.slideDown();
+            // Unhide the footer
+            $('#footer').slideDown();
         }
     }
 }

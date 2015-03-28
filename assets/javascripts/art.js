@@ -12,8 +12,9 @@ $(document).ready(function() {
         $(document.body).css('background-position', "50% " + (-window.pageYOffset / speed) + "px");
     });
 
-    // Unhide the outer content div
+    // Unhide the outer content div and the footer
     $('#art-page-div').toggle();
+    $('#footer').slideDown();
 
     /**
      * Select all modals and add modal functionality

@@ -9,6 +9,7 @@ $(document).ready(function() {
         $(document.body).css('background-position', "50% " + (-window.pageYOffset / speed) + "px");
     });
 
-    // Unhide the outer content div
+    // Unhide the outer content div and the footer
     $('#about-page-div').toggle();
+    $('#footer').slideDown();
 });

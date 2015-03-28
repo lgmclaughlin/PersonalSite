@@ -9,8 +9,9 @@ $(document).ready(function() {
         $(document.body).css('background-position', "50% " + (-window.pageYOffset / speed) + "px");
     });
 
-    // Unhide the outer content div
+    // Unhide the outer content div and the footer
     $('#music-page-div').toggle();
+    $('#footer').slideDown();
 
     // Look for errors when YouTube videos are grabbed
     // and refresh if there is an error

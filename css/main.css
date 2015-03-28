@@ -7857,14 +7857,20 @@ button.close {
 /**********/
 /**
  * This mixin is for the social icons, and will
- * take an image source and propagate it to the static
- * and hover state of the icon (adding '.png' and '-h.png'
- * respectively).
+ * take a normal image as the standard icon image
+ * and the hover image as the image displayed when
+ * the user hovers over the icon
  */
 /*************/
 /* index.php */
 /*************/
 /* line 32, ../scss/main.scss */
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+/* line 37, ../scss/main.scss */
 .nav-container {
   margin: auto;
   text-align: center;
@@ -7872,48 +7878,65 @@ button.close {
   font-weight: 300;
 }
 @media (min-width: 0px) {
-  /* line 32, ../scss/main.scss */
+  /* line 37, ../scss/main.scss */
   .nav-container {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 32, ../scss/main.scss */
+  /* line 37, ../scss/main.scss */
   .nav-container {
-    width: 612px;
+    width: 664px;
   }
 }
 
-/* line 48, ../scss/main.scss */
+/* line 53, ../scss/main.scss */
 .navbar-nav {
   padding: 0 30px 0 30px;
+  width: 100%;
 }
 
-/* line 52, ../scss/main.scss */
+/* line 58, ../scss/main.scss */
 .navbar-link {
-  width: 110px;
+  width: 20%;
   float: left;
 }
 
-/* line 57, ../scss/main.scss */
+/* line 63, ../scss/main.scss */
 .top-container {
   color: transparent;
   padding-top: 25px;
 }
 
-/* line 62, ../scss/main.scss */
+/* line 68, ../scss/main.scss */
 .main-container {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-/* line 66, ../scss/main.scss */
+/* line 72, ../scss/main.scss */
 .bottom-container {
-  padding-top: 50px;
+  padding-top: 200px;
 }
 
-/* line 70, ../scss/main.scss */
+/* line 76, ../scss/main.scss */
+.footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  height: 150px;
+  background-color: rgba(30, 30, 30, 0.8);
+}
+
+/* line 86, ../scss/main.scss */
+.navbar-footer {
+  color: #bbb;
+}
+
+/* line 90, ../scss/main.scss */
 body {
   background-image: url("../assets/images/home_background.jpg");
   background-repeat: no-repeat;
@@ -7926,99 +7949,99 @@ body {
 /*********************/
 /* all PHP pages CSS */
 /*********************/
-/* line 87, ../scss/main.scss */
+/* line 107, ../scss/main.scss */
 html {
   overflow-y: scroll;
 }
 
-/* line 91, ../scss/main.scss */
+/* line 111, ../scss/main.scss */
 .content {
   padding: 0 15px 0 15px;
 }
 
-/* line 95, ../scss/main.scss */
+/* line 115, ../scss/main.scss */
 a, a:visited, a:focus, a:active, a:hover {
   outline: 0 none !important;
   text-decoration: none !important;
 }
 
-/* line 100, ../scss/main.scss */
+/* line 120, ../scss/main.scss */
 button, button:visited, button:focus, button:active, button:hover {
   outline: 0 none !important;
   box-shadow: none !important;
 }
 
 @media (min-width: 0px) {
-  /* line 105, ../scss/main.scss */
+  /* line 125, ../scss/main.scss */
   .container {
     width: 100%;
   }
 }
 
-/* line 113, ../scss/main.scss */
+/* line 133, ../scss/main.scss */
 .title-and-content-nav-div:before {
   content: " ";
   display: table;
 }
 
 @media (min-width: 0px) {
-  /* line 118, ../scss/main.scss */
+  /* line 138, ../scss/main.scss */
   .title-and-content-nav-div {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 118, ../scss/main.scss */
+  /* line 138, ../scss/main.scss */
   .title-and-content-nav-div {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  /* line 118, ../scss/main.scss */
+  /* line 138, ../scss/main.scss */
   .title-and-content-nav-div {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 118, ../scss/main.scss */
+  /* line 138, ../scss/main.scss */
   .title-and-content-nav-div {
     width: 1170px;
   }
 }
-/* line 134, ../scss/main.scss */
+/* line 154, ../scss/main.scss */
 .title-and-content-nav-div .content-main-title {
   text-align: center !important;
   padding: 30px 0px 25px 0px;
 }
 @media (min-width: 0px) {
-  /* line 139, ../scss/main.scss */
+  /* line 159, ../scss/main.scss */
   .title-and-content-nav-div .content-nav {
     width: 100%;
     margin: 20px 0 50px 0;
   }
 }
 @media (min-width: 768px) {
-  /* line 139, ../scss/main.scss */
+  /* line 159, ../scss/main.scss */
   .title-and-content-nav-div .content-nav {
     width: 450px;
     margin: 20px 150px 50px 150px;
   }
 }
 @media (min-width: 992px) {
-  /* line 139, ../scss/main.scss */
+  /* line 159, ../scss/main.scss */
   .title-and-content-nav-div .content-nav {
     width: 582px;
     margin: 20px 194px 50px 194px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 139, ../scss/main.scss */
+  /* line 159, ../scss/main.scss */
   .title-and-content-nav-div .content-nav {
     width: 702px;
     margin: 20px 234px 50px 234px;
   }
 }
-/* line 168, ../scss/main.scss */
+/* line 188, ../scss/main.scss */
 .title-and-content-nav-div .btn-nav, .title-and-content-nav-div button.btn-nav:visited, .title-and-content-nav-div button.btn-nav:focus, .title-and-content-nav-div button.btn-nav:active {
   font-size: 17px;
   font-weight: normal;
@@ -8028,12 +8051,12 @@ button, button:visited, button:focus, button:active, button:hover {
   border: none;
   background-color: #ddd;
 }
-/* line 178, ../scss/main.scss */
+/* line 198, ../scss/main.scss */
 .title-and-content-nav-div button.btn-nav:hover {
   background-color: #eee;
 }
 
-/* line 183, ../scss/main.scss */
+/* line 203, ../scss/main.scss */
 .remaining-content-div {
   margin-right: auto;
   margin-left: auto;
@@ -8051,28 +8074,28 @@ button, button:visited, button:focus, button:active, button:hover {
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 183, ../scss/main.scss */
+  /* line 203, ../scss/main.scss */
   .remaining-content-div {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  /* line 183, ../scss/main.scss */
+  /* line 203, ../scss/main.scss */
   .remaining-content-div {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 183, ../scss/main.scss */
+  /* line 203, ../scss/main.scss */
   .remaining-content-div {
     width: 1170px;
   }
 }
-/* line 198, ../scss/main.scss */
+/* line 218, ../scss/main.scss */
 .remaining-content-div .inner-content-div {
   margin: 30px auto 80px auto;
 }
-/* line 202, ../scss/main.scss */
+/* line 222, ../scss/main.scss */
 .remaining-content-div .btn-to-top, .remaining-content-div button.btn-to-top:visited, .remaining-content-div button.btn-to-top:focus, .remaining-content-div button.btn-to-top:active {
   font-size: 10px;
   height: 15px !important;
@@ -8083,20 +8106,20 @@ button, button:visited, button:focus, button:active, button:hover {
   color: #333;
   background-color: #ddd;
 }
-/* line 213, ../scss/main.scss */
+/* line 233, ../scss/main.scss */
 .remaining-content-div button.btn-to-top:hover {
   background-color: #eee;
 }
-/* line 217, ../scss/main.scss */
+/* line 237, ../scss/main.scss */
 .remaining-content-div .content-sub-title {
   margin-bottom: 30px;
   text-align: center;
 }
-/* line 222, ../scss/main.scss */
+/* line 242, ../scss/main.scss */
 .remaining-content-div .content-link-align {
   text-align: center;
 }
-/* line 226, ../scss/main.scss */
+/* line 246, ../scss/main.scss */
 .remaining-content-div .content-link, .remaining-content-div a.content-link:visited, .remaining-content-div a.content-link:active {
   color: #333;
   border-radius: 5px;
@@ -8110,7 +8133,7 @@ button, button:visited, button:focus, button:active, button:hover {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 238, ../scss/main.scss */
+/* line 258, ../scss/main.scss */
 .remaining-content-div a.content-link:hover {
   color: #777;
   border-radius: 5px;
@@ -8121,11 +8144,11 @@ button, button:visited, button:focus, button:active, button:hover {
   padding-left: 2px;
   padding-right: 2px;
 }
-/* line 249, ../scss/main.scss */
+/* line 269, ../scss/main.scss */
 .remaining-content-div .desc-p {
   margin-bottom: 55px;
 }
-/* line 253, ../scss/main.scss */
+/* line 273, ../scss/main.scss */
 .remaining-content-div .content-img-div:before {
   height: 65px;
   content: '';
@@ -8133,14 +8156,14 @@ button, button:visited, button:focus, button:active, button:hover {
   float: right;
 }
 @media (min-width: 0px) {
-  /* line 260, ../scss/main.scss */
+  /* line 280, ../scss/main.scss */
   .remaining-content-div .content-image {
     visibility: hidden;
     display: none;
   }
 }
 @media (min-width: 768px) {
-  /* line 260, ../scss/main.scss */
+  /* line 280, ../scss/main.scss */
   .remaining-content-div .content-image {
     display: block;
     visibility: visible;
@@ -8152,33 +8175,33 @@ button, button:visited, button:focus, button:active, button:hover {
     float: right;
   }
 }
-/* line 277, ../scss/main.scss */
+/* line 297, ../scss/main.scss */
 .remaining-content-div .content-p {
   padding-top: 15px;
   text-align: justify;
   line-height: 1.75;
 }
 
-/* line 284, ../scss/main.scss */
+/* line 304, ../scss/main.scss */
 .outer-content-div {
   display: none;
   background-color: #eee;
   margin: 42px auto 0 auto;
 }
 @media (min-width: 768px) {
-  /* line 284, ../scss/main.scss */
+  /* line 304, ../scss/main.scss */
   .outer-content-div {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  /* line 284, ../scss/main.scss */
+  /* line 304, ../scss/main.scss */
   .outer-content-div {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 284, ../scss/main.scss */
+  /* line 304, ../scss/main.scss */
   .outer-content-div {
     width: 1170px;
   }
@@ -8187,47 +8210,48 @@ button, button:visited, button:focus, button:active, button:hover {
 /****************/
 /* home.php CSS */
 /****************/
-/* line 304, ../scss/main.scss */
+/* line 324, ../scss/main.scss */
 .home-content {
   margin: auto;
   text-align: center;
   padding-top: 50px;
 }
-/* line 309, ../scss/main.scss */
+/* line 329, ../scss/main.scss */
 .home-content .name-link, .home-content a.name-link:active, .home-content a.name-link:visited, .home-content a.name-link:focus {
   color: #333;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 314, ../scss/main.scss */
+/* line 334, ../scss/main.scss */
 .home-content a.name-link:hover {
   color: #eee;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 319, ../scss/main.scss */
+/* line 339, ../scss/main.scss */
 .home-content .name {
   font-weight: 100;
   font-size: 40px;
 }
-/* line 324, ../scss/main.scss */
+/* line 344, ../scss/main.scss */
 .home-content .title {
   font-weight: 700;
   font-size: 60px;
 }
-/* line 329, ../scss/main.scss */
+/* line 349, ../scss/main.scss */
 .home-content .hobbies {
   font-size: 50px;
 }
 
-/* line 334, ../scss/main.scss */
+/* line 354, ../scss/main.scss */
 .social-icons {
+  margin: auto;
   padding-top: 40px;
 }
 
-/* line 339, ../scss/main.scss */
+/* line 360, ../scss/main.scss */
 .fb-icon, .fb-pages-icon, .yt-icon, .li-icon, .gh-icon {
   background-size: 30px, 30px;
   height: 0;
@@ -8241,7 +8265,7 @@ button, button:visited, button:focus, button:active, button:hover {
   transition: all 0.3s ease;
 }
 
-/* line 355, ../scss/main.scss */
+/* line 376, ../scss/main.scss */
 .fb-icon {
   background-image: url("../assets/images/FB-icon.png");
 }
@@ -8250,7 +8274,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background-image: url("../assets/images/FB-icon-h.png");
 }
 
-/* line 360, ../scss/main.scss */
+/* line 383, ../scss/main.scss */
 .fb-pages-icon {
   background-image: url("../assets/images/FB-pages-icon.png");
 }
@@ -8259,7 +8283,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background-image: url("../assets/images/FB-pages-icon-h.png");
 }
 
-/* line 365, ../scss/main.scss */
+/* line 390, ../scss/main.scss */
 .yt-icon {
   background-image: url("../assets/images/YT-icon.png");
 }
@@ -8268,7 +8292,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background-image: url("../assets/images/YT-icon-h.png");
 }
 
-/* line 370, ../scss/main.scss */
+/* line 397, ../scss/main.scss */
 .li-icon {
   background-image: url("../assets/images/LI-icon.png");
 }
@@ -8277,7 +8301,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background-image: url("../assets/images/LI-icon-h.png");
 }
 
-/* line 375, ../scss/main.scss */
+/* line 404, ../scss/main.scss */
 .gh-icon {
   background-image: url("../assets/images/GH-icon.png");
 }
@@ -8286,7 +8310,52 @@ button, button:visited, button:focus, button:active, button:hover {
   background-image: url("../assets/images/GH-icon-h.png");
 }
 
-/* line 379, ../scss/main.scss */
+/* line 411, ../scss/main.scss */
+.fb-icon-inv {
+  background-image: url("../assets/images/FB-icon-h.png");
+}
+/* line 23, ../scss/main.scss */
+.fb-icon-inv.fb-icon-inv:hover {
+  background-image: url("../assets/images/FB-icon.png");
+}
+
+/* line 418, ../scss/main.scss */
+.fb-pages-icon-inv {
+  background-image: url("../assets/images/FB-pages-icon-h.png");
+}
+/* line 23, ../scss/main.scss */
+.fb-pages-icon-inv.fb-pages-icon-inv:hover {
+  background-image: url("../assets/images/FB-pages-icon.png");
+}
+
+/* line 425, ../scss/main.scss */
+.yt-icon-inv {
+  background-image: url("../assets/images/YT-icon-h.png");
+}
+/* line 23, ../scss/main.scss */
+.yt-icon-inv.yt-icon-inv:hover {
+  background-image: url("../assets/images/YT-icon.png");
+}
+
+/* line 432, ../scss/main.scss */
+.li-icon-inv {
+  background-image: url("../assets/images/LI-icon-h.png");
+}
+/* line 23, ../scss/main.scss */
+.li-icon-inv.li-icon-inv:hover {
+  background-image: url("../assets/images/LI-icon.png");
+}
+
+/* line 439, ../scss/main.scss */
+.gh-icon-inv {
+  background-image: url("../assets/images/GH-icon-h.png");
+}
+/* line 23, ../scss/main.scss */
+.gh-icon-inv.gh-icon-inv:hover {
+  background-image: url("../assets/images/GH-icon.png");
+}
+
+/* line 445, ../scss/main.scss */
 hr {
   border: 0;
   height: 1px;
@@ -8299,19 +8368,19 @@ hr {
 /********************/
 /* projects.php CSS */
 /********************/
-/* line 392, ../scss/main.scss */
+/* line 458, ../scss/main.scss */
 .git-hub-link {
   width: 100%;
 }
 
-/* line 396, ../scss/main.scss */
+/* line 462, ../scss/main.scss */
 .git-hub-icon {
   padding-top: 40px;
   display: block;
   margin: auto;
 }
 
-/* line 402, ../scss/main.scss */
+/* line 468, ../scss/main.scss */
 .projects-page-description {
   width: 500px;
   padding-top: 10px;
@@ -8320,16 +8389,16 @@ hr {
   font-weight: normal;
 }
 
-/* line 410, ../scss/main.scss */
+/* line 476, ../scss/main.scss */
 .past-current-btns {
   margin-left: auto;
   margin-right: auto;
-  width: 204px;
+  width: 221.33333px;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 416, ../scss/main.scss */
+/* line 482, ../scss/main.scss */
 .past-current-btns .btn {
   background-color: transparent;
   border-top: none;
@@ -8339,41 +8408,41 @@ hr {
   font-size: 16px;
   font-weight: 300;
 }
-/* line 426, ../scss/main.scss */
+/* line 492, ../scss/main.scss */
 .past-current-btns .btn:hover {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 430, ../scss/main.scss */
+/* line 496, ../scss/main.scss */
 .past-current-btns .btn:visited, .past-current-btns .btn:active {
   background-color: transparent;
 }
-/* line 434, ../scss/main.scss */
+/* line 500, ../scss/main.scss */
 .past-current-btns .btn:focus {
   background-color: none;
 }
-/* line 438, ../scss/main.scss */
+/* line 504, ../scss/main.scss */
 .past-current-btns .active {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 442, ../scss/main.scss */
+/* line 508, ../scss/main.scss */
 .past-current-btns .past {
   border-right: 1px dashed rgba(20, 20, 20, 0.3);
   text-align: right;
   padding-right: 15px;
 }
-/* line 448, ../scss/main.scss */
+/* line 514, ../scss/main.scss */
 .past-current-btns .current {
   border-right: none;
   text-align: left;
   padding-left: 15px;
 }
 
-/* line 455, ../scss/main.scss */
+/* line 521, ../scss/main.scss */
 .btns-inactive {
   padding-top: 60px;
 }
 
-/* line 459, ../scss/main.scss */
+/* line 525, ../scss/main.scss */
 .btns-active {
   padding-top: 25px;
 }
@@ -8381,14 +8450,14 @@ hr {
 /*****************************/
 /* art.php and music.php CSS */
 /*****************************/
-/* line 467, ../scss/main.scss */
+/* line 533, ../scss/main.scss */
 .active-modal-div {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-/* line 471, ../scss/main.scss */
+/* line 537, ../scss/main.scss */
 .modal-active {
   position: fixed;
   top: 50%;
@@ -8407,12 +8476,12 @@ hr {
   transition: all 0.3s ease;
 }
 
-/* line 486, ../scss/main.scss */
+/* line 552, ../scss/main.scss */
 img.modal-active:hover {
   background-color: #999;
 }
 
-/* line 490, ../scss/main.scss */
+/* line 556, ../scss/main.scss */
 .blur {
   -webkit-filter: blur(5px) grayscale(50%);
   -moz-filter: blur(5px) grayscale(50%);
@@ -8427,7 +8496,7 @@ img.modal-active:hover {
   transition: all 0.3s ease;
 }
 
-/* line 496, ../scss/main.scss */
+/* line 562, ../scss/main.scss */
 .art-sketch {
   display: block;
   margin: 40px auto 10px auto;
@@ -8438,13 +8507,13 @@ img.modal-active:hover {
   border-radius: 10px;
 }
 
-/* line 505, ../scss/main.scss */
+/* line 571, ../scss/main.scss */
 img.art-sketch:hover {
   -webkit-box-shadow: 0 0 20px #cccccc;
   box-shadow: 0 0 20px #cccccc;
 }
 
-/* line 509, ../scss/main.scss */
+/* line 575, ../scss/main.scss */
 .music-video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -8453,7 +8522,7 @@ img.art-sketch:hover {
   height: 0;
   color: #333;
 }
-/* line 517, ../scss/main.scss */
+/* line 583, ../scss/main.scss */
 .music-video-wrapper iframe {
   position: absolute;
   height: 100% !important;
@@ -8466,13 +8535,13 @@ img.art-sketch:hover {
 }
 
 @media (min-width: 0px) {
-  /* line 528, ../scss/main.scss */
+  /* line 594, ../scss/main.scss */
   .music-video-info {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 528, ../scss/main.scss */
+  /* line 594, ../scss/main.scss */
   .music-video-info {
     display: block;
     padding: 15px 15px 10px 15px;
@@ -8482,12 +8551,12 @@ img.art-sketch:hover {
     width: 95%;
   }
 }
-/* line 542, ../scss/main.scss */
+/* line 608, ../scss/main.scss */
 .music-video-info .video-views-h {
   text-align: center;
   margin: auto;
 }
-/* line 547, ../scss/main.scss */
+/* line 613, ../scss/main.scss */
 .music-video-info .music-video-desc {
   line-height: 1.5;
 }
@@ -8495,14 +8564,14 @@ img.art-sketch:hover {
 /*****************/
 /* about.php CSS */
 /*****************/
-/* line 556, ../scss/main.scss */
+/* line 622, ../scss/main.scss */
 .about-btns-div {
   margin: 15px auto 60px auto;
   padding-bottom: 20px;
   display: block;
   height: 60px;
 }
-/* line 562, ../scss/main.scss */
+/* line 628, ../scss/main.scss */
 .about-btns-div .about-btn, .about-btns-div button.about-btn:visited, .about-btns-div button.about-btn:focus, .about-btns-div button.about-btn:active {
   float: left;
   font-size: 20px;
@@ -8514,18 +8583,19 @@ img.art-sketch:hover {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 572, ../scss/main.scss */
+/* line 638, ../scss/main.scss */
 .about-btns-div button.about-btn:hover {
   border-radius: 30px;
   border-color: #999;
+  color: #999999;
 }
 @media (min-width: 0px) {
-  /* line 556, ../scss/main.scss */
+  /* line 622, ../scss/main.scss */
   .about-btns-div {
     width: 100%;
     display: block;
   }
-  /* line 583, ../scss/main.scss */
+  /* line 650, ../scss/main.scss */
   .about-btns-div .about-btn, .about-btns-div button.about-btn:visited, .about-btns-div button.about-btn:focus, .about-btns-div button.about-btn:active {
     width: 60%;
     height: 60px;
@@ -8533,11 +8603,11 @@ img.art-sketch:hover {
   }
 }
 @media (min-width: 768px) {
-  /* line 556, ../scss/main.scss */
+  /* line 622, ../scss/main.scss */
   .about-btns-div {
     width: 360px;
   }
-  /* line 592, ../scss/main.scss */
+  /* line 659, ../scss/main.scss */
   .about-btns-div .about-btn, .about-btns-div button.about-btn:visited, .about-btns-div button.about-btn:focus, .about-btns-div button.about-btn:active {
     width: 150px;
     height: 60px;
@@ -8545,19 +8615,19 @@ img.art-sketch:hover {
   }
 }
 
-/* line 600, ../scss/main.scss */
+/* line 667, ../scss/main.scss */
 .left-about-p-div {
   padding-bottom: 70px;
 }
 
 @media (min-width: 0px) {
-  /* line 604, ../scss/main.scss */
+  /* line 671, ../scss/main.scss */
   .right-about-img-div {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  /* line 604, ../scss/main.scss */
+  /* line 671, ../scss/main.scss */
   .right-about-img-div {
     display: inline;
     width: 187px;
@@ -8565,7 +8635,7 @@ img.art-sketch:hover {
     margin-left: 20px;
   }
 }
-/* line 618, ../scss/main.scss */
+/* line 685, ../scss/main.scss */
 .right-about-img-div .about-img {
   border-radius: 50%;
   -webkit-box-shadow: 0 0 10px #333333;
@@ -8573,7 +8643,7 @@ img.art-sketch:hover {
   margin-bottom: 20px;
 }
 
-/* line 625, ../scss/main.scss */
+/* line 692, ../scss/main.scss */
 .wpi-ul {
   margin-top: 35px;
 }
@@ -8581,14 +8651,14 @@ img.art-sketch:hover {
 /*****************/
 /* error.php CSS */
 /*****************/
-/* line 633, ../scss/main.scss */
+/* line 700, ../scss/main.scss */
 .error-title {
   text-align: center;
   font-weight: 300;
   padding-top: 70px;
 }
 
-/* line 639, ../scss/main.scss */
+/* line 706, ../scss/main.scss */
 .error-p {
   text-align: center;
   font-size: 15px;
