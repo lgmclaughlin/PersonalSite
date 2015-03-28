@@ -61,16 +61,12 @@ function setUpContent(clickedBtn) {
 }
 
 $(document).ready(function() {
-    /**
-     * Implement parallax scrolling
-     */
-    $(window).scroll(function() {
-        var speed = 12;
-        var img = new Image;
-        img.src = $(document.body).css('background-image').replace('url', '').replace('(', '').replace(')', '').replace('"', '').replace('"', '');
-        $(document.body).css('background-position', "50% " + (-window.pageYOffset / speed) + "px");
-    });
+    // Hide the content and footer
+    $('#past-prj-div').hide();
+    $('#current-prj-div').hide();
+    $('#footer').hide();
     
+    // Respond to button clicks
     $('#past-btn').click(function() {
         setUpContent($(this));
     });

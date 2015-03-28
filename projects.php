@@ -22,4 +22,3 @@
         echo $projectsPst->generateProjects('current');
     ?>
 </div>
-</div> <!-- close the main-container div from index.php to allow modal blur -->

@@ -70,21 +70,44 @@
 }
 
 .bottom-container {
-    padding-top: 200px;
+    padding-top: 270px;
 }
 
 .footer {
     text-align: center;
     position: absolute;
     bottom: 0;
-    display: none;
     width: 100%;
-    height: 150px;
+    height: 200px;
     background-color: rgba(30, 30, 30, .8);
 }
 
 .navbar-footer {
     color: #bbb;
+    margin-bottom: 30px
+}
+
+.con-res-link {
+    color: #000;
+    margin: 0px 20px 0 20px;
+    font-size: 20px;
+
+    &:hover {
+        color: #eee;
+    }
+}
+
+.con-res-link-footer {
+    margin: 0px 20px 0 20px;
+    font-size: 17px;
+}
+
+.copyright-p {
+    color: #777;
+}
+
+html, body {
+    height: 100%;
 }
 
 body {
@@ -92,7 +115,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 0%;
-    background-size: auto 140%;
+    background-size: auto auto;
     font-family: 'Lato', palatino linotype, sans-serif;
 }
 
@@ -302,7 +325,6 @@ button, button:visited, button:focus, button:active, button:hover {
 }
 
 .outer-content-div {
-    display: none;
     background-color: #eee;
     margin: 42px auto 0 auto;
 
@@ -324,7 +346,7 @@ button, button:visited, button:focus, button:active, button:hover {
 .home-content {
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 10px;
 
     .name-link, a.name-link:active, a.name-link:visited, a.name-link:focus {
         color: #333;
@@ -349,15 +371,21 @@ button, button:visited, button:focus, button:active, button:hover {
     .hobbies {
         font-size: 50px;
     }
+
+    .hr-div {
+        width: 400px;
+        margin: 40px auto 40px auto;
+    }
 }
 
 .social-icons {
     margin: auto;
-    padding-top: 40px;
+    padding-top: 25px;
 }
 
 // Apply general settings to all icons
-.fb-icon, .fb-pages-icon, .yt-icon, .li-icon, .gh-icon {
+.fb-icon, .fb-pages-icon, .yt-icon, .li-icon, .gh-icon,
+.fb-icon-inv, .fb-pages-icon-inv, .yt-icon-inv, .li-icon-inv, .gh-icon-inv {
     background-size: 30px, 30px;
     // Trick Chrome into thinking there is no image
     // Otherwise, a thin outline will appear since there

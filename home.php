@@ -2,6 +2,15 @@
     <p class="name"><a href="?p=about" class="name-link">Lucas McLaughlin</a></p>
     <p class="title">Web and software developer</p>
     <p class="hobbies">Musician and artist</p>
+    <div class="hr-div">
+        <hr />
+    </div>
+    <div class="con-res-links-div">
+        <div class="nav-container">
+            <a href="?p=contact" class="con-res-link">Contact</a>
+            <a href="?p=resume" class="con-res-link">Resume</a>
+        </div>
+    </div>
     <div class="social-icons">
         <a href="https://www.facebook.com/McLovin905" target="_blank">
             <img class="fb-icon" />
@@ -20,4 +29,3 @@
         </a>
     </div>
 </div>
-</div> <!-- close the main-container div from index.php to allow modal blur -->

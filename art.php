@@ -6,4 +6,4 @@
 <!-- Div for modal images -->
 <div class="active-modal-div" id="active-modal-div">
     <!-- Filled and cleared by jQuery in art.js -->
-</div>
+    <!-- Div is closed in index.html -->

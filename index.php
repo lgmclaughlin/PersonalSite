@@ -15,7 +15,7 @@
 
 <body>
     <div class="wrapper">
-        <div class='main-container' id='main-container'> <!-- gets closed in the generated php below -->
+        <div class='main-container' id='main-container'>
             <!-- Top container div for whitespace -->
             <div class="container top-container"></div>
 
@@ -42,19 +42,15 @@
                             include_once('home.php');
                             break;
                         case 'projects':
-                            echo '<script type="text/javascript" src="assets/javascripts/projects.js"></script>';
                             include_once('projects.php');
                             break;
                         case 'art':
-                            echo '<script type="text/javascript" src="assets/javascripts/art.js"></script>';
                             include_once('art.php');
                             break;
                         case 'music':
-                            echo '<script type="text/javascript" src="assets/javascripts/music.js"></script>';
                             include_once('music.php');
                             break;
                         case 'about':
-                            echo '<script type="text/javascript" src="assets/javascripts/about.js"></script>';
                             include_once('about.php');
                             break;
                         default:
@@ -65,6 +61,7 @@
                     include_once('home.php');
                 }
             ?>
+        </div>
 
         <!-- Bottom container div for whitespace between content and footer -->
         <div class="bottom-container"></div>
@@ -77,6 +74,12 @@
                         $nav = new NavBar();
                         echo $nav->generateNav();
                     ?>
+                </div>
+            </div>
+            <div class="con-res-links-div">
+                <div class="nav-container">
+                    <a href="?p=contact" class="con-res-link-footer">Contact</a>
+                    <a href="?p=resume" class="con-res-link-footer">Resume</a>
                 </div>
             </div>
             <div class="social-icons">
@@ -96,7 +99,42 @@
                     <img class="gh-icon-inv" />
                 </a>
             </div>
+            <p class="content-p footer-p">
+                
+            </p>
+            <p class="content-p copyright-p">
+                &copy 2015 Lucas McLaughlin. All Rights Reserved.
+            </p>
         </div>
     </div>
+    
+    <!-- Get scripts -->
+    <script type="text/javascript" src="assets/javascripts/main.js"></script>
+    <?php
+        if (isset($_GET['p'])) {
+            $p = $_GET['p'];
+
+            switch($p) {
+                case 'home':
+                    echo '<script type="text/javascript" src="assets/javascripts/home.js"></script>';
+                    break;
+                case 'projects':
+                    echo '<script type="text/javascript" src="assets/javascripts/projects.js"></script>';
+                    break;
+                case 'art':
+                    echo '<script type="text/javascript" src="assets/javascripts/art.js"></script>';
+                    break;
+                case 'music':
+                    echo '<script type="text/javascript" src="assets/javascripts/music.js"></script>';
+                    break;
+                case 'about':
+                    break;
+                case 'error':
+                    break;
+                default:
+                    break;
+            }
+        }
+    ?>
 </body>
 </html>
