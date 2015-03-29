@@ -4,8 +4,8 @@
     </div>
     <div class="remaining-content-div">
         <div class="about-btns-div">
-            <button class="about-btn">Contact</button>
-            <button class="about-btn">Resume</button>
+            <button class="about-btn" onclick="location.href='mailto:lgmclaughlin905@gmail.com'">Contact</button>
+            <button class="about-btn" onclick="window.open('assets/files/lucas-mclaughlin-resume.pdf', '_blank')">Resume</button>
         </div>
         <div class="right-about-img-div">
             <img src="assets/images/me1.jpg" class="about-img" />

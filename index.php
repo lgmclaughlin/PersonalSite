@@ -78,8 +78,8 @@
             </div>
             <div class="con-res-links-div">
                 <div class="nav-container">
-                    <a href="?p=contact" class="con-res-link-footer">Contact</a>
-                    <a href="?p=resume" class="con-res-link-footer">Resume</a>
+                    <a href="mailto:lgmclaughlin905@gmail.com" target="_blank" class="con-res-link-footer">Contact</a>
+                    <a href="assets/files/lucas-mclaughlin-resume.pdf" target="_blank" class="con-res-link-footer">Resume</a>
                 </div>
             </div>
             <div class="social-icons">
@@ -99,9 +99,6 @@
                     <img class="gh-icon-inv" />
                 </a>
             </div>
-            <p class="content-p footer-p">
-                
-            </p>
             <p class="content-p copyright-p">
                 &copy 2015 Lucas McLaughlin. All Rights Reserved.
             </p>
@@ -134,6 +131,8 @@
                 default:
                     break;
             }
+        } else {
+            echo '<script type="text/javascript" src="assets/javascripts/home.js"></script>';
         }
     ?>
 </body>

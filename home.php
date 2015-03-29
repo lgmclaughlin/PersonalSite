@@ -7,8 +7,8 @@
     </div>
     <div class="con-res-links-div">
         <div class="nav-container">
-            <a href="?p=contact" class="con-res-link">Contact</a>
-            <a href="?p=resume" class="con-res-link">Resume</a>
+            <a href="mailto:lgmclaughlin905@gmail.com" target="_blank" class="con-res-link">Contact</a>
+            <a href="assets/files/lucas-mclaughlin-resume.pdf" target="_blank" class="con-res-link">Resume</a>
         </div>
     </div>
     <div class="social-icons">

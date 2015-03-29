@@ -27,10 +27,13 @@ function setUpContent(clickedBtn) {
         $('#past-current-btns').removeClass('btns-active').addClass('btns-inactive');
         // Unhide the GitHub link
         $('#git-hub-link').slideDown();
-        // Hide the correct div, past or current
-        clickedDiv.slideUp();
         // Hide the footer
-        $('#footer').slideUp();
+        $('#footer').slideUp(function() {
+                // Hide the correct div, past or current,
+                // after the footer is hidden
+                clickedDiv.slideUp();
+            }
+        );
     } else {
         // Otherwise, always remove the active state
         // from the other element and add it to the new one
@@ -53,9 +56,10 @@ function setUpContent(clickedBtn) {
             clickedDiv.fadeIn(300);
         } else {
             // Display the correct div, past or current
-            clickedDiv.slideDown();
-            // Unhide the footer
-            $('#footer').slideDown();
+            clickedDiv.slideDown(function() {
+                // Unhide the footer once the content is visible
+                $('#footer').slideDown();
+            });
         }
     }
 }

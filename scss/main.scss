@@ -104,6 +104,7 @@
 
 .copyright-p {
     color: #777;
+    line-height: 1;
 }
 
 html, body {
@@ -112,10 +113,11 @@ html, body {
 
 body {
     background-image: url("../assets/images/home_background.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
     background-position: 50% 0%;
-    background-size: auto auto;
+    background-size: 1980px 1280px;
+
     font-family: 'Lato', palatino linotype, sans-serif;
 }
 
@@ -379,8 +381,9 @@ button, button:visited, button:focus, button:active, button:hover {
 }
 
 .social-icons {
-    margin: auto;
-    padding-top: 25px;
+    margin: 0 auto 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 // Apply general settings to all icons
