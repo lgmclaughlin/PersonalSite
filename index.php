@@ -6,7 +6,7 @@
     <meta name="description" content="My personal website. Enjoy!"/>
     <meta name="author" content="Lucas McLaughlin"/>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="initial-scale=.75, maximum-scale=.75" />
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="css/main.css" />
