@@ -329,7 +329,7 @@ class Projects {
         $html .= "  </div>\n";
 
         // Loop through each item and create the HTML of the content
-        $html .= "  <div class='remaining-content-div' id='{$prefix}-div'>\n";
+        $html .= "  <div class='remaining-content-div'>\n";
         foreach($projects as $key => $project) {
             $html .= "      <div class='inner-content-div'>\n";
             $html .= "          <a name='{$key}'></a>\n";

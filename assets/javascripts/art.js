@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    // Unhide footer
+    $('#footer').css('visibility', 'visible');
+
     /**
      * Select all modals and add modal functionality
      */

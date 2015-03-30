@@ -74,6 +74,7 @@
 }
 
 .footer {
+    visibility: hidden;
     text-align: center;
     position: absolute;
     bottom: 0;
@@ -502,6 +503,14 @@ hr {
     margin: auto;
     text-align: center;
     font-weight: normal;
+}
+
+#past-prj-div {
+    display: none;
+}
+
+#current-prj-div {
+    display: none;
 }
 
 .past-current-btns {

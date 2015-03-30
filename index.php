@@ -125,10 +125,10 @@
                     echo '<script type="text/javascript" src="assets/javascripts/music.js"></script>';
                     break;
                 case 'about':
-                    break;
-                case 'error':
+                    echo '<script type="text/javascript" src="assets/javascripts/about.js"></script>';
                     break;
                 default:
+                    echo '<script type="text/javascript" src="assets/javascripts/error.js"></script>';
                     break;
             }
         } else {

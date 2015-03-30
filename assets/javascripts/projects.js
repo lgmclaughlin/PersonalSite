@@ -28,12 +28,9 @@ function setUpContent(clickedBtn) {
         // Unhide the GitHub link
         $('#git-hub-link').slideDown();
         // Hide the footer
-        $('#footer').slideUp(function() {
-                // Hide the correct div, past or current,
-                // after the footer is hidden
-                clickedDiv.slideUp();
-            }
-        );
+        $('#footer').css('visibility', 'hidden');
+        // Hide the correct div, past or current
+        clickedDiv.slideUp();
     } else {
         // Otherwise, always remove the active state
         // from the other element and add it to the new one
@@ -58,18 +55,13 @@ function setUpContent(clickedBtn) {
             // Display the correct div, past or current
             clickedDiv.slideDown(function() {
                 // Unhide the footer once the content is visible
-                $('#footer').slideDown();
+                $('#footer').css('visibility', 'visible');
             });
         }
     }
 }
 
 $(document).ready(function() {
-    // Hide the content and footer
-    $('#past-prj-div').hide();
-    $('#current-prj-div').hide();
-    $('#footer').hide();
-    
     // Respond to button clicks
     $('#past-btn').click(function() {
         setUpContent($(this));
