@@ -536,7 +536,7 @@ class Music {
         foreach($music as $key => $video) {
             // Get video JSON
             // Suppress errors
-            @$json = file_get_contents("http://gdata.youtube.com/feeds/api/videos/" . $video['id'] . "?v=2&alt=json");
+            @$json = file_get_contents("https://gdata.youtube.com/feeds/api/videos/" . $video['id'] . "?v=2&alt=json");
            
             // Check for errors retrieving from YouTube
             if (!$json) {
@@ -554,7 +554,7 @@ class Music {
             $html .= "          <h3 class='content-sub-title'>{$video['title']}</h3>\n";
             $html .= "          <div class='modal-video'>\n";
             $html .= "              <div class='music-video-wrapper'>\n";
-            $html .= "                  <iframe src='http://www.youtube.com/v/{$video['id']}' class='music-video'></iframe>\n";
+            $html .= "                  <iframe src='https://www.youtube.com/v/{$video['id']}' class='music-video'></iframe>\n";
             $html .= "              </div>\n";
             $html .= "          </div>\n";
             $html .= "          <div class='music-video-info'>\n";

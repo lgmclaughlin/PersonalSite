@@ -17,11 +17,19 @@
  * and the hover image as the image displayed when
  * the user hovers over the icon
  */
-@mixin social-icon-bg-img($normal, $hover, $class) {
-    background-image: url("#{$normal}.png");
+@mixin social-icon-bg-img($class, $x, $y) {
+    background: url("../assets/images/socialiconsprites30x30.png") $x $y;
 
     &.#{$class}:hover {
-        background-image: url("#{$hover}.png");
+        background: url("../assets/images/socialiconsprites30x30.png") $x $y - 31px;
+    }
+}
+
+@mixin social-icon-bg-img-inv($class, $x, $y) {
+    background: url("../assets/images/socialiconsprites30x30.png") $x $y - 31px;
+
+    &.#{$class}:hover {
+        background: url("../assets/images/socialiconsprites30x30.png") $x $y;
     }
 }
 
@@ -390,7 +398,6 @@ button, button:visited, button:focus, button:active, button:hover {
 // Apply general settings to all icons
 .fb-icon, .fb-pages-icon, .yt-icon, .li-icon, .gh-icon,
 .fb-icon-inv, .fb-pages-icon-inv, .yt-icon-inv, .li-icon-inv, .gh-icon-inv {
-    background-size: 30px, 30px;
     // Trick Chrome into thinking there is no image
     // Otherwise, a thin outline will appear since there
     // is no src
@@ -401,77 +408,66 @@ button, button:visited, button:focus, button:active, button:hover {
     margin: 0 15px 0 15px;
     // Add padding all around to allow 30x30 background img
     padding: 15px 15px 15px 15px;
-    @include transition(all 0.3s ease);
 }
 
 // Set FB-icon background image for static and hover
 .fb-icon {
-    @include social-icon-bg-img("../assets/images/FB-icon", 
-                                "../assets/images/FB-icon-h", 
-                                "fb-icon");
+    @include social-icon-bg-img("fb-icon",
+                                0, 0);
 }
 
 // Set fb-pages-icon background image for static and hover
 .fb-pages-icon {
-    @include social-icon-bg-img("../assets/images/FB-pages-icon", 
-                                "../assets/images/FB-pages-icon-h", 
-                                "fb-pages-icon");
+    @include social-icon-bg-img("fb-pages-icon",
+                                -31px, 0);
 }
 
 // Set yt-icon background image for static and hover
 .yt-icon {
-    @include social-icon-bg-img("../assets/images/YT-icon", 
-                                "../assets/images/YT-icon-h", 
-                                "yt-icon");
+    @include social-icon-bg-img("yt-icon",
+                                -62px, 0);
 }
 
 // Set li-icon background image for static and hover
 .li-icon {
-    @include social-icon-bg-img("../assets/images/LI-icon", 
-                                "../assets/images/LI-icon-h", 
-                                "li-icon");
+    @include social-icon-bg-img("li-icon",
+                                -93px, 0);
 }
 
 // Set gh-icon background image for static and hover
 .gh-icon {
-    @include social-icon-bg-img("../assets/images/GH-icon", 
-                                "../assets/images/GH-icon-h", 
-                                "gh-icon");
+    @include social-icon-bg-img("gh-icon",
+                                -124px, 0);
 }
 
 // Set FB-icon background image for static and hover
 .fb-icon-inv {
-    @include social-icon-bg-img("../assets/images/FB-icon-h",
-                                "../assets/images/FB-icon",  
-                                "fb-icon-inv");
+    @include social-icon-bg-img-inv("fb-icon-inv",
+                                    0, 0);
 }
 
 // Set fb-pages-icon background image for static and hover
 .fb-pages-icon-inv {
-    @include social-icon-bg-img("../assets/images/FB-pages-icon-h",
-                                "../assets/images/FB-pages-icon",  
-                                "fb-pages-icon-inv");
+    @include social-icon-bg-img-inv("fb-pages-icon-inv",
+                                    -31px, 0);
 }
 
 // Set yt-icon background image for static and hover
 .yt-icon-inv {
-    @include social-icon-bg-img("../assets/images/YT-icon-h", 
-                                "../assets/images/YT-icon", 
-                                "yt-icon-inv");
+    @include social-icon-bg-img-inv("yt-icon-inv",
+                                    -62px, 0);
 }
 
 // Set li-icon background image for static and hover
 .li-icon-inv {
-    @include social-icon-bg-img("../assets/images/LI-icon-h",
-                                "../assets/images/LI-icon", 
-                                "li-icon-inv");
+    @include social-icon-bg-img-inv("li-icon-inv",
+                                    -93px, 0);
 }
 
 // Set gh-icon background image for static and hover
 .gh-icon-inv {
-    @include social-icon-bg-img("../assets/images/GH-icon-h", 
-                                "../assets/images/GH-icon", 
-                                "gh-icon-inv");
+    @include social-icon-bg-img-inv("gh-icon-inv",
+                                    -124px, 0);
 }
 
 hr {
