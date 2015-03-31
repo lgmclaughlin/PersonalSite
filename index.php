@@ -5,12 +5,10 @@
 <head>
     <meta name="description" content="My personal website. Enjoy!"/>
     <meta name="author" content="Lucas McLaughlin"/>
-    <meta charset="UTF-8"/>
     <meta name="viewport" content="initial-scale=.75, maximum-scale=.75" />
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="css/main.css" />
-    <script type="text/javascript" src="assets/javascripts/jquery-2-1-3.min.js"></script>
+    <link rel="stylesheet" href="css/main.min.css" />
 </head>
 
 <body>
@@ -105,34 +103,45 @@
         </div>
     </div>
     
-    <!-- Get scripts -->
-    <script type="text/javascript" src="assets/javascripts/main.js"></script>
+    <!-- GET SCRIPTS -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <!-- Inline small scripts -->
+
+    <!-- Main page script -->
+    <script>
+        $(document).ready(function(){$(window).scroll(function(){var e=12,c=new Image;c.src=$(document.body).css("background-image").replace("url","").replace("(","").replace(")","").replace('"',"").replace('"',""),$(document.body).css("background-position","50% "+-window.pageYOffset/e+"px")})});
+    </script>
+
     <?php
         if (isset($_GET['p'])) {
             $p = $_GET['p'];
 
             switch($p) {
                 case 'home':
-                    echo '<script type="text/javascript" src="assets/javascripts/home.js"></script>';
                     break;
                 case 'projects':
-                    echo '<script type="text/javascript" src="assets/javascripts/projects.js"></script>';
+                    echo '<script type="text/javascript" src="assets/javascripts/projects.min.js"></script>';
                     break;
                 case 'art':
-                    echo '<script type="text/javascript" src="assets/javascripts/art.js"></script>';
+                    echo '<script type="text/javascript" src="assets/javascripts/art.min.js"></script>';
                     break;
                 case 'music':
-                    echo '<script type="text/javascript" src="assets/javascripts/music.js"></script>';
+                    echo '<script>
+                        $(document).ready(function(){$("#footer").css("visibility","visible"),$(".music-video").bind("error",function(){window.location.reload()})});
+                    </script>';
                     break;
                 case 'about':
-                    echo '<script type="text/javascript" src="assets/javascripts/about.js"></script>';
+                    echo '<script>
+                        $(document).ready(function(){$("#footer").css("visibility","visible")});
+                    </script>';
                     break;
                 default:
-                    echo '<script type="text/javascript" src="assets/javascripts/error.js"></script>';
+                    echo '<script>
+                        $(document).ready(function(){$("#footer").css("visibility","visible")});
+                    </script>';
                     break;
             }
-        } else {
-            echo '<script type="text/javascript" src="assets/javascripts/home.js"></script>';
         }
     ?>
 </body>
