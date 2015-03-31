@@ -69,7 +69,7 @@ class NavBar {
         // Loop through each item and create the HTML of the Nav
         $html = "";
         foreach($navbar as $link) {
-            $html .= "<li class='{$link['class']}'><a href='{$link['url']}'>{$link['text']}</a>";
+            $html .= "<li class='{$link['class']}'><a href='{$link['url']}'>{$link['text']}</a>\n";
         }
 
         return $html;
@@ -311,45 +311,45 @@ class Projects {
         }
 
         // Open the outermost div
-        $html = "<div class='outer-content-div' id='{$prefix}-div'>";
+        $html = "<div class='outer-content-div' id='{$prefix}-div'>\n";
 
         // Create the title and top anchor
         $html .= "  <div class='title-and-content-nav-div'>";
-        $html .= "      <a name='{$prefix}-nav'></a>";
-        $html .= "      <h1 class='content-main-title'>{$pageTitle}</h1>";
+        $html .= "      <a name='{$prefix}-nav'></a>\n";
+        $html .= "      <h1 class='content-main-title'>{$pageTitle}</h1>\n";
         
         // Create the project content nav bar
-        $html .= "      <div class='btn-group-vertical content-nav'>";
+        $html .= "      <div class='btn-group-vertical content-nav'>\n";
         foreach($projects as $key => $project) {
-            $html .= "          <button type='button' class='btn btn-default btn-nav' onclick=\"location.href ='#{$key}'\">{$project['title']}</button>";
+            $html .= "          <button type='button' class='btn btn-default btn-nav' onclick=\"location.href ='#{$key}'\">{$project['title']}</button>\n";
         }
-        $html .= "      </div>";
+        $html .= "      </div>\n";
 
         // Close the title/nav div
-        $html .= "  </div>";
+        $html .= "  </div>\n";
 
         // Loop through each item and create the HTML of the content
-        $html .= "  <div class='remaining-content-div'>";
+        $html .= "  <div class='remaining-content-div'>\n";
         foreach($projects as $key => $project) {
-            $html .= "      <div class='inner-content-div'>";
-            $html .= "          <a name='{$key}'></a>";
-            $html .= "          <h3 class='content-sub-title'>{$project['title']}</h3>";
-            $html .= "          <h4 class='content-link-align'><a href='{$project['link']}' class='content-link' target='_blank'>{$project['link-text']}</a></h4>";
+            $html .= "      <div class='inner-content-div'>\n";
+            $html .= "          <a name='{$key}'></a>\n";
+            $html .= "          <h3 class='content-sub-title'>{$project['title']}</h3>\n";
+            $html .= "          <h4 class='content-link-align'><a href='{$project['link']}' class='content-link' target='_blank'>{$project['link-text']}</a></h4>\n";
             if ($project['image']) {
-                $html .= "          <div class='content-img-div'>";
-                $html .= "              <img src='{$project['image']}' class='content-image' />";
-                $html .= "          </div>";
+                $html .= "          <div class='content-img-div'>\n";
+                $html .= "              <img src='{$project['image']}' class='content-image' />\n";
+                $html .= "          </div>\n";
             }
-            $html .= "          <p class='content-p'>{$project['description']}</p>";
-            $html .= "          <div class='content-nav'>";
-            $html .= "              <button type='button' class='btn btn-default btn-to-top' onclick=\"location.href = '#{$prefix}-nav'\">To Top</button>";
-            $html .= "          </div>";
-            $html .= "      </div>";
+            $html .= "          <p class='content-p'>{$project['description']}</p>\n";
+            $html .= "          <div class='content-nav'>\n";
+            $html .= "              <button type='button' class='btn btn-default btn-to-top' onclick=\"location.href = '#{$prefix}-nav'\">To Top</button>\n";
+            $html .= "          </div>\n";
+            $html .= "      </div>\n";
         }
-        $html .= "  </div>";
+        $html .= "  </div>\n";
 
         // Close the outermost div
-        $html .= "</div>";
+        $html .= "</div>\n";
 
         return $html;
     }
@@ -407,44 +407,44 @@ class Art {
         $pageDesc = $this->pageDesc;
 
         // Create the html with the title and page description
-        $html = "<div class='outer-content-div' id='{$prefix}-div'>";
-        $html .= "  <div class='title-and-content-nav-div'>";
-        $html .= "      <a name='{$prefix}-nav'></a>";
-        $html .= "      <h1 class='content-main-title'>{$pageTitle}</h1>";
-        $html .= "      <div class='remaining-content-div'>";
-        $html .= "          <p class='desc-p content-p'>{$pageDesc}</h1>";
-        $html .= "      </div>";
+        $html = "<div class='outer-content-div' id='{$prefix}-div'>\n";
+        $html .= "  <div class='title-and-content-nav-div'>\n";
+        $html .= "      <a name='{$prefix}-nav'></a>\n";
+        $html .= "      <h1 class='content-main-title'>{$pageTitle}</h1>\n";
+        $html .= "      <div class='remaining-content-div'>\n";
+        $html .= "          <p class='desc-p content-p'>{$pageDesc}</h1>\n";
+        $html .= "      </div>\n";
         
         // Create the project content nav bar
-        $html .= "      <div class='btn-group-vertical content-nav'>";
+        $html .= "      <div class='btn-group-vertical content-nav'>\n";
         foreach($art as $key => $sketch) {
-            $html .= "          <button type='button' class='btn btn-default btn-nav' onclick=\"location.href ='#{$key}'\">{$sketch['title']}</button>";
+            $html .= "          <button type='button' class='btn btn-default btn-nav' onclick=\"location.href ='#{$key}'\">{$sketch['title']}</button>\n";
         }
-        $html .= "      </div>";
+        $html .= "      </div>\n";
 
         // Close the title/nav div
-        $html .= "  </div>";
+        $html .= "  </div>\n";
 
         // Loop through each item and create the HTML of the content
-        $html .= "  <div class='remaining-content-div' id='{$prefix}-div'>";
+        $html .= "  <div class='remaining-content-div' id='{$prefix}-div'>\n";
         $i = 0; // Loop counter
         foreach($art as $key => $sketch) {
-            $html .= "      <div class='inner-content-div'>";
-            $html .= "          <a name='{$key}'></a>";
-            $html .= "          <h3 class='content-sub-title'>{$sketch['title']}</h3>";
-            $html .= "          <div class='modal-image'>";
-            $html .= "              <img src='{$sketch['src']}' class='art-sketch' id='modal{$i}' />";
-            $html .= "          </div>";
-            $html .= "          <div class='content-nav'>";
-            $html .= "              <button type='button' class='btn btn-default btn-to-top' onclick=\"location.href = '#{$prefix}-nav'\">To Top</button>";
-            $html .= "          </div>";
-            $html .= "      </div>";
+            $html .= "      <div class='inner-content-div'>\n";
+            $html .= "          <a name='{$key}'></a>\n";
+            $html .= "          <h3 class='content-sub-title'>{$sketch['title']}</h3>\n";
+            $html .= "          <div class='modal-image'>\n";
+            $html .= "              <img src='{$sketch['src']}' class='art-sketch' id='modal{$i}' />\n";
+            $html .= "          </div>\n";
+            $html .= "          <div class='content-nav'>\n";
+            $html .= "              <button type='button' class='btn btn-default btn-to-top' onclick=\"location.href = '#{$prefix}-nav'\">To Top</button>\n";
+            $html .= "          </div>\n";
+            $html .= "      </div>\n";
             $i++;   
         }
-        $html .= "  </div>";
+        $html .= "  </div>\n";
 
         // Close the outermost div
-        $html .= "</div>";
+        $html .= "</div>\n";
 
         return $html;
     }
@@ -511,28 +511,28 @@ class Music {
         $pageDesc = $this->pageDesc;
 
         // Create the html with the title and page description
-        $html = "<div class='outer-content-div' id='{$prefix}-div'>";
-        $html .= "  <div class='title-and-content-nav-div'>";
-        $html .= "      <a name='{$prefix}-nav'></a>";
-        $html .= "      <h1 class='content-main-title'>{$pageTitle}</h1>";
-        $html .= "      <div class='remaining-content-div'>";
-        $html .= "          <p class='desc-p content-p'>{$pageDesc}</h1>";
-        $html .= "      </div>";
+        $html = "<div class='outer-content-div' id='{$prefix}-div'>\n";
+        $html .= "  <div class='title-and-content-nav-div'>\n";
+        $html .= "      <a name='{$prefix}-nav'></a>\n";
+        $html .= "      <h1 class='content-main-title'>{$pageTitle}</h1>\n";
+        $html .= "      <div class='remaining-content-div'>\n";
+        $html .= "          <p class='desc-p content-p'>{$pageDesc}</h1>\n";
+        $html .= "      </div>\n";
         
         // Create the project content nav bar
-        $html .= "      <div class='btn-group-vertical content-nav'>";
+        $html .= "      <div class='btn-group-vertical content-nav'>\n";
         foreach($music as $key => $video) {
-            $html .= "          <button type='button' class='btn btn-default btn-nav' onclick=\"location.href ='#{$key}'\">{$video['title']}</button>";
+            $html .= "          <button type='button' class='btn btn-default btn-nav' onclick=\"location.href ='#{$key}'\">{$video['title']}</button>\n";
         }
-        $html .= "      </div>";
+        $html .= "      </div>\n";
 
         // Close the title/nav div
-        $html .= "  </div>";
+        $html .= "  </div>\n";
 
         // Loop through each item and create the HTML of the content;
         // For videos, this requires getting description and view counter
         // for each
-        $html .= "  <div class='remaining-content-div' id='{$prefix}-div'>";
+        $html .= "  <div class='remaining-content-div' id='{$prefix}-div'>\n";
         foreach($music as $key => $video) {
             // Get video JSON
             // Suppress errors
@@ -549,31 +549,31 @@ class Music {
             $videoDesc  = $json['entry']['media$group']['media$description']['$t'];
             $videoViews = $json['entry']['yt$statistics']['viewCount'];
 
-            $html .= "      <div class='inner-content-div'>";
-            $html .= "          <a name='{$key}'></a>";
-            $html .= "          <h3 class='content-sub-title'>{$video['title']}</h3>";
-            $html .= "          <div class='modal-video'>";
-            $html .= "              <div class='music-video-wrapper'>";
-            $html .= "                  <iframe src='https://www.youtube.com/v/{$video['id']}' class='music-video'></iframe>";
-            $html .= "              </div>";
-            $html .= "          </div>";
-            $html .= "          <div class='music-video-info'>";
-            $html .= "              <div class='music-video-views'>";
-            $html .= "                  <h4 class='video-views-h'>Views: {$videoViews}</h4>";
-            $html .= "              </div>";
-            $html .= "              <div class='music-video-desc'>";
-            $html .= "                  <p class='video-desc-p'>{$videoDesc}</p>";
-            $html .= "              </div>";
-            $html .= "          </div>";
-            $html .= "          <div class='content-nav'>";
-            $html .= "              <button type='button' class='btn btn-default btn-to-top' onclick=\"location.href = '#{$prefix}-nav'\">To Top</button>";
-            $html .= "          </div>";
-            $html .= "      </div>";
+            $html .= "      <div class='inner-content-div'>\n";
+            $html .= "          <a name='{$key}'></a>\n";
+            $html .= "          <h3 class='content-sub-title'>{$video['title']}</h3>\n";
+            $html .= "          <div class='modal-video'>\n";
+            $html .= "              <div class='music-video-wrapper'>\n";
+            $html .= "                  <iframe src='https://www.youtube.com/v/{$video['id']}' class='music-video'></iframe>\n";
+            $html .= "              </div>\n";
+            $html .= "          </div>\n";
+            $html .= "          <div class='music-video-info'>\n";
+            $html .= "              <div class='music-video-views'>\n";
+            $html .= "                  <h4 class='video-views-h'>Views: {$videoViews}</h4>\n";
+            $html .= "              </div>\n";
+            $html .= "              <div class='music-video-desc'>\n";
+            $html .= "                  <p class='video-desc-p'>{$videoDesc}</p>\n";
+            $html .= "              </div>\n";
+            $html .= "          </div>\n";
+            $html .= "          <div class='content-nav'>\n";
+            $html .= "              <button type='button' class='btn btn-default btn-to-top' onclick=\"location.href = '#{$prefix}-nav'\">To Top</button>\n";
+            $html .= "          </div>\n";
+            $html .= "      </div>\n";
         }
-        $html .= "  </div>";
+        $html .= "  </div>\n";
 
         // Close the outermost div
-        $html .= "</div>";
+        $html .= "</div>\n";
 
         return $html;
     }
