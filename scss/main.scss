@@ -401,10 +401,12 @@ button, button:visited, button:focus, button:active, button:hover {
     // Trick Chrome into thinking there is no image
     // Otherwise, a thin outline will appear since there
     // is no src
+    box-sizing: padding-box !important;
+    font-size: 0;
     height: 0;
     width: 0;
     outline: none;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     margin: 0 15px 0 15px;
     // Add padding all around to allow 30x30 background img
     padding: 15px 15px 15px 15px;

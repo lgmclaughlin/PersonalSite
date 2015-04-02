@@ -4723,6 +4723,7 @@ button, button:visited, button:focus, button:active, button:hover {
 
 /* line 392, ../scss/main.scss */
 .social-icons {
+  font-size: 0;
   margin: 0 auto 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -4731,15 +4732,17 @@ button, button:visited, button:focus, button:active, button:hover {
 /* line 400, ../scss/main.scss */
 .fb-icon, .fb-pages-icon, .yt-icon, .li-icon, .gh-icon,
 .fb-icon-inv, .fb-pages-icon-inv, .yt-icon-inv, .li-icon-inv, .gh-icon-inv {
+  box-sizing: padding-box !important;
+  font-size: 0;
   height: 0;
   width: 0;
   outline: none;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   margin: 0 15px 0 15px;
   padding: 15px 15px 15px 15px;
 }
 
-/* line 414, ../scss/main.scss */
+/* line 416, ../scss/main.scss */
 .fb-icon {
   background: url("../assets/images/socialiconsprites30x30.png") 0 0;
 }
@@ -4748,7 +4751,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background: url("../assets/images/socialiconsprites30x30.png") 0 -31px;
 }
 
-/* line 420, ../scss/main.scss */
+/* line 422, ../scss/main.scss */
 .fb-pages-icon {
   background: url("../assets/images/socialiconsprites30x30.png") -31px 0;
 }
@@ -4757,7 +4760,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background: url("../assets/images/socialiconsprites30x30.png") -31px -31px;
 }
 
-/* line 426, ../scss/main.scss */
+/* line 428, ../scss/main.scss */
 .yt-icon {
   background: url("../assets/images/socialiconsprites30x30.png") -62px 0;
 }
@@ -4766,7 +4769,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background: url("../assets/images/socialiconsprites30x30.png") -62px -31px;
 }
 
-/* line 432, ../scss/main.scss */
+/* line 434, ../scss/main.scss */
 .li-icon {
   background: url("../assets/images/socialiconsprites30x30.png") -93px 0;
 }
@@ -4775,7 +4778,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background: url("../assets/images/socialiconsprites30x30.png") -93px -31px;
 }
 
-/* line 438, ../scss/main.scss */
+/* line 440, ../scss/main.scss */
 .gh-icon {
   background: url("../assets/images/socialiconsprites30x30.png") -124px 0;
 }
@@ -4784,7 +4787,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background: url("../assets/images/socialiconsprites30x30.png") -124px -31px;
 }
 
-/* line 444, ../scss/main.scss */
+/* line 446, ../scss/main.scss */
 .fb-icon-inv {
   background: url("../assets/images/socialiconsprites30x30.png") 0 -31px;
 }
@@ -4793,7 +4796,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background: url("../assets/images/socialiconsprites30x30.png") 0 0;
 }
 
-/* line 450, ../scss/main.scss */
+/* line 452, ../scss/main.scss */
 .fb-pages-icon-inv {
   background: url("../assets/images/socialiconsprites30x30.png") -31px -31px;
 }
@@ -4802,7 +4805,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background: url("../assets/images/socialiconsprites30x30.png") -31px 0;
 }
 
-/* line 456, ../scss/main.scss */
+/* line 458, ../scss/main.scss */
 .yt-icon-inv {
   background: url("../assets/images/socialiconsprites30x30.png") -62px -31px;
 }
@@ -4811,7 +4814,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background: url("../assets/images/socialiconsprites30x30.png") -62px 0;
 }
 
-/* line 462, ../scss/main.scss */
+/* line 464, ../scss/main.scss */
 .li-icon-inv {
   background: url("../assets/images/socialiconsprites30x30.png") -93px -31px;
 }
@@ -4820,7 +4823,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background: url("../assets/images/socialiconsprites30x30.png") -93px 0;
 }
 
-/* line 468, ../scss/main.scss */
+/* line 470, ../scss/main.scss */
 .gh-icon-inv {
   background: url("../assets/images/socialiconsprites30x30.png") -124px -31px;
 }
@@ -4829,7 +4832,7 @@ button, button:visited, button:focus, button:active, button:hover {
   background: url("../assets/images/socialiconsprites30x30.png") -124px 0;
 }
 
-/* line 473, ../scss/main.scss */
+/* line 475, ../scss/main.scss */
 hr {
   border: 0;
   height: 1px;
@@ -4842,19 +4845,19 @@ hr {
 /********************/
 /* projects.php CSS */
 /********************/
-/* line 486, ../scss/main.scss */
+/* line 488, ../scss/main.scss */
 .git-hub-link {
   width: 100%;
 }
 
-/* line 490, ../scss/main.scss */
+/* line 492, ../scss/main.scss */
 .git-hub-icon {
   padding-top: 40px;
   display: block;
   margin: auto;
 }
 
-/* line 496, ../scss/main.scss */
+/* line 498, ../scss/main.scss */
 .projects-page-description {
   width: 500px;
   padding-top: 10px;
@@ -4863,17 +4866,17 @@ hr {
   font-weight: normal;
 }
 
-/* line 504, ../scss/main.scss */
+/* line 506, ../scss/main.scss */
 #past-prj-div {
   display: none;
 }
 
-/* line 508, ../scss/main.scss */
+/* line 510, ../scss/main.scss */
 #current-prj-div {
   display: none;
 }
 
-/* line 512, ../scss/main.scss */
+/* line 514, ../scss/main.scss */
 .past-current-btns {
   margin-left: auto;
   margin-right: auto;
@@ -4882,7 +4885,7 @@ hr {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 518, ../scss/main.scss */
+/* line 520, ../scss/main.scss */
 .past-current-btns .btn {
   background-color: transparent;
   border-top: none;
@@ -4892,41 +4895,41 @@ hr {
   font-size: 16px;
   font-weight: 300;
 }
-/* line 528, ../scss/main.scss */
+/* line 530, ../scss/main.scss */
 .past-current-btns .btn:hover {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 532, ../scss/main.scss */
+/* line 534, ../scss/main.scss */
 .past-current-btns .btn:visited, .past-current-btns .btn:active {
   background-color: transparent;
 }
-/* line 536, ../scss/main.scss */
+/* line 538, ../scss/main.scss */
 .past-current-btns .btn:focus {
   background-color: none;
 }
-/* line 540, ../scss/main.scss */
+/* line 542, ../scss/main.scss */
 .past-current-btns .active {
   background-color: rgba(230, 230, 230, 0.5);
 }
-/* line 544, ../scss/main.scss */
+/* line 546, ../scss/main.scss */
 .past-current-btns .past {
   border-right: 1px dashed rgba(20, 20, 20, 0.3);
   text-align: right;
   padding-right: 15px;
 }
-/* line 550, ../scss/main.scss */
+/* line 552, ../scss/main.scss */
 .past-current-btns .current {
   border-right: none;
   text-align: left;
   padding-left: 15px;
 }
 
-/* line 557, ../scss/main.scss */
+/* line 559, ../scss/main.scss */
 .btns-inactive {
   padding-top: 60px;
 }
 
-/* line 561, ../scss/main.scss */
+/* line 563, ../scss/main.scss */
 .btns-active {
   padding-top: 25px;
 }
@@ -4934,14 +4937,14 @@ hr {
 /*****************************/
 /* art.php and music.php CSS */
 /*****************************/
-/* line 569, ../scss/main.scss */
+/* line 571, ../scss/main.scss */
 .active-modal-div {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-/* line 573, ../scss/main.scss */
+/* line 575, ../scss/main.scss */
 .modal-active {
   position: fixed;
   top: 50%;
@@ -4960,12 +4963,12 @@ hr {
   transition: all 0.3s ease;
 }
 
-/* line 588, ../scss/main.scss */
+/* line 590, ../scss/main.scss */
 img.modal-active:hover {
   background-color: #999;
 }
 
-/* line 592, ../scss/main.scss */
+/* line 594, ../scss/main.scss */
 .blur {
   -webkit-filter: blur(5px) grayscale(50%);
   -moz-filter: blur(5px) grayscale(50%);
@@ -4980,7 +4983,7 @@ img.modal-active:hover {
   transition: all 0.3s ease;
 }
 
-/* line 598, ../scss/main.scss */
+/* line 600, ../scss/main.scss */
 .art-sketch {
   display: block;
   margin: 40px auto 10px auto;
@@ -4991,13 +4994,13 @@ img.modal-active:hover {
   border-radius: 10px;
 }
 
-/* line 607, ../scss/main.scss */
+/* line 609, ../scss/main.scss */
 img.art-sketch:hover {
   -webkit-box-shadow: 0 0 20px #cccccc;
   box-shadow: 0 0 20px #cccccc;
 }
 
-/* line 611, ../scss/main.scss */
+/* line 613, ../scss/main.scss */
 .music-video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -5006,7 +5009,7 @@ img.art-sketch:hover {
   height: 0;
   color: #333;
 }
-/* line 619, ../scss/main.scss */
+/* line 621, ../scss/main.scss */
 .music-video-wrapper iframe {
   position: absolute;
   height: 100% !important;
@@ -5019,13 +5022,13 @@ img.art-sketch:hover {
 }
 
 @media (min-width: 0px) {
-  /* line 630, ../scss/main.scss */
+  /* line 632, ../scss/main.scss */
   .music-video-info {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 630, ../scss/main.scss */
+  /* line 632, ../scss/main.scss */
   .music-video-info {
     display: block;
     padding: 15px 15px 10px 15px;
@@ -5035,12 +5038,12 @@ img.art-sketch:hover {
     width: 95%;
   }
 }
-/* line 644, ../scss/main.scss */
+/* line 646, ../scss/main.scss */
 .music-video-info .video-views-h {
   text-align: center;
   margin: auto;
 }
-/* line 649, ../scss/main.scss */
+/* line 651, ../scss/main.scss */
 .music-video-info .music-video-desc {
   line-height: 1.5;
 }
@@ -5048,14 +5051,14 @@ img.art-sketch:hover {
 /*****************/
 /* about.php CSS */
 /*****************/
-/* line 658, ../scss/main.scss */
+/* line 660, ../scss/main.scss */
 .about-btns-div {
   margin: 15px auto 60px auto;
   padding-bottom: 20px;
   display: block;
   height: 60px;
 }
-/* line 664, ../scss/main.scss */
+/* line 666, ../scss/main.scss */
 .about-btns-div .about-btn, .about-btns-div button.about-btn:visited, .about-btns-div button.about-btn:focus, .about-btns-div button.about-btn:active {
   float: left;
   font-size: 20px;
@@ -5067,19 +5070,19 @@ img.art-sketch:hover {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 674, ../scss/main.scss */
+/* line 676, ../scss/main.scss */
 .about-btns-div button.about-btn:hover {
   border-radius: 30px;
   border-color: #999;
   color: #999999;
 }
 @media (min-width: 0px) {
-  /* line 658, ../scss/main.scss */
+  /* line 660, ../scss/main.scss */
   .about-btns-div {
     width: 100%;
     display: block;
   }
-  /* line 686, ../scss/main.scss */
+  /* line 688, ../scss/main.scss */
   .about-btns-div .about-btn, .about-btns-div button.about-btn:visited, .about-btns-div button.about-btn:focus, .about-btns-div button.about-btn:active {
     width: 60%;
     height: 60px;
@@ -5087,11 +5090,11 @@ img.art-sketch:hover {
   }
 }
 @media (min-width: 768px) {
-  /* line 658, ../scss/main.scss */
+  /* line 660, ../scss/main.scss */
   .about-btns-div {
     width: 360px;
   }
-  /* line 695, ../scss/main.scss */
+  /* line 697, ../scss/main.scss */
   .about-btns-div .about-btn, .about-btns-div button.about-btn:visited, .about-btns-div button.about-btn:focus, .about-btns-div button.about-btn:active {
     width: 150px;
     height: 60px;
@@ -5099,19 +5102,19 @@ img.art-sketch:hover {
   }
 }
 
-/* line 703, ../scss/main.scss */
+/* line 705, ../scss/main.scss */
 .left-about-p-div {
   padding-bottom: 70px;
 }
 
 @media (min-width: 0px) {
-  /* line 707, ../scss/main.scss */
+  /* line 709, ../scss/main.scss */
   .right-about-img-div {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  /* line 707, ../scss/main.scss */
+  /* line 709, ../scss/main.scss */
   .right-about-img-div {
     display: inline;
     width: 187px;
@@ -5119,7 +5122,7 @@ img.art-sketch:hover {
     margin-left: 20px;
   }
 }
-/* line 721, ../scss/main.scss */
+/* line 723, ../scss/main.scss */
 .right-about-img-div .about-img {
   border-radius: 50%;
   -webkit-box-shadow: 0 0 10px #333333;
@@ -5127,7 +5130,7 @@ img.art-sketch:hover {
   margin-bottom: 20px;
 }
 
-/* line 728, ../scss/main.scss */
+/* line 730, ../scss/main.scss */
 .wpi-ul {
   margin-top: 35px;
 }
@@ -5135,14 +5138,14 @@ img.art-sketch:hover {
 /*****************/
 /* error.php CSS */
 /*****************/
-/* line 736, ../scss/main.scss */
+/* line 738, ../scss/main.scss */
 .error-title {
   text-align: center;
   font-weight: 300;
   padding-top: 70px;
 }
 
-/* line 742, ../scss/main.scss */
+/* line 744, ../scss/main.scss */
 .error-p {
   text-align: center;
   font-size: 15px;

@@ -1,12 +1,13 @@
 <?php require_once('classes.php'); ?>
 
 <!DOCTYPE html>
-<html><head> <meta name="description" content="My personal website. Enjoy!"/> <meta name="author" content="Lucas McLaughlin"/> <meta name="viewport" content="initial-scale=.75, maximum-scale=.75"/> <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'/> <link rel="stylesheet" href="css/main.min.css"/></head><body> <div class="wrapper"> <div class='main-container' id='main-container'> <div class="container top-container"></div><div class="nav-container"> <nav class="navbar navbar-default"> <ul class="nav navbar-nav"> <?php $nav=new NavBar(); echo $nav->generateNav(); ?> </ul> </nav> </div>
+<html><head> <meta name="description" content="My personal website. Enjoy!"/> <meta name="author" content="Lucas McLaughlin"/> <meta name="viewport" content="initial-scale=.75, maximum-scale=.75"/> <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'/> <link rel="stylesheet" href="http://www.heyimlucas.com/css/main.min.css"/></head><body> <div class="wrapper"> <div class='main-container' id='main-container'> <div class="container top-container"></div><div class="nav-container"> <nav class="navbar navbar-default"> <ul class="nav navbar-nav"> <?php $nav=new NavBar(); echo $nav->generateNav(); ?> </ul> </nav> </div>
 
             <?php
                 // Render the requested page
                 if (isset($_GET['p'])) {
                     $p = $_GET['p'];
+                    $err = null; // set to null for error.php to check
 
                     switch($p) {
                         case 'home':
@@ -24,11 +25,20 @@
                         case 'about':
                             include_once('about.php');
                             break;
+                        case 'error':
+                            // Get the error and include the error page
+                            // which will decide what to display
+                            $err = $_GET['error'];
+                            include_once('error.php');
                         default:
+                            // If param not a case, go to error page
+                            // and hit 404 page
+                            $err = 404;
                             include_once('error.php');
                             break;
                     }
                 } else {
+                    // If no param is set, render home page
                     include_once('home.php');
                 }
             ?>

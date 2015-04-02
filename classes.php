@@ -25,11 +25,11 @@ class NavBar {
      * links here, changes will be reflected in the navbar.
      */
     private $navbar = array(
-        'home'     => array('text' => 'Home',     'url' => '?p=home',     'class' => 'navbar-link'),
-        'projects' => array('text' => 'Projects', 'url' => '?p=projects', 'class' => 'navbar-link'),
-        'art'      => array('text' => 'Art',      'url' => '?p=art',      'class' => 'navbar-link'),
-        'music'    => array('text' => 'Music',    'url' => '?p=music',    'class' => 'navbar-link'),
-        'about'    => array('text' => 'About',    'url' => '?p=about',    'class' => 'navbar-link')
+        'home'     => array('text' => 'Home',     'url' => 'http://www.heyimlucas.com/?p=home',     'class' => 'navbar-link'),
+        'projects' => array('text' => 'Projects', 'url' => 'http://www.heyimlucas.com/?p=projects', 'class' => 'navbar-link'),
+        'art'      => array('text' => 'Art',      'url' => 'http://www.heyimlucas.com/?p=art',      'class' => 'navbar-link'),
+        'music'    => array('text' => 'Music',    'url' => 'http://www.heyimlucas.com/?p=music',    'class' => 'navbar-link'),
+        'about'    => array('text' => 'About',    'url' => 'http://www.heyimlucas.com/?p=about',    'class' => 'navbar-link')
     );
 
     /**
