@@ -156,6 +156,10 @@ button, button:visited, button:focus, button:active, button:hover {
     box-shadow: none !important;
 }
 
+.btn, nav {
+    border-radius: 0 !important;
+}
+
 .container {
     // Scale the width of a container if the page
     // gets too small in scale
@@ -323,7 +327,7 @@ button, button:visited, button:focus, button:active, button:hover {
             clear: both;
             margin: 5px 0 5px 20px;
             @include box-shadow(0 0 10px #888);
-            border-radius: 5px;
+            border-radius: 0; // 5
             float: right;
         }
     }
@@ -583,7 +587,7 @@ hr {
     margin: 40px auto 10px auto;
     padding: 10px;
     @include box-shadow(0 0 10px #888);
-    border-radius: 10px;
+    border-radius: 0; // 10
     @include transition(all 0.3s ease);
 }
 
@@ -603,7 +607,7 @@ img.modal-active:hover {
     height: auto;
     width: 100%;
     @include box-shadow(0 0 10px #888);
-    border-radius: 10px;
+    border-radius: 0; // 10
 }
 
 img.art-sketch:hover {
@@ -638,7 +642,7 @@ img.art-sketch:hover {
         display: block;
         padding: 15px 15px 10px 15px;
         background-color: #fff;
-        border-radius: 10px;
+        border-radius: 0; // 10
         margin: 10px auto 5px auto;
         width: 95%;
     }
@@ -666,7 +670,7 @@ img.art-sketch:hover {
     .about-btn, button.about-btn:visited, button.about-btn:focus, button.about-btn:active {
         float: left;
         font-size: 20px;
-        border-radius: 10px;
+        border-radius: 0; // 10
         border: 3px solid #333;
         color: #333;
         background-color: transparent;
@@ -674,7 +678,7 @@ img.art-sketch:hover {
     }
 
     button.about-btn:hover {
-        border-radius: 30px;
+        border-radius: 0; // 30
         border-color: #999;
         color: #999
     }
