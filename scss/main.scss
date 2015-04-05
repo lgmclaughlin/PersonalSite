@@ -76,7 +76,14 @@
 
 .top-container {
     color: transparent;
-    padding-top: 25px;
+    // If the page is scaled small, have a larger
+    // top container
+    @media (min-width: 0px) {
+        padding-top: 78px;
+    }
+    @media (min-width: $screen-sm-min) {
+        padding-top: 25px;
+    }
 }
 
 .main-container {
@@ -84,7 +91,15 @@
 }
 
 .bottom-container {
-    padding-top: 75px
+    color: transparent;
+    // If the page is scaled small, have a no
+    // bottom container
+    @media (min-width: 0px) {
+        padding-top: 0;
+    }
+    @media (min-width: $screen-sm-min) {
+        padding-top: 75px;
+    }
 }
 
 .footer {
@@ -385,8 +400,16 @@ button, button:visited, button:focus, button:active, button:hover {
     }
 
     .hr-div {
-        width: 400px;
         margin: 40px auto 40px auto;
+        
+        // If the page is scaled small, have the hr
+        // take up the entire width of the page
+        @media (min-width: 0px) {
+            width: 90%;
+        }
+        @media (min-width: $screen-sm-min) {
+            width: 400px;
+        }
     }
 }
 
@@ -398,12 +421,11 @@ button, button:visited, button:focus, button:active, button:hover {
 
 .social-icon-link {
     display: inline-block;
-    margin: 10px;
+    margin: 10px 15px;
 }
 
 // Apply general settings to all icons
-.fb-icon, .fb-pages-icon, .yt-icon, .li-icon, .gh-icon,
-.fb-icon-inv, .fb-pages-icon-inv, .yt-icon-inv, .li-icon-inv, .gh-icon-inv {
+.social-icon {
     // Trick Chrome into thinking there is no image
     // Otherwise, a thin outline will appear since there
     // is no src
@@ -502,11 +524,18 @@ hr {
 }
 
 .projects-page-description {
-    width: 500px;
     padding-top: 10px;
     margin: auto;
     text-align: center;
     font-weight: normal;
+
+    // Have the text wrap correctly with a narrow screen
+    @media (min-width: 0px) {
+        width: 90%;
+    }
+    @media (min-width: 600px) { 
+        width: 500px;
+    }
 }
 
 #past-prj-div {
@@ -664,7 +693,6 @@ img.art-sketch:hover {
 /*****************/
 
 .about-btns-div {
-    margin: 15px auto 60px auto;
     padding-bottom: 20px;
     display: block;
     height: 60px;
@@ -690,6 +718,7 @@ img.art-sketch:hover {
     @media (min-width: 0px) {   
         width: 100%;
         display: block;
+        margin: 15px auto 130px auto;
 
         .about-btn, button.about-btn:visited, button.about-btn:focus, button.about-btn:active {
             width: 60%;
@@ -699,6 +728,7 @@ img.art-sketch:hover {
     }
     @media (min-width: $screen-sm-min) {
         width: 360px;
+        margin: 15px auto 60px auto;
 
         .about-btn, button.about-btn:visited, button.about-btn:focus, button.about-btn:active {
             width: 150px;

@@ -5,21 +5,21 @@
 <head>
     <meta name="description" content="My personal website. Enjoy!"/>
     <meta name="author" content="Lucas McLaughlin"/>
-    <meta name="viewport" content="initial-scale=.75, maximum-scale=.75" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="http://heyimlucas.com/css/main.css" />
 </head>
 
 <body>
     <div class="wrapper">
         <div class='main-container' id='main-container'>
             <!-- Top container div for whitespace -->
-            <div class="container top-container"></div>
+            <div class="top-container"></div>
 
-            <!-- Navbar -->
-            <header>
-                <nav class="navbar navbar-default navbar-fixed" role="navigation">
+            <!-- Navbar for Sm, Md,and Lg devices -->
+            <header class="hidden-xs">
+                <nav class="navbar navbar-default" role="navigation">
                     <div class="container">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav">
@@ -33,6 +33,33 @@
                             </a>
                         </div>
                         <div id="top-nav" class="collapse navbar-collapse top-nav-container">
+                            <ul class="nav navbar-nav navbar-right">
+                                <?php
+                                    $nav = new NavBar();
+                                    echo $nav->generateNav("top");
+                                ?>  
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Navbar for Xs devices -->
+            <header class="hidden-sm hidden-md hidden-lg">
+                <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav-xs">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="#" class="navbar-brand">
+                                <img src="http://heyimlucas.com/assets/images/LM-logo-inv.svg" class="lm-logo" alt="" />
+                            </a>
+                        </div>
+                        <div id="top-nav-xs" class="collapse navbar-collapse top-nav-container">
                             <ul class="nav navbar-nav navbar-right">
                                 <?php
                                     $nav = new NavBar();
@@ -99,19 +126,19 @@
                 </div>
                 <div class="social-icons">
                     <a class="social-icon-link" href="https://www.facebook.com/McLovin905" target="_blank">
-                        <img class="fb-icon-inv" />
+                        <img class="fb-icon-inv social-icon" />
                     </a>
                     <a class="social-icon-link" href="https://www.facebook.com/lucasmband" target="_blank">
-                        <img class="fb-pages-icon-inv" />
+                        <img class="fb-pages-icon-inv social-icon" />
                     </a>
                     <a class="social-icon-link" href="https://www.youtube.com/user/DormRoomSerenade" target="_blank">
-                        <img class="yt-icon-inv" />
+                        <img class="yt-icon-inv social-icon" />
                     </a>
                     <a class="social-icon-link" href="https://www.linkedin.com/in/lucasmclaughlin" target="_blank">
-                        <img class="li-icon-inv" />
+                        <img class="li-icon-inv social-icon" />
                     </a>
                     <a class="social-icon-link" href="https://github.com/lgmclaughlin" target="_blank">
-                        <img class="gh-icon-inv" />
+                        <img class="gh-icon-inv social-icon" />
                     </a>
                 </div>
                 <p class="content-p copyright-p">
@@ -127,7 +154,23 @@
 
     <!-- Main page script -->
     <script>
-        $(document).ready(function(){$(window).scroll(function(){var e=12,c=new Image;c.src=$(document.body).css("background-image").replace("url","").replace("(","").replace(")","").replace('"',"").replace('"',""),$(document.body).css("background-position","50% "+-window.pageYOffset/e+"px")})});
+        $(document).ready(function() {    
+            function isMobile() {
+                return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            }
+
+            /**
+             * Implement parallax scrolling if not mobile device
+             */
+            if (!isMobile()) {
+                $(window).scroll(function() {
+                    var speed = 12;
+                    var img = new Image;
+                    img.src = $(document.body).css('background-image').replace('url', '').replace('(', '').replace(')', '').replace('"', '').replace('"', '');
+                    $(document.body).css('background-position', "50% " + (-window.pageYOffset / speed) + "px");
+                });
+            }
+        });
     </script>
 
     <?php

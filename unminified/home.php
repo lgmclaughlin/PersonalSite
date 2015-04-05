@@ -12,20 +12,20 @@
         </div>
     </div>
     <div class="social-icons">
-        <a href="https://www.facebook.com/McLovin905" target="_blank">
-            <img class="fb-icon" />
+        <a class="social-icon-link" href="https://www.facebook.com/McLovin905" target="_blank">
+            <img class="fb-icon social-icon" />
         </a>
-        <a href="https://www.facebook.com/lucasmband" target="_blank">
-            <img class="fb-pages-icon" />
+        <a class="social-icon-link" href="https://www.facebook.com/lucasmband" target="_blank">
+            <img class="fb-pages-icon social-icon" />
         <a/>
-        <a href="https://www.youtube.com/user/DormRoomSerenade" target="_blank">
-            <img class="yt-icon" />
+        <a class="social-icon-link" href="https://www.youtube.com/user/DormRoomSerenade" target="_blank">
+            <img class="yt-icon social-icon" />
         </a>
-        <a href="https://www.linkedin.com/in/lucasmclaughlin" target="_blank">
-            <img class="li-icon" />
+        <a class="social-icon-link" href="https://www.linkedin.com/in/lucasmclaughlin" target="_blank">
+            <img class="li-icon social-icon" />
         </a>
-        <a href="https://github.com/lgmclaughlin" target="_blank">
-            <img class="gh-icon" />
+        <a class="social-icon-link" href="https://github.com/lgmclaughlin" target="_blank">
+            <img class="gh-icon social-icon" />
         </a>
     </div>
 </div>
