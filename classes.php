@@ -328,6 +328,7 @@ class Projects {
         
         // Create the project content nav bar
         $html .= "      <div class='btn-group-vertical content-nav'>";
+        $html .= "          <div class='content-nav-label'>Jump To</div>";
         foreach($projects as $key => $project) {
             $html .= "          <button type='button' class='btn btn-default btn-nav' onclick=\"location.href ='#{$key}'\">{$project['title']}</button>";
         }
@@ -425,6 +426,7 @@ class Art {
         
         // Create the project content nav bar
         $html .= "      <div class='btn-group-vertical content-nav'>";
+        $html .= "          <div class='content-nav-label'>Jump To</div>";
         foreach($art as $key => $sketch) {
             $html .= "          <button type='button' class='btn btn-default btn-nav' onclick=\"location.href ='#{$key}'\">{$sketch['title']}</button>";
         }
@@ -529,6 +531,7 @@ class Music {
         
         // Create the project content nav bar
         $html .= "      <div class='btn-group-vertical content-nav'>";
+        $html .= "          <div class='content-nav-label'>Jump To</div>";
         foreach($music as $key => $video) {
             $html .= "          <button type='button' class='btn btn-default btn-nav' onclick=\"location.href ='#{$key}'\">{$video['title']}</button>";
         }

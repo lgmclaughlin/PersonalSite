@@ -179,9 +179,7 @@
 
             switch($p) {
                 case 'home':
-                    echo '<script>
-                        $(document).ready(function(){$("#footer").css("display","none")});
-                    </script>';
+                    echo '<script type="text/javascript" src="http://heyimlucas.com/assets/javascripts/home.min.js"></script>';
                     break;
                 case 'projects':
                     echo '<script type="text/javascript" src="http://heyimlucas.com/assets/javascripts/projects.min.js"></script>';
@@ -205,10 +203,6 @@
                     </script>';
                     break;
             }
-        } else {
-            echo '<script>
-                $(document).ready(function(){$("#footer").css("display","none")});
-            </script>';
         }
     ?>
 </body>

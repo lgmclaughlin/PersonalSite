@@ -235,14 +235,28 @@ button, button:visited, button:focus, button:active, button:hover {
         }
     }
 
+    .content-nav-label {
+        background-color: #333;
+        color: #eee;
+        width: 100%;
+        text-align: center;
+    }
+
     .btn-nav, button.btn-nav:visited, button.btn-nav:focus, button.btn-nav:active {
-        font-size: 17px;
         font-weight: normal;
         padding: 15px 30px 15px 30px;
         width: 100%;
         color: #333;
         border: none;
         background-color: #ddd;
+
+        // Size change with narrow screen
+        @media (min-width: 0px) {
+            font-size: 14px;
+        }
+        @media (min-width: 450px) {
+            font-size: 17px;
+        }
     }
 
     button.btn-nav:hover {
@@ -254,6 +268,11 @@ button, button:visited, button:focus, button:active, button:hover {
     @include container-fixed;
 
     @media (min-width: $screen-sm-min) {
+        padding: 0 15px;
+        width: $container-sm;
+    }
+    @media (min-width: $screen-sm-min) {
+        padding: 0 60px;
         width: $container-sm;
     }
     @media (min-width: $screen-md-min) {
@@ -262,8 +281,6 @@ button, button:visited, button:focus, button:active, button:hover {
     @media (min-width: $screen-lg-min) {
         width: $container-lg;
     }
-    
-    padding: 0 60px 0 60px;
 
     .inner-content-div {
         margin: 30px auto 80px auto;
@@ -709,6 +726,14 @@ img.art-sketch:hover {
 
     .music-video-desc {
         line-height: 1.5;
+
+        // No visibility if screen is narrow
+        @media (min-width: 0px) {
+            display: none;
+        }
+        @media (min-width: $screen-sm-min) {
+            display: block;
+        }
     }
 }
 
