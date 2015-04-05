@@ -8,7 +8,7 @@
     <meta name="viewport" content="initial-scale=.75, maximum-scale=.75" />
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
@@ -17,18 +17,32 @@
             <!-- Top container div for whitespace -->
             <div class="container top-container"></div>
 
-            <!-- Nav Container -->
-            <div class="nav-container">
-                <!-- Nav bar -->
-                <nav class="navbar navbar-default">
-                    <ul class="nav navbar-nav">
-                        <?php 
-                            $nav = new NavBar();
-                            echo $nav->generateNav();
-                        ?>
-                    </ul>
+            <!-- Navbar -->
+            <header>
+                <nav class="navbar navbar-default navbar-fixed" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="#" class="navbar-brand">
+                                <img src="http://heyimlucas.com/assets/images/LM-logo.svg" class="lm-logo" alt="" />
+                            </a>
+                        </div>
+                        <div id="top-nav" class="collapse navbar-collapse top-nav-container">
+                            <ul class="nav navbar-nav navbar-right">
+                                <?php
+                                    $nav = new NavBar();
+                                    echo $nav->generateNav("top");
+                                ?>  
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
-            </div>
+            </header>
 
             <?php
                 // Render the requested page
@@ -65,46 +79,49 @@
         <div class="bottom-container"></div>
         
         <!-- This footer will only be unhidden for pages that need it -->
-        <div class="footer" id="footer">
-            <div class="nav-container">
-                <div class="nav navbar-footer">
-                    <?php 
-                        $nav = new NavBar();
-                        echo $nav->generateNav();
-                    ?>
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="hidden-xs">
+                    <div class="footer-nav-container">
+                        <div class="nav navbar-footer">
+                            <?php 
+                                $nav = new NavBar();
+                                echo $nav->generateNav("foot");
+                            ?>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="con-res-links-div">
-                <div class="nav-container">
-                    <a href="mailto:lgmclaughlin905@gmail.com" target="_blank" class="con-res-link-footer">Contact</a>
-                    <a href="assets/files/lucas-mclaughlin-resume.pdf" target="_blank" class="con-res-link-footer">Resume</a>
+                <div class="con-res-links-div">
+                    <div class="nav-container">
+                        <a href="mailto:lgmclaughlin905@gmail.com" target="_blank" class="con-res-link-footer">Contact</a>
+                        <a href="assets/files/lucas-mclaughlin-resume.pdf" target="_blank" class="con-res-link-footer">Resume</a>
+                    </div>
                 </div>
+                <div class="social-icons">
+                    <a class="social-icon-link" href="https://www.facebook.com/McLovin905" target="_blank">
+                        <img class="fb-icon-inv" />
+                    </a>
+                    <a class="social-icon-link" href="https://www.facebook.com/lucasmband" target="_blank">
+                        <img class="fb-pages-icon-inv" />
+                    </a>
+                    <a class="social-icon-link" href="https://www.youtube.com/user/DormRoomSerenade" target="_blank">
+                        <img class="yt-icon-inv" />
+                    </a>
+                    <a class="social-icon-link" href="https://www.linkedin.com/in/lucasmclaughlin" target="_blank">
+                        <img class="li-icon-inv" />
+                    </a>
+                    <a class="social-icon-link" href="https://github.com/lgmclaughlin" target="_blank">
+                        <img class="gh-icon-inv" />
+                    </a>
+                </div>
+                <p class="content-p copyright-p">
+                    &copy; 2015 Lucas McLaughlin. All Rights Reserved.
+                </p>
             </div>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/McLovin905" target="_blank">
-                    <img class="fb-icon-inv" />
-                </a>
-                <a href="https://www.facebook.com/lucasmband" target="_blank">
-                    <img class="fb-pages-icon-inv" />
-                </a>
-                <a href="https://www.youtube.com/user/DormRoomSerenade" target="_blank">
-                    <img class="yt-icon-inv" />
-                </a>
-                <a href="https://www.linkedin.com/in/lucasmclaughlin" target="_blank">
-                    <img class="li-icon-inv" />
-                </a>
-                <a href="https://github.com/lgmclaughlin" target="_blank">
-                    <img class="gh-icon-inv" />
-                </a>
-            </div>
-            <p class="content-p copyright-p">
-                &copy 2015 Lucas McLaughlin. All Rights Reserved.
-            </p>
-        </div>
-    </div>
+        </footer>
     
     <!-- GET SCRIPTS -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.3.min.js"></script><script type="text/javascript" src="http://heyimlucas.com/assets/javascripts/bootstrap/transition.js"></script><script type="text/javascript" src="http://heyimlucas.com/assets/javascripts/bootstrap/collapse.js"></script><script type="text/javascript" src="http://heyimlucas.com/assets/javascripts/bootstrap/modal.js"></script>
 
     <!-- Inline small scripts -->
 
@@ -119,12 +136,13 @@
 
             switch($p) {
                 case 'home':
+                    echo '<script type="text/javascript" src="http://heyimlucas.com/assets/javascripts/home.min.js"></script>';
                     break;
                 case 'projects':
-                    echo '<script type="text/javascript" src="assets/javascripts/projects.min.js"></script>';
+                    echo '<script type="text/javascript" src="http://heyimlucas.com/assets/javascripts/projects.min.js"></script>';
                     break;
                 case 'art':
-                    echo '<script type="text/javascript" src="assets/javascripts/art.min.js"></script>';
+                    echo '<script type="text/javascript" src="http://heyimlucas.com/assets/javascripts/art.min.js"></script>';
                     break;
                 case 'music':
                     echo '<script>

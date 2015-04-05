@@ -25,11 +25,11 @@ class NavBar {
      * links here, changes will be reflected in the navbar.
      */
     private $navbar = array(
-        'home'     => array('text' => 'Home',     'url' => 'http://www.heyimlucas.com/?p=home',     'class' => 'navbar-link'),
-        'projects' => array('text' => 'Projects', 'url' => 'http://www.heyimlucas.com/?p=projects', 'class' => 'navbar-link'),
-        'art'      => array('text' => 'Art',      'url' => 'http://www.heyimlucas.com/?p=art',      'class' => 'navbar-link'),
-        'music'    => array('text' => 'Music',    'url' => 'http://www.heyimlucas.com/?p=music',    'class' => 'navbar-link'),
-        'about'    => array('text' => 'About',    'url' => 'http://www.heyimlucas.com/?p=about',    'class' => 'navbar-link')
+        'home'     => array('text' => 'Home',     'url' => 'http://www.heyimlucas.com/?p=home',     'class' => ''),
+        'projects' => array('text' => 'Projects', 'url' => 'http://www.heyimlucas.com/?p=projects', 'class' => ''),
+        'art'      => array('text' => 'Art',      'url' => 'http://www.heyimlucas.com/?p=art',      'class' => ''),
+        'music'    => array('text' => 'Music',    'url' => 'http://www.heyimlucas.com/?p=music',    'class' => ''),
+        'about'    => array('text' => 'About',    'url' => 'http://www.heyimlucas.com/?p=about',    'class' => '')
     );
 
     /**
@@ -59,17 +59,25 @@ class NavBar {
      *
      * @return The HTML for the navbar is returned
      */
-    public function generateNav() {
+    public function generateNav($loc) {
         // Get the nav and class
         $navbar = $this->navbar;
 
         // Get the active link, if any
         $navbar = $this->getActive($navbar);
 
+        // Assign footer class if generating footer nav
+        $class = "";
+        if ($loc == "foot") {
+            $class = "footer-navbar-link ";
+        } else if ($loc == "top") {
+            $class = "navbar-link ";
+        }
+
         // Loop through each item and create the HTML of the Nav
         $html = "";
         foreach($navbar as $link) {
-            $html .= "<li class='{$link['class']}'><a href='{$link['url']}'>{$link['text']}</a>";
+            $html .= "<li class='{$class}{$link['class']}'><a href='{$link['url']}'>{$link['text']}</a>";
         }
 
         return $html;

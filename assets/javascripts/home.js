@@ -1,3 +1,4 @@
 $(document).ready(function() {
-    $('#footer').hide();
+    // No display for the footer
+    $('#footer').css('display', 'none');
 });
