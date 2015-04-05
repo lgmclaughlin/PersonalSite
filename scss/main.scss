@@ -387,16 +387,40 @@ button, button:visited, button:focus, button:active, button:hover {
 
     .name {
         font-weight: 100;
-        font-size: 40px;
+        @media (min-width: 0) {
+            font-size: 20px
+        }
+        @media (min-width: $screen-xs-min) {
+            font-size: 30px;
+        }
+        @media (min-width: $screen-md-min) {
+            font-size: 40px;
+        }
     }
 
     .title {
         font-weight: 700;
-        font-size: 60px;
+        @media (min-width: 0) {
+            font-size: 30px
+        }
+        @media (min-width: $screen-xs-min) {
+            font-size: 40px;
+        }
+        @media (min-width: $screen-md-min) {
+            font-size: 60px;
+        }
     }
 
     .hobbies {
-        font-size: 50px;
+        @media (min-width: 0) {
+            font-size: 25px
+        }
+        @media (min-width: $screen-xs-min) {
+            font-size: 35px;
+        }
+        @media (min-width: $screen-md-min) {
+            font-size: 50px;
+        }
     }
 
     .hr-div {

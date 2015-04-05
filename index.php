@@ -65,7 +65,7 @@
 
             switch($p) {
                 case 'home':
-                    echo '<script type="text/javascript" src="http://heyimlucas.com/assets/javascripts/home.min.js"></script>';
+                    echo '<script>$(document).ready(function(){$("#footer").css("display","none")});</script>';
                     break;
                 case 'projects':
                     echo '<script type="text/javascript" src="http://heyimlucas.com/assets/javascripts/projects.min.js"></script>';
@@ -74,21 +74,17 @@
                     echo '<script type="text/javascript" src="http://heyimlucas.com/assets/javascripts/art.min.js"></script>';
                     break;
                 case 'music':
-                    echo '<script>
-                        $(document).ready(function(){$("#footer").css("visibility","visible"),$(".music-video").bind("error",function(){window.location.reload()})});
-                    </script>';
+                    echo '<script>$(document).ready(function(){$("#footer").css("visibility","visible"),$(".music-video").bind("error",function(){window.location.reload()})});</script>';
                     break;
                 case 'about':
-                    echo '<script>
-                        $(document).ready(function(){$("#footer").css("visibility","visible")});
-                    </script>';
+                    echo '<script>$(document).ready(function(){$("#footer").css("visibility","visible")});</script>';
                     break;
                 default:
-                    echo '<script>
-                        $(document).ready(function(){$("#footer").css("visibility","visible")});
-                    </script>';
+                    echo '<script>$(document).ready(function(){$("#footer").css("visibility","visible")});</script>';
                     break;
             }
+        } else {
+            echo '<script>$(document).ready(function(){$("#footer").css("display","none")});</script>';
         }
     ?>
 </body></html>
