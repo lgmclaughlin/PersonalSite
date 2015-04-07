@@ -4362,7 +4362,7 @@ tbody.collapse.in {
 /* line 45, ../scss/main.scss */
 .lm-logo {
   margin-top: -30px;
-  width: 193%;
+  width: 78px;
 }
 
 /* line 50, ../scss/main.scss */
@@ -4814,7 +4814,7 @@ button, button:visited, button:focus, button:active, button:hover {
     font-size: 30px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 850px) {
   /* line 405, ../scss/main.scss */
   .home-content .name {
     font-size: 40px;
@@ -4836,7 +4836,7 @@ button, button:visited, button:focus, button:active, button:hover {
     font-size: 40px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 850px) {
   /* line 418, ../scss/main.scss */
   .home-content .title {
     font-size: 60px;
@@ -4854,7 +4854,7 @@ button, button:visited, button:focus, button:active, button:hover {
     font-size: 35px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 850px) {
   /* line 431, ../scss/main.scss */
   .home-content .hobbies {
     font-size: 50px;
@@ -4949,7 +4949,7 @@ button, button:visited, button:focus, button:active, button:hover {
 
 /* line 515, ../scss/main.scss */
 .fb-icon-inv {
-  background: url("../assets/images/socialiconsprites30x30.png") 0 -31px;
+  background: url("../assets/ images/socialiconsprites30x30.png") 0 -31px;
 }
 /* line 31, ../scss/main.scss */
 .fb-icon-inv.fb-icon-inv:hover {
@@ -4958,7 +4958,7 @@ button, button:visited, button:focus, button:active, button:hover {
 
 /* line 521, ../scss/main.scss */
 .fb-pages-icon-inv {
-  background: url("../assets/images/socialiconsprites30x30.png") -31px -31px;
+  background: url("../assets/ images/socialiconsprites30x30.png") -31px -31px;
 }
 /* line 31, ../scss/main.scss */
 .fb-pages-icon-inv.fb-pages-icon-inv:hover {
@@ -4967,7 +4967,7 @@ button, button:visited, button:focus, button:active, button:hover {
 
 /* line 527, ../scss/main.scss */
 .yt-icon-inv {
-  background: url("../assets/images/socialiconsprites30x30.png") -62px -31px;
+  background: url("../assets/ images/socialiconsprites30x30.png") -62px -31px;
 }
 /* line 31, ../scss/main.scss */
 .yt-icon-inv.yt-icon-inv:hover {
@@ -4976,7 +4976,7 @@ button, button:visited, button:focus, button:active, button:hover {
 
 /* line 533, ../scss/main.scss */
 .li-icon-inv {
-  background: url("../assets/images/socialiconsprites30x30.png") -93px -31px;
+  background: url("../assets/ images/socialiconsprites30x30.png") -93px -31px;
 }
 /* line 31, ../scss/main.scss */
 .li-icon-inv.li-icon-inv:hover {
@@ -4985,7 +4985,7 @@ button, button:visited, button:focus, button:active, button:hover {
 
 /* line 539, ../scss/main.scss */
 .gh-icon-inv {
-  background: url("../assets/images/socialiconsprites30x30.png") -124px -31px;
+  background: url("../assets/ images/socialiconsprites30x30.png") -124px -31px;
 }
 /* line 31, ../scss/main.scss */
 .gh-icon-inv.gh-icon-inv:hover {
@@ -5334,3 +5334,8 @@ img.art-sketch:hover {
   text-align: center;
   font-size: 15px;
 }
+
+/****************************** land.php ******************************/
+/*****************/
+/* error.php CSS */
+/*****************/
