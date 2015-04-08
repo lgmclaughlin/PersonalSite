@@ -6,6 +6,8 @@
 
 @import "compass";
 @import "bootstrap";
+@import "land";
+@import "animate";
 
 /**********/
 /* Mixins */
@@ -26,7 +28,7 @@
 }
 
 @mixin social-icon-bg-img-inv($class, $x, $y) {
-    background: url("../assets/ images/socialiconsprites30x30.png") $x $y - 31px;
+    background: url("../assets/images/socialiconsprites30x30.png") $x $y - 31px;
 
     &.#{$class}:hover {
         background: url("../assets/images/socialiconsprites30x30.png") $x $y;
@@ -141,13 +143,15 @@ html, body {
 }
 
 body {
+    font-family: 'Lato', palatino linotype, sans-serif;
+}
+
+.index-body {
     background-image: url("../assets/images/home_background.jpg");
     background-repeat: repeat;
     background-attachment: fixed;
     background-position: 50% 0%;
     background-size: 1980px 1280px;
-
-    font-family: 'Lato', palatino linotype, sans-serif;
 }
 
 /*********************/
@@ -271,11 +275,8 @@ button, button:visited, button:focus, button:active, button:hover {
         padding: 0 15px;
         width: $container-sm;
     }
-    @media (min-width: $screen-sm-min) {
-        padding: 0 60px;
-        width: $container-sm;
-    }
     @media (min-width: $screen-md-min) {
+        padding: 0 60px;
         width: $container-md;
     }
     @media (min-width: $screen-lg-min) {
@@ -830,9 +831,3 @@ img.art-sketch:hover {
     text-align: center;
     font-size: 15px;
 }
-
-/****************************** land.php ******************************/
-
-/*****************/
-/* error.php CSS */
-/*****************/

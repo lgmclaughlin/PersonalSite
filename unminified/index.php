@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="http://heyimlucas.com/css/main.css" />
 </head>
 
-<body>
+<body class="index-body">
     <div class="wrapper">
         <div class='main-container' id='main-container'>
             <!-- Top container div for whitespace -->

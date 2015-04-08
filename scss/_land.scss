@@ -1,0 +1,89 @@
+/**
+ * Custom Sass/CSS for my personal site landing page
+ *
+ * Author: Lucas McLaughlin
+ */
+
+.hero {
+    color: #333;
+    background-image: url(../assets/images/hero.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 0%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+
+    .hero-div {
+        margin: auto;
+        padding-top: 25vh;
+        text-align: center;
+
+        .hey, .im-lucas, .welcome {
+            display: block;            
+        }
+
+        .hey {
+            padding-right: 30%;
+            font-weight: 100;
+            @media (min-width: 0) {
+                font-size: 25px
+            }
+            @media (min-width: $screen-xs-min) {
+                font-size: 30px;
+            }
+            @media (min-width: 850px) {
+                font-size: 40px;
+            }
+        }
+
+        .im-lucas {
+            @media (min-width: 0) {
+            font-size: 35px
+            }
+            @media (min-width: $screen-xs-min) {
+                font-size: 40px;
+            }
+            @media (min-width: 850px) {
+                font-size: 60px;
+            }
+        }
+
+        .welcome {
+            font-weight: 100;
+            @media (min-width: 0) {
+                font-size: 17px
+            }
+            @media (min-width: $screen-xs-min) {
+                font-size: 25px;
+            }
+            @media (min-width: 850px) {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.content-wrapper {
+    
+}
+
+.first-content-div {
+    background-color: #eee;
+    height: 600px;
+    margin-top: -20vh;
+}
+
+.cust-container {
+    @media (min-width: $screen-sm-min) {
+        padding: 0 15px;
+        width: $container-sm;
+    }
+    @media (min-width: $screen-md-min) {
+        padding: 0 60px;
+        width: $container-md;
+    }
+}
